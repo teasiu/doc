@@ -4,44 +4,24 @@ sidebar_position: 1
 
 # 海思 NAS 使用手册介绍
 
-Let's discover **Docusaurus in less than 5 minutes**.
+本手册由作者神雕及开发群成员热心撰写。
 
-## Getting Started
+## 初衷
 
-Get started by **creating a new site**.
+为了让国内用户向普及 Linux 系统方向不断发展和进步，
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+把嵌入式的 NAS 系统尽可能的以浅显的描述方式展现出来，
 
-### What you'll need
+让使用者从小白到摸进门槛，再到自主创作个人需求的使用方式迈进。
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 免责声明
 
-## Generate a new site
+本教程旨在让用户更容易掌握 NAS 系统的使用方法，
 
-Generate a new Docusaurus site using the **classic template**.
+不对各项内置软件的代码以及专利置评，所描述的使用方法仅仅是建议，
 
-The classic template will automatically be added to your project after you run the command:
+使用者学习过程中造成的任何折腾带来的损失，不承担任何责任。
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## 改进
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+每一篇教程都接受改进建议，期望更多参与者fork教程仓库并踊跃提出修正。
