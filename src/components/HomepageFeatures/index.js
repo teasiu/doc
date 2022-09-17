@@ -8,8 +8,9 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        基于ubuntu linux打造一个优秀的nas系统
-        used to get your website up and running quickly.
+        基于 ubuntu linux 打造一个优秀的 nas 系统。内置丰富的功能，
+        网盘，建站，上传下载，穿透等，不仅能满足你家用小型服务器的
+        要求，还可以通过 ubuntu 丰富的软件仓库安装你需要的软件。
       </>
     ),
   },
@@ -18,8 +19,9 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        适配的海思 hi3798m 芯片盒子，高达 1.5hz 的四核 CPU，1-2G运存，8G闪存，
+        让你轻松应对各项运行环境需求。hi3798mv200/300的盒子，支持 arch64 系统，
+        日常只有2-3瓦的功耗，轻易超越你的需求。
       </>
     ),
   },
