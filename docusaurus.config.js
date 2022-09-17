@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'histb doc',
-  tagline: 'Dinosaurs are cool',
+  title: '海思机顶盒使用教程',
+  tagline: '一个极低功耗的 Linux 服务器',
   url: 'https://histb.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
