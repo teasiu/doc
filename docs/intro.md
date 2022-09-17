@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 海思 NAS 使用手册介绍
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
