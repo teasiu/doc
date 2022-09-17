@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '海思机顶盒 NAS 教程',
   tagline: '一个极低功耗的 Linux 服务器',
-  url: 'https://doc.ecoo.top',
+  url: 'https://histb.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/teasiu/doc/blob/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/teasiu/doc/blob/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
