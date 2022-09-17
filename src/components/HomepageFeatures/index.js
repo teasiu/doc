@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '基于Linux Ubuntu 20.04 LTS',
+    title: 'Base on Linux Ubuntu 20.04 LTS',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -14,7 +14,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '四核arm高达1.5HZ的CPU',
+    title: 'Arm v7/v8 4core 1.5Hz CPU',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -24,7 +24,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '极低功耗，功能丰富',
+    title: 'Support Docker 20.18',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

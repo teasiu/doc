@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            我是小盒子，也是大世界
+            我是小盒子 也是大世界
           </Link>
         </div>
       </div>
