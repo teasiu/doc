@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} www.ecoo.top Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} www.ecoo.top`,
       },
       prism: {
         theme: lightCodeTheme,
