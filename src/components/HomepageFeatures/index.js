@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
+        基于ubuntu linux打造一个优秀的nas系统
         used to get your website up and running quickly.
       </>
     ),
