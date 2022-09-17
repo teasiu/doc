@@ -21,17 +21,17 @@ const FeatureList = [
       <>
         适配的海思 hi3798m 芯片盒子，高达 1.5hz 的四核 CPU，1-2G运存，8G闪存，
         让你轻松应对各项运行环境需求。hi3798mv200/300的盒子，支持 arch64 系统，
-        日常只有2-3瓦的功耗，轻易超越你的需求。
+        日常只有2-3瓦的功耗，一杯奶茶的钱，养活它一年。是的，就是这么优秀。
       </>
     ),
   },
   {
-    title: 'Support Docker 20.18',
+    title: 'Support Docker 20.10',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        支持 Docker 容器的安装，内置多款一键脚本，目前测试基本完美运行。
+        青龙面板，网心云，智能家居，casaos等各类型 docker 容器都通过多次运行测试。
       </>
     ),
   },

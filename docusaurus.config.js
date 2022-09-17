@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '海思机顶盒使用教程',
   tagline: '一个极低功耗的 Linux 服务器',
-  url: 'https://histb.com',
+  url: 'https://doc.ecoo.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-cn',
-    locales: ['zh-cn'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -90,19 +90,19 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '海思NAS交流社区',
+                href: 'https://bbs.histb.com',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: '官方主页',
+                href: 'https://www.ecoo.top',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: '固件下载',
+                href: 'https://dl.ecoo.top:2096',
               },
             ],
           },

@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`海思机顶盒 ${siteConfig.title}`}
+      title={`e酷网 ${siteConfig.title}`}
       description="海思机顶盒hi3798m">
       <HomepageHeader />
       <main>
