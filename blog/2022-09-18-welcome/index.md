@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome
+title: 欢迎
 authors: [teasiu]
 tags: [hello, hi3798m]
 ---
