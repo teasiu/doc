@@ -84,7 +84,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '教程',
+                label: '教程手册',
                 to: '/docs/intro',
               },
             ],
@@ -110,7 +110,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: '博客',
+                label: '作者博客',
                 to: '/blog',
               },
               {
