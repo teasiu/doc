@@ -84,7 +84,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '教程手册',
+                label: '教程',
                 to: '/docs/intro',
               },
             ],
