@@ -1,6 +1,11 @@
 teasiu:
-  name: teasiu
+  name: 神雕
   title: 海思NAS原创作者
   url: https://github.com/teasiu
   image_url: ./teasiu.jpg
 
+xjm:
+  name: Jimmy xiao
+  title: 编程与优化
+  url: https://github.com/xjm
+  image_url: ./teasiu.jpg
