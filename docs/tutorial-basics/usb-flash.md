@@ -2,5 +2,5 @@
 sidebar_position: 2
 ---
 
-# USB flash
+# USB 刷机
 
