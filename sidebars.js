@@ -23,7 +23,7 @@ const sidebars = {
     'hello',
     {
       type: 'category',
-      label: '教程',
+      label: '教程手册',
       items: ['tutorial-basics/create-a-document'],
     },
   ],

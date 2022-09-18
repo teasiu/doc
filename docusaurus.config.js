@@ -67,9 +67,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '教程',
+            label: '教程手册',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '作者博客', position: 'left'},
           {
             href: 'https://github.com/teasiu/doc',
             label: 'GitHub',
