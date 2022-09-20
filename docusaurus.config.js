@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '海思机顶盒 NAS 教程',
   tagline: '一个极低功耗的 Linux 服务器',
-  url: 'https://histb.netlify.app/',
-  baseUrl: '/',
+  url: 'https://doc.ecoo.top/',
+  baseUrl: 'https://doc.ecoo.top/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
