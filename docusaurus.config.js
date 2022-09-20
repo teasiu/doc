@@ -9,7 +9,7 @@ const config = {
   title: '海思机顶盒 NAS 教程',
   tagline: '一个极低功耗的 Linux 服务器',
   url: 'https://doc.ecoo.top/',
-  baseUrl: 'https://doc.ecoo.top/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
