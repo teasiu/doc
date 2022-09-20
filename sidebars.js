@@ -23,7 +23,7 @@ const sidebars = {
     'hello',
     {
       type: 'category',
-      label: '½Ì³ÌÊÖ²á',
+      label: 'æ•™ç¨‹æ‰‹å†Œ',
       items: ['tutorial-basics/create-a-document'],
     },
   ],
