@@ -69,6 +69,11 @@ const config = {
             position: 'left',
             label: '教程手册',
           },
+          {
+            href: 'https://bbs.histb.com',
+            label: '社区论坛',
+            position: 'left',
+          },
           {to: '/blog', label: '作者博客', position: 'left'},
           {
             href: 'https://github.com/teasiu/doc',
