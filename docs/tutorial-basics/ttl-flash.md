@@ -12,5 +12,13 @@ sidebar_position: 1
 - Hitool工具（华为海思官方刷机工具）；
 - 熟练看懂TTL刷机教程。
 
-## 确认设机顶盒reg名称
+## 确认机顶盒reg名称
 
+- [什么是机顶盒reg名称？如何知道我的机顶盒reg名称？](https://www.ecoo.top/getreg.html)
+- [目前作者开发支持适配的机型列表](https://www.ecoo.top/histb.html)
+
+## 下载匹配的固件
+
+- [作者发布的官方网站下载地址](https://www.ecoo.top/download.html)
+
+## 刷机
