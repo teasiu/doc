@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '海思机顶盒 NAS 教程',
   tagline: '一个极低功耗的 Linux 服务器',
-  url: 'https://doc.ecoo.top/',
-  baseUrl: '/',
+  url: 'https://doc.ecoo.top',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -60,7 +60,7 @@ const config = {
         title: 'histb doc',
         logo: {
           alt: 'histb Logo',
-          src: 'img/logo.svg',
+          src: './img/logo.svg',
         },
         items: [
           {
@@ -74,7 +74,7 @@ const config = {
             label: '社区论坛',
             position: 'left',
           },
-          {to: '/blog', label: '作者博客', position: 'left'},
+          {to: './blog', label: '作者博客', position: 'left'},
           {
             href: 'https://github.com/teasiu/doc',
             label: 'GitHub',
@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: '教程',
-                to: '/docs/intro',
+                to: './docs/intro',
               },
             ],
           },
@@ -116,7 +116,7 @@ const config = {
             items: [
               {
                 label: '作者博客',
-                to: '/blog',
+                to: './blog',
               },
               {
                 label: 'GitHub',
