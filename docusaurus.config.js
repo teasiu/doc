@@ -56,6 +56,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: "keywords", content: "海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统"}],
       navbar: {
         title: 'histb doc',
         logo: {
