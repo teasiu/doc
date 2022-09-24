@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '海思机顶盒 NAS 教程',
+  title: '海思机 NAS 使用手册',
   tagline: '一个极低功耗的 Linux 服务器',
   url: 'https://doc.ecoo.top',
   baseUrl: '/',
@@ -90,7 +90,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '教程',
+                label: '教程手册',
                 to: '/docs/intro',
               },
             ],
