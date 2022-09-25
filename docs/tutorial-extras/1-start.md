@@ -32,11 +32,15 @@ sidebar_position: 1
 
 终端输入以下命令进行更改：
 
-```passwd root```
+```bash
+passwd root
+```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
-```passwd ubuntu```
+```bash
+passwd ubuntu
+```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
