@@ -14,7 +14,7 @@ NAS 系统已内置了 vsftpd 服务端, 可以使用 FTP 上传或下载软件,
 
 请参考以下图例进行实际操作：
 
-<img src="./img/ftp.jpg"  />
+![](./img/ftp.jpg)
 
 ![](./img/ftp2.jpg)
 
