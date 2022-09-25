@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## 进入后台终端
 
-请首先要做第一件事就是修改密码。
+:::note请首先要做第一件事就是修改密码。:::
 
 系统提供了两个账户，一个是具有全部权限的 root 用户，一个是普通权限的 ubuntu 用户，
 
@@ -30,11 +30,11 @@ sidebar_position: 1
 
 终端输入以下命令进行更改：
 
-`passwd root`
+```passwd root```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
-`passwd ubuntu`
+```passwd ubuntu```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
