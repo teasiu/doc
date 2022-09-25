@@ -32,14 +32,14 @@ sidebar_position: 1
 
 终端输入以下命令进行更改：
 
-```bash
-passwd root
+```console
+root@hi3798mv100:~# passwd root
 ```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
-```bash
-passwd ubuntu
+```console
+root@hi3798mv100:~# passwd ubuntu
 ```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
