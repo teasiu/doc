@@ -33,13 +33,15 @@ sidebar_position: 1
 终端输入以下命令进行更改：
 
 ```console
-root@hi3798mv100:~# passwd root
-```
-
-提示输入两次新的密码，回车后，提示修改成功的英文 success
-
-```console
-root@hi3798mv100:~# passwd ubuntu
+root@hi3798mv200:~# passwd root
+New password:
+Retype new password:
+passwd: password updated successfully
+root@hi3798mv200:~# passwd ubuntu
+New password:
+Retype new password:
+passwd: password updated successfully
+root@hi3798mv200:~#
 ```
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
