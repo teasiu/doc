@@ -35,5 +35,7 @@ echo "## 这是外置磁盘链接到home的页首显示" > /mnt/sda1/files/_h5ai
 echo "## 这是外置磁盘链接到home的页脚说明" > /mnt/sda1/files/_h5ai.footer.md
 ```
 
-## 增加文件夹和上传位置修改
+## 访问密码修改
+- 更改密码
+- 删除密码
 
