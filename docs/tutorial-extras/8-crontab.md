@@ -31,3 +31,7 @@ crontab -l
 ```bash
 0 */1 * * * systemctl restart smbd
 ```
+
+## 学习教材
+
+[](https://www.runoob.com/w3cnote/linux-crontab-tasks.html)
