@@ -16,7 +16,7 @@ apt update && apt install minidlna
 你就可以在局域网下的电脑、手机、电视等智能终端进行播放了
 
 ## 资源位置修改
-```html
+```bash
 vi /etc/minidlna.conf
 # 修改配置文件
 #将 media_dir=/var/lib/minidlna 修改为 media_dir=/mnt/sda1/minidlna

@@ -20,7 +20,7 @@ sidebar_position: 6
 可以轻松的选择将保存的文档位置链接到外置磁盘空间。
 
 例子：
-```html
+```bash
 mkdir /mnt/sda1/files
 #创建一个外置磁盘的文件夹
 chown -R www-data:www-data /mnt/sda1/files
@@ -30,7 +30,7 @@ ln -sf /mnt/sda1/files /var/www/html/files/home
 ```
 
 也可以个性化你指定位置的页首或页脚显示，例如：
-```html
+```bash
 echo "## 这是外置磁盘链接到home的页首显示" > /mnt/sda1/files/_h5ai.header.md
 echo "## 这是外置磁盘链接到home的页脚说明" > /mnt/sda1/files/_h5ai.footer.md
 ```
