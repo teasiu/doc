@@ -37,5 +37,24 @@ echo "## 这是外置磁盘链接到home的页脚说明" > /mnt/sda1/files/_h5ai
 
 ## 访问密码修改
 - 更改密码
+
+```bash
+echo -n 'admin:' | tee /etc/nginx/passwords.list
+openssl passwd -apr1 | tee -a /etc/nginx/passwords.list
+nginx -s reload
+```
+
 - 删除密码
 
+取消h5ai登陆密码
+```bash
+vi /etc/nginx/locations.d/h5ai
+```
+
+```bash
+#将后面两行删掉即可：
+auth_basic "admin";
+auth_basic_user_file /etc/nginx/passwords.list;
+#最后重启一下nginx服务
+nginx -s reload
+```
