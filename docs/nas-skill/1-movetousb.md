@@ -14,9 +14,9 @@ sidebar_position: 1
 内置的自动挂载脚本，请这样使用：
 
 ```bash
-automoount -u
+automount -u
 #自动卸载所有外置磁盘
-automoount -a
+automount -a
 #自动挂载所有外置磁盘
 ```
 
