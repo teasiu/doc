@@ -2,21 +2,27 @@
 sidebar_position: 3
 ---
 
-# ota在线升级
+# 从老版本系统一键升级到20221001最新版本
 
-从20220808版开始，我们支持了ota在线无损升级功能
 
-## 旧版首次升级
-
-```bash
-bash <(curl https://www.ecoo.top/ota.sh)
-```
-
-## 新版升级
+## mv100
 
 ```bash
-nasupdate
+bash <(curl https://ecoo.top/mv100_upgrade.sh)
 ```
+
+## mv200
+
+```bash
+bash <(curl https://ecoo.top/mv200_upgrade.sh)
+```
+
+## mv300
+
+```bash
+bash <(curl https://ecoo.top/mv300_upgrade.sh)
+
+
 
 ## 注意
 
