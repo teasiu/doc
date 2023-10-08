@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '海纳思使用手册',
+  title: '海纳思系统',
   tagline: '一个极低功耗的 Linux 服务器',
   url: 'https://doc.ecoo.top',
   baseUrl: '/',
@@ -56,9 +56,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: "keywords", content: "海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统"}],
+      metadata: [{name: "keywords", content: "海纳思系统,海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统"}],
       navbar: {
-        title: 'histb doc',
+        title: 'HiNAS',
         logo: {
           alt: 'histb Logo',
           src: './img/logo.svg',
