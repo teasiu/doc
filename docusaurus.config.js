@@ -108,7 +108,7 @@ const config = {
               },
               {
                 label: '固件下载',
-                href: 'https://dl.ecoo.top:2096',
+                href: 'https://dl.ecoo.top',
               },
             ],
           },
