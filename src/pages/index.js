@@ -19,8 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.ecoo.top/histb.html"
-          >
+            to={useBaseUrl("devices")}>
             支持设备适配表
           </Link>
         </div>
