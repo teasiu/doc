@@ -16,14 +16,18 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <img height="40%" width="450px" src="img/home.png" alt="homepage" />
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={useBaseUrl("devices")}
+            to="https://www.ecoo.top/histb.html"
           >
             支持设备适配表
           </Link>
+        </div>
+        
+        <div className={styles.buttons}>
+          <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to="https://www.ecoo.top/download.html">最新固件下载</Link>
+          <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to={useBaseUrl("docs/category/机顶盒刷机教程")}>保姆级刷机教程</Link>
         </div>
         <br></br>
         <div className={styles.buttons}>
@@ -59,6 +63,25 @@ function PolicyPersistence() {
   );
 }
 
+function PolicyEnforcement() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <div className={styles.policyenforcement}>
+      <div className="container text--center">
+        <div className="row">
+          <div style={{marginInline: "auto"}}>
+            <img height="500" width="500" src="img/home.png" alt="homepage" />
+          </div>
+          <div className="col" style={{marginBlock: "auto"}}>
+            <h3>改造的机顶盒</h3>
+            <p>每个家庭都适用.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function OpenCollective() {
     return (
       <iframe title="Sponsors" src="changeslog.html" style={{width: "100%", height: "1100px", display: "block"}}></iframe>
@@ -76,6 +99,7 @@ export default function Home() {
         <HomepageFeatures />
         <Amlogic />
         <PolicyPersistence />
+        <PolicyEnforcement />
         <OpenCollective />
       </main>
     </Layout>

@@ -20,6 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
 }
 
 .policypersistence {
@@ -28,4 +30,11 @@
   justify-content: center;
   line-height: 40px;
   background-color: var(--ifm-color-emphasis-100);
+}
+
+.policyenforcement {
+  padding: 60px 0;
+  font-size: 1.3rem;
+  justify-content: center;
+  line-height: 40px;
 }

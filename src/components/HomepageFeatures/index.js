@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'AMD Intel 系列',
+    title: 'Amd Intel 系列',
     Svg: require('@site/static/img/cpu-amd.svg').default,
     description: (
       <>
