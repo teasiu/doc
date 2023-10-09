@@ -4,29 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '海思芯片 Hisilicon 系列',
+    title: '海纳思系统专业版',
     Svg: require('@site/static/img/cpu11.svg').default,
     description: (
       <>
-        目前已开发适配的海思芯片机顶盒，CPU型号为 hi3798mv100，hi3798mv200，hi3798mv300
+        海思芯片的机顶盒开发了包含wifi功能，打印功能的专业版。
       </>
     ),
   },
+ 
   {
-    title: '晶晨芯片 Amlogic 系列',
+    title: '海纳思宝塔专用版',
     Svg: require('@site/static/img/cpu12.svg').default,
     description: (
       <>
-        已开发适配 S805 玩客云盒子，后续 S905陆续推出。
+        内置宝塔程序
       </>
     ),
   },
-  {
-    title: 'AMD Intel 系列',
+    {
+    title: '海纳思网心云专用版',
     Svg: require('@site/static/img/cpu13.svg').default,
     description: (
       <>
-        即将推出 x86 机型的海纳思系统。
+        一个可以赚点小钱钱的系统
       </>
     ),
   },

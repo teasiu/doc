@@ -61,15 +61,17 @@ const config = {
         title: 'HiNAS',
         logo: {
           alt: 'histb Logo',
-          src: './img/logo.svg',
+          src: './img/hinas3x7.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '教程手册',
+            label: '刷机教程手册',
           },
+          {to: '/gonggao', label: '系统升级公告', position: 'left'},
+          {to: '/download', label: '固件下载', position: 'left'},
           {
             href: 'https://bbs.histb.com',
             label: '社区论坛',
@@ -90,7 +92,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '教程手册',
+                label: '海纳思系统教程手册',
                 to: '/docs/intro',
               },
             ],
