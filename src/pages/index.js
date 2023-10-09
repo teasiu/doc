@@ -24,7 +24,7 @@ function HomepageHeader() {
             支持设备适配表
           </Link>
         </div>
-        
+        <br></br>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to="https://www.ecoo.top/download.html">最新固件下载</Link>
           <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to={useBaseUrl("docs/category/机顶盒刷机教程")}>保姆级刷机教程</Link>
