@@ -37,6 +37,33 @@ function HomepageHeader() {
   );
 }
 
+function PolicyPersistence() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <div className={styles.policypersistence}>
+      <div className="container text--center">
+        <div className="row">
+          <div className="col" style={{marginBlock: "auto"}}>
+            <h3>Policy Persistence</h3>
+            <p>
+              In Casbin, the policy storage is implemented as an adapter(aka middleware for Casbin). 
+            </p>
+          </div>
+          <div style={{marginInline: "auto"}}>
+            <img src="/img/tu5x5.png" alt="Policy Persistence" width="500" height="500" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function OpenCollective() {
+    return (
+      <iframe title="Sponsors" src="changeslog.html" style={{width: "100%", height: "1100px", display: "block"}}></iframe>
+    );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
