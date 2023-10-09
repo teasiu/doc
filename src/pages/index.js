@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={useBaseUrl("devices")}>
-            支持设备适配表
+            设备支持适配表
           </Link>
         </div>
         <br></br>

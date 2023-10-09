@@ -68,7 +68,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '刷机教程手册',
+            label: '使用教程手册',
           },
           {to: '/gonggao', label: '系统升级公告', position: 'left'},
           {to: '/download', label: '固件下载', position: 'left'},
