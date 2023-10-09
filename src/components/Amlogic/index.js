@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '海纳思系统专业版',
-    Svg: require('@site/static/img/cpu11.svg').default,
+    Svg: require('@site/static/img/cpu-ecoo.svg').default,
     description: (
       <>
         海思芯片的机顶盒开发了包含wifi功能，打印功能的专业版。
@@ -15,7 +15,7 @@ const FeatureList = [
  
   {
     title: '海纳思宝塔专用版',
-    Svg: require('@site/static/img/cpu12.svg').default,
+    Svg: require('@site/static/img/cpu-baota.svg').default,
     description: (
       <>
         内置宝塔程序
@@ -24,7 +24,7 @@ const FeatureList = [
   },
     {
     title: '海纳思网心云专用版',
-    Svg: require('@site/static/img/cpu13.svg').default,
+    Svg: require('@site/static/img/cpu-hinas.svg').default,
     description: (
       <>
         一个可以赚点小钱钱的系统

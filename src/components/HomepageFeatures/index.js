@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: '晶晨芯片 Amlogic 系列',
-    Svg: require('@site/static/img/cpu12.svg').default,
+    Svg: require('@site/static/img/cpu-amlogic.svg').default,
     description: (
       <>
         已开发适配 S805 玩客云盒子，后续 S905陆续推出。
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'AMD Intel 系列',
-    Svg: require('@site/static/img/cpu13.svg').default,
+    Svg: require('@site/static/img/cpu-amd.svg').default,
     description: (
       <>
         即将推出 x86 机型的海纳思系统。
