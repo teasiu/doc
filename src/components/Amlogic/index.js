@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         包含wifi功能，打印功能，内网穿透的专业版。<br />
-        详情
+        <a href="https://www.ecoo.top/professional.html" target="_blank">更多详情</a>
       </>
     ),
   },
@@ -20,7 +20,7 @@ const FeatureList = [
     description: (
       <>
         内置宝塔程序,预编译并内置全家桶 LNMP 套件。<br />
-        详情
+        <a href="https://www.ecoo.top/baota" target="_blank">更多详情</a>
       </>
     ),
   },
@@ -30,7 +30,7 @@ const FeatureList = [
     description: (
       <>
         可以赚点小钱钱的系统，优化后运行容器魔方镜像。<br />
-        详情
+        <a href="URL_HERE" target="_blank">更多详情</a>
       </>
     ),
   },
