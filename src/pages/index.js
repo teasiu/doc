@@ -48,9 +48,9 @@ function PolicyPersistence() {
       <div className="container text--center">
         <div className="row">
           <div className="col" style={{marginBlock: "auto"}}>
-            <h3>海纳思系统已开发内置丰富的程序和功能</h3>
+            <h3>永久免费的家用 Linux 服务器系统</h3>
             <p>
-              内网穿透，网盘共享，远程下载，Docker安装，个人博客，网络建站，socks5服务，ftp上传下载，webdav接口，终端控制，一键还原，计划任务，等等。我们将继续不断更新和维护，每天都在进步！
+基于开源 Linux Ubuntu 20.04 LTS 打造的 NAS 系统，海纳思系统。已开发内置丰富的程序和功能，内网穿透，网盘共享，远程下载，Docker安装，个人博客，网络建站，socks5服务，ftp上传下载，webdav接口，终端控制，一键还原，计划任务，等等。我们将继续不断更新和维护，每天都在进步！
             </p>
           </div>
           <div style={{marginInline: "auto"}}>

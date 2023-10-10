@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu-amlogic.svg').default,
     description: (
       <>
-        已开发适配 S805 玩客云盒子，后续 S905陆续推出。
+        已开发适配 S805 玩客云盒子，晶晨芯片的盒子后续 S905 陆续推出。
       </>
     ),
   },
