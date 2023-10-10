@@ -18,7 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu-baota.svg').default,
     description: (
       <>
-        内置宝塔程序,预编译并内置全家桶 LNMP 套件。
+        内置宝塔程序,预编译并内置全家桶 LNMP 套件。<br />
+        一键切换脚本
       </>
     ),
   },
@@ -27,7 +28,8 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu-hinas.svg').default,
     description: (
       <>
-        一个可以赚点小钱钱的系统，优化各项配置以达到运行容器魔方镜像。
+        一个可以赚点小钱钱的系统，优化后运行容器魔方镜像。<br />
+        一键切换脚本
       </>
     ),
   },
