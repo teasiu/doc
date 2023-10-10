@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu11.svg').default,
     description: (
       <>
-        目前已开发适配的海思芯片机顶盒，CPU型号为 hi3798mv100，hi3798mv200，hi3798mv300
+        已开发适配的海思芯片机顶盒，CPU型号为 hi3798mv1xx，hi3798mv2xx，hi3798mv3xx
       </>
     ),
   },
@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Amd Intel 系列',
+    title: 'x86 系列',
     Svg: require('@site/static/img/cpu-amd.svg').default,
     description: (
       <>
