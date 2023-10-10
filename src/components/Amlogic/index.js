@@ -8,7 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu-ecoo.svg').default,
     description: (
       <>
-        海思芯片的机顶盒开发了包含wifi功能，打印功能的专业版。
+        包含wifi功能，打印功能，内网穿透的专业版。<br />
+        详情
       </>
     ),
   },
@@ -19,7 +20,7 @@ const FeatureList = [
     description: (
       <>
         内置宝塔程序,预编译并内置全家桶 LNMP 套件。<br />
-        一键切换脚本
+        详情
       </>
     ),
   },
@@ -28,8 +29,8 @@ const FeatureList = [
     Svg: require('@site/static/img/cpu-hinas.svg').default,
     description: (
       <>
-        一个可以赚点小钱钱的系统，优化后运行容器魔方镜像。<br />
-        一键切换脚本
+        可以赚点小钱钱的系统，优化后运行容器魔方镜像。<br />
+        详情
       </>
     ),
   },
