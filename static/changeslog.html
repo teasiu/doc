@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,39 +6,44 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start; /* 内容靠上居中 */
             align-items: center;
-            min-height: 100vh; /* 使用视口高度来确保内容垂直居中 */
-            margin: 0; /* 去除默认的边距 */
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin: 20px 0; /* 添加标题上下边距 */
         }
         .image-row {
             display: flex;
-            flex-wrap: wrap; /* 图片容器换行 */
-            gap: 20px; /* 图片容器之间的间隔 */
+            flex-wrap: wrap;
+            gap: 20px;
         }
         .image-container {
             text-align: center;
             border: 2px solid #ccc;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
-            flex: 1; /* 填充剩余空间，使图片容器平均分配宽度 */
-            max-width: 300px; /* 最大宽度 */
+            flex: 1;
+            max-width: 300px;
         }
         .image-container:hover {
             transform: translateY(-10px);
         }
         img {
             width: 100%;
-            height: auto; /* 自适应高度，防止图片变形 */
+            height: auto;
         }
         .image-caption {
             font-size: 16px;
             padding: 10px;
         }
     </style>
-    <title>带方框和上浮效果的图片</title>
+    <title>捐助与远程协助</title>
 </head>
 <body>
+    <h1>捐助作者</h1> <!-- 添加标题 -->
     <div class="image-row">
         <div class="image-container">
             <img src="img/about.png" alt="Image 1">
