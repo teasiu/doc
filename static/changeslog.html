@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,24 +7,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 1000px;
+            min-height: 100vh; /* 使用视口高度来确保内容垂直居中 */
+            margin: 0; /* 去除默认的边距 */
         }
         .image-row {
             display: flex;
+            flex-wrap: wrap; /* 图片容器换行 */
+            gap: 20px; /* 图片容器之间的间隔 */
         }
         .image-container {
             text-align: center;
-            margin: 0 20px;
-            border: 2px solid #ccc; /* 添加方框样式 */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
-            transition: transform 0.3s; /* 添加上浮的过渡效果 */
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            flex: 1; /* 填充剩余空间，使图片容器平均分配宽度 */
+            max-width: 300px; /* 最大宽度 */
         }
         .image-container:hover {
-            transform: translateY(-10px); /* 上浮效果 */
+            transform: translateY(-10px);
         }
         img {
-            width: 300px;
-            height: 500px;
+            width: 100%;
+            height: auto; /* 自适应高度，防止图片变形 */
         }
         .image-caption {
             font-size: 16px;
