@@ -66,7 +66,7 @@ function PolicyEnforcement() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <div className={styles.policyenforcement}>
-      <div className="container text--center">
+      <div className="container text--left">
         <div className="row">
           <div style={{marginInline: "auto"}}>
             <img height="500" width="500" src="img/home.png" alt="homepage" />
@@ -74,17 +74,10 @@ function PolicyEnforcement() {
           <div className="col" style={{marginBlock: "auto"}}>
             <h3>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h3>
             <p>1. Linux服务器，可以作为你学习Linux系统的一个样板</p>
-<p>2. 盒子支持Docker程序，你可以使用Docker扩展你的需求</p>
-<p>3. 用盒子作为自己家用的文件存储器，文件共享器</p>
-<p>4. 可以把盒子作为内网穿透跳板机，或P2P把家里的设备跟异地的设备网络组成同一个内网</p>
-<p>5. 可以用盒子的博客系统记录你学习和生活的点点滴滴，既能分享，又能保留历史记忆</p>
-<p>6. 可以用盒子播放影音，视频，并推送到局域网内的电视</p>
-<p>7. 可以用盒子系统自带的插件作为一个下载机，随时随地下载并存储在本地</p>
-<p>8. 可以用盒子做个人网站个人数据库前端或后端</p>
-<p>9. 可以做自己的Git仓库，协助你建立或转存个人或群体仓库</p>
-<p>10. 可以建立自己的Socks网络中转，安全地科学使用网络</p>
-<p>11. 还可以做更多事情，等待你的发掘。或加入用户微信群交流，或加入社区交流。</p>
-
+			<p>2. 盒子支持Docker程序，你可以使用Docker扩展你的需求</p>
+			<p>3. 用盒子作为自己家用的文件存储器，文件共享器</p>
+			<p>4. 可以把盒子作为内网穿透跳板机，或P2P把家里的设备跟异地的设备网络组成同一个内网</p>
+			<p>5. 可以用盒子的博客系统记录你学习和生活的点点滴滴，既能分享，又能保留历史记忆</p>
           </div>
         </div>
       </div>
