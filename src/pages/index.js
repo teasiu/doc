@@ -73,7 +73,7 @@ function PolicyEnforcement() {
           </div>
           <div className="col" style={{marginBlock: "auto"}}>
             <h3>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h3>
-            <p>1. 实测功耗约为 3 瓦， <br />
+            <p>1. 实测功耗约为 3 瓦， 3x24x365÷1000x0.7≈18元/年，一杯奶茶钱，养活它一年。<br />
 			2. 支持Docker程序，你可以使用Docker扩展你的需求<br />
 			3. 作为家用的文件存储器，文件共享器<br />
 			4. 内网穿透跳板机，或P2P把家里的设备跟异地的设备网络组成同一个内网<br />
