@@ -48,7 +48,7 @@ function PolicyPersistence() {
       <div className="container text--center">
         <div className="row">
           <div className="col" style={{marginBlock: "auto"}}>
-            <h3>开源，免费，易用的家用 Linux 服务器系统</h3>
+            <h2>开源，免费，易用的家用 Linux 服务器系统</h2>
             <p>
 			海纳思系统，一个基于开源 Linux Ubuntu 20.04 LTS 打造的 NAS 系统，<br />
 			开发者精心打造，已开发和内置丰富的程序和功能，内网穿透，网盘共享，<br />
@@ -75,7 +75,7 @@ function PolicyEnforcement() {
             <img height="500" width="500" src="img/home.png" alt="homepage" />
           </div>
           <div className="col" style={{marginBlock: "auto"}}>
-            <h3>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h3>
+            <h2>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h2>
             <p>1. 实测功耗约为 3 瓦， 3x24x365÷1000x0.7≈18元/年，一杯奶茶钱，养活它一年。<br />
 			2. 普遍盒子4核心CPU，内核频率高达1.4GHz-1.6GHz，流畅运行各项 NAS 程序。<br />
 			3. 家用存储机，Linux 学习机，学生技术孵化机，网络下载机，组网跳板机，均可。<br />
