@@ -1,60 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>居中捐助与持续开发内容</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: 1100px;
         }
-
-        .app__container {
+        .image-row {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+        }
+        .image-container {
             text-align: center;
+            margin: 0 20px;
+            border: 2px solid #ccc; /* 添加方框样式 */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+            transition: transform 0.3s; /* 添加上浮的过渡效果 */
         }
-
-        .app__data {
-            text-align: center;
+        .image-container:hover {
+            transform: translateY(-10px); /* 上浮效果 */
         }
-
-        .app__initial {
-            text-align: initial;
+        img {
+            width: 200px;
+            height: 400px;
         }
-
-        .app__description {
-            margin-bottom: var(--mb-3);
-        }
-
-        .app__img {
-            max-width: 100%;
-        }
-
-        .app__stores {
-            margin-top: 20px;
-        }
-
-        .app__store {
-            margin-right: 10px;
+        .image-caption {
+            font-size: 16px;
+            padding: 10px;
         }
     </style>
+    <title>带方框和上浮效果的图片</title>
 </head>
 <body>
-    <div class="app__container bd-grid">
-        <div class="app__data">
-            <span class="section-subtitle app__initial">捐助与持续开发</span>
-            <h2 class="section-title app__initial">我们每天都在进步！</h2>
-            <p class="app__description">这是 Teasiu 开发的固件和提供的个人网站，为了更好的持续进步，呼吁有能力的网友支持本站持续运作和固件持续开发更新。不甚感激！<br>您的捐助将用于本站的服务器架设和固件升级维护.</p>
-            <div class="app__stores">
-                <a href="#"><img src="assets/img/donate.png" alt="" class="app__store"></a>
-            </div>
+    <div class="image-row">
+        <div class="image-container">
+            <img src="img/about.png" alt="Image 1">
+            <p class="image-caption">这是图片1的说明文字。</p>
         </div>
-
-        <img src="assets/img/teasiu.png" alt="" class="app__img">
+        <div class="image-container">
+            <img src="img/about.png" alt="Image 2">
+            <p class="image-caption">这是图片2的说明文字。</p>
+        </div>
     </div>
 </body>
 </html>
