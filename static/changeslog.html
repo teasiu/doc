@@ -7,13 +7,13 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* 内容靠上居中 */
+            justify-content: flex-start;
             align-items: center;
             min-height: 100vh;
             margin: 0;
         }
         h1 {
-            margin: 20px 0; /* 添加标题上下边距 */
+            margin: 20px 0;
         }
         .image-row {
             display: flex;
@@ -39,15 +39,37 @@
             font-size: 16px;
             padding: 10px;
         }
+        
+        /* 白天模式下的样式 */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .image-container {
+                background-color: white;
+            }
+        }
+        
+        /* 黑夜模式下的样式 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+            .image-container {
+                background-color: black;
+            }
+        }
     </style>
     <title>捐助与远程协助</title>
 </head>
 <body>
-    <h1>捐助作者</h1> <!-- 添加标题 -->
+    <h1>捐助作者，持续开发</h1> <!-- 添加标题 -->
     <div class="image-row">
         <div class="image-container">
             <img src="img/about.png" alt="Image 1">
-            <p class="image-caption">这是图片1的说明文字。</p>
+            <p class="image-caption">作者“神雕”开发的固件和提供的个人网站，为了持续维护和进步，呼吁有能力的网友支持本站持续运作和固件持续开发更新。不甚感激！您的捐助将用于本站的服务器架设和固件升级维护.</p>
         </div>
         <div class="image-container">
             <img src="img/about.png" alt="Image 2">
