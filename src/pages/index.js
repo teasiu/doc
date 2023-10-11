@@ -70,7 +70,7 @@ function PolicyEnforcement() {
       <div className="container text--center">
         <div className="row">
           <div style={{marginInline: "auto"}}>
-            <img height="500" width="500" src="img/home.png" alt="homepage" />
+            <img height="250" width="400" src="img/huawei.png" alt="homepage" />
           </div>
           <div className="col" style={{marginBlock: "auto"}}>
             <h2>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h2>
