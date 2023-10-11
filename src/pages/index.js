@@ -28,6 +28,11 @@ function HomepageHeader() {
             to={useBaseUrl("gonggao")}>
             系统最新升级公告
           </Link>
+          <Link
+            className="button button--success button--lg"
+            to={useBaseUrl("docs/intro")}>
+            海纳思系统使用手册
+          </Link>
         </div>
       </div>
     </header>
