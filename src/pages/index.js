@@ -24,12 +24,12 @@ function HomepageHeader() {
         <br></br>
         <div className={styles.buttons}>
           <Link
-            className="button button--success button--lg"
+            className="button button--success button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} 
             to={useBaseUrl("gonggao")}>
             系统最新升级公告
           </Link>
           <Link
-            className="button button--success button--lg"
+            className="button button--success button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} 
             to={useBaseUrl("docs/intro")}>
             海纳思系统使用手册
           </Link>
