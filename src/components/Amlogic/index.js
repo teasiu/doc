@@ -30,7 +30,7 @@ const FeatureList = [
     description: (
       <>
         可以赚点小钱钱的系统，优化后运行容器魔方镜像。<br />
-        <a href="URL_HERE" target="_blank">更多详情</a>
+        <a href="/gonggao#3" target="_blank">更多详情</a>
       </>
     ),
   },
