@@ -14,7 +14,7 @@ title: 系统最新升级公告
 - 接着输入`histb`。
 - 将会得到一个机顶盒识别码，将此码复制后发给群主，等待通知一键命令升级即可。
 
-[专业版有什么区别？](http://www.ecoo.top/professional.html)
+[专业版有什么区别？](https://www.ecoo.top/professional.html)
 
 ##### 仅内网穿透服务，25 元/年
 - 终端输入`nasupdate`。
@@ -28,27 +28,27 @@ title: 系统最新升级公告
 
     - mv100
         ```shell
-        bash <(curl https://ecoo.top/mv100_upgrade.sh)
+        bash <(curl https://www.ecoo.top/mv100_upgrade.sh)
         ```
     - mv200
         ```shell
-        bash <(curl https://ecoo.top/mv200_upgrade.sh)
+        bash <(curl https://www.ecoo.top/mv200_upgrade.sh)
         ```
     - mv300
         ```shell
-        bash <(curl https://ecoo.top/mv300_upgrade.sh)
+        bash <(curl https://www.ecoo.top/mv300_upgrade.sh)
         ```
     - N2 恩兔专用
         ```shell
-        bash <(curl https://ecoo.top/n2_upgrade.sh)
+        bash <(curl https://www.ecoo.top/n2_upgrade.sh)
         ```
     - 6109u 专用
         ```shell
-        bash <(curl https://ecoo.top/6109_upgrade.sh)
+        bash <(curl https://www.ecoo.top/6109_upgrade.sh)
         ```
     - 玩客云 S805 专用
         ```shell
-        bash <(curl https://ecoo.top/s805_upgrade.sh)
+        bash <(curl https://www.ecoo.top/s805_upgrade.sh)
         ```
 
 ### 3. 网心云专用固件（付费10元）一键切换安装
@@ -60,11 +60,11 @@ title: 系统最新升级公告
 
 - mv100
     ```shell
-    bash <(curl https://ecoo.top/mv100-wx.sh)
+    bash <(curl https://www.ecoo.top/mv100-wx.sh)
     ```
 - mv200/mv300
     ```shell
-    bash <(curl https://ecoo.top/mv23-wx.sh)
+    bash <(curl https://www.ecoo.top/mv23-wx.sh)
     ```
 
 [点击链接注册网心云可以再获得5元奖励加成。](https://act.walk-live.com/acts/invite/v3/?inviteid=cb9bbacd)
