@@ -128,7 +128,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} www.ecoo.top 粤ICP备2022054080号`,
+        copyright: `Copyright © ${new Date().getFullYear()}-粤ICP备2022054080号`,
 
       },
       prism: {
