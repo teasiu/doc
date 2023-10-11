@@ -62,7 +62,7 @@ function PolicyEnforcement() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <div className={styles.policyenforcement}>
-      <div className="container text--left">
+      <div className="container text--center">
         <div className="row">
           <div style={{marginInline: "auto"}}>
             <img height="500" width="500" src="img/home.png" alt="homepage" />
