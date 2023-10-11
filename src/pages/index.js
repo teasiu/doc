@@ -55,7 +55,7 @@ function PolicyPersistence() {
             </p>
           </div>
           <div style={{marginInline: "auto"}}>
-            <img src="img/about.png" alt="Policy Persistence" width="300" height="500" />
+            <img src="img/about.png" alt="Policy Persistence" width="400" height="466" />
           </div>
         </div>
       </div>
