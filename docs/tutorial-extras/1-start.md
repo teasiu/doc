@@ -14,19 +14,19 @@ sidebar_position: 1
 
 系统提供了两个账户，一个是具有全部权限的 root 用户，一个是普通权限的 ubuntu 用户，
 
-默认账号 `root`，默认密码 `1234`
+默认账号 `root`，默认密码 `ecoo1234`
 
-默认账号 `ubuntu`，默认密码 `1234`
+默认账号 `ubuntu`，默认密码 `ecoo1234`
 
 - 建议使用 SSH 终端管理器登录后台
 
-  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://mobaxterm.mobatek.net/) 工具，
+  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://dl.histb.com/#/list/189cn/82531180155783956) 工具，
 
   Linux 操作系统直接 `ssh root@<IP>`
 
 - 或者使用网页ttyd进入后台终端
 
-  浏览器 `IP:7681` 进入
+  浏览器 `<IP>:7681` 进入
 
 ## 修改密码：
 
@@ -46,7 +46,7 @@ root@hi3798mv200:~#
 
 提示输入两次新的密码，回车后，提示修改成功的英文 success
 
-**注意**：密码是不会显示的，输入后按回车即可。
+**注意**：密码是不会显示的，盲敲输入后按回车即可。
 
 ## 阅读手册
 
