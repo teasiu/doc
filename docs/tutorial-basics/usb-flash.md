@@ -58,8 +58,12 @@ sidebar_position: 2
 所有hi3798mv100型号的机顶盒短接点都可以通用的短接点：  
 CPU 右上角的 1，2 脚 短接法：  
 ![usbformat](pic/cpu12.png)  
-另外，华为悦盒ec6108v9,unt400b的例子如下：  
+个别已知的例子如下：  
+例子 1 ：华为悦盒 ec6108v9c 短接 J16 （用镊子把这两个孔连上）  
+注意：如果你发现自己的ec6108v9板子是J16 请使用mdmo1g的刷机包。（部分商家外壳标识不规范）  
 ![usbformat](pic/ec6108v9c.png)  
+
+例子 2 ：UNT400B 短接图 （用镊子把这两个孔连上）  
 ![usbformat](pic/unt400b.png)  
 
 
