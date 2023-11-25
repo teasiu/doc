@@ -48,7 +48,8 @@ sidebar_position: 2
 
 将固件包解压到 U 盘的根目录，如下图：  
 
-![usbformat](pic/usb2.png) 
+![usbformat](pic/usb2.png)  
+注意：根据型号不同，分别是```mv100/mv200/mv300```的子文件夹。
 
 ### 拆开外壳，准备短接点
 以下是几种已知的型号短接点，作为示例：  
@@ -56,7 +57,10 @@ sidebar_position: 2
 #### hi3798mv100 的盒子
 所有hi3798mv100型号的机顶盒短接点都可以通用的短接点：  
 CPU 右上角的 1，2 脚 短接法：  
-![usbformat](pic/cpu12.png) 
+![usbformat](pic/cpu12.png)  
+另外，华为悦盒ec6108v9,unt400b的例子如下：  
+![usbformat](pic/ec6108v9c.png)  
+![usbformat](pic/unt400b.png)  
 
 
 ##  知识点
