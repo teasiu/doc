@@ -6,7 +6,7 @@ title: 系统固件下载
 
 ## 固件下载分流地址
 
-## 1.alist 天翼云盘阿里云盘
+## 1.alist 阿里云盘
 [https://alist.ecoo.top](https://alist.ecoo.top)
 
 ## 2.justlist 天翼云盘
