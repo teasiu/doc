@@ -53,6 +53,9 @@ sidebar_position: 1
 ![ttl](pic/29631852.jpg)  
 参照下图接好杜邦线：  
 ![ttl](pic/ttl3.jpg)  
+usb转接板端 RX  TX   GND  
+.                       ↓       ↓       ↓  
+盒子设备端   TX   RX  GND  
 排针和杜邦线要保证不会断芯，如果某些板子的排针插口过小（ec6109-u），则可以考虑使用缝衣针点胶水固定到杜邦线口。  
 ![ttl](pic/6109uttl.jpg)  
 - 如果你没有小锡焊机，那么就用些技巧，将排针稳稳的靠在盒子主板的GND，TX，RX的小孔上。  
