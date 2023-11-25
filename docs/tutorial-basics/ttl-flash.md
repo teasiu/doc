@@ -25,6 +25,7 @@ sidebar_position: 1
 
 - [什么是机顶盒reg名称？如何知道我的机顶盒reg名称？](https://www.ecoo.top/getreg.html)
 - [目前作者开发支持适配的机型列表](/devices)
+- 也可以通过下面![步骤](#第二步打开hitool软件工具跑码检查盒子芯片型号参数)的跑码信息获得机顶盒的硬件资料。
 
 ## 下载匹配的固件
 
