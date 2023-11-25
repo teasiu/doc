@@ -20,5 +20,26 @@ sidebar_position: 3
 
 - NAND闪存和高安板无法刷目前的固件
 - 高安板常见于四川地区、河北地区、上海地区的hi3798mv100电信的盒子
-- 对adb了解不足的小白谨慎使用此方式。
+- 对 adb 了解不足的小白谨慎使用此方式。是的，别瞎凑热闹！
 :::
+
+- 格式化为 fat32 文件系统的 U 盘，用于存放自制的【烧片器】；
+- adb 程序，用于登录安卓后台；
+- Hitool工具，用于自制【烧片器】；
+
+## 进入安卓后台获取regname设备信息
+
+![pic](pic/telnetinst.png)  
+在安卓后台终端输入以下命令，读取盒子的 reg name 管脚对应名称;
+```bash
+cat /dev/block/mmcblk0p1 | grep -a hi3798m
+```
+
+得到下图的数值： ```hi3798mdmo1g```  
+
+![pic](pic/grepreg.png)  
+
+注意，当你输入cat /dev/block/mmcblk0p1返回信息是没有这个文件或者文件夹时，  
+继续检查 ls -al /dev/block/ ，假如看到有mtdblk字样，代表你这个盒子闪存是NAND，请放弃。  
+
+
