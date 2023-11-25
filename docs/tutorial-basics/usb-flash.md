@@ -25,7 +25,7 @@ sidebar_position: 2
 请务必使用此工具格式化你的 U 盘：  
 它能把 U 盘格式化为标准的 fat32 格式，并且能让 99% 的老旧 CPU 识别；  
 :::
-![usbformat](pic/usb.png)  
+![pic](pic/usb.png)  
 :::tip
 下载地址：  
 [神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
@@ -53,7 +53,7 @@ sidebar_position: 2
 
 将固件包解压到 U 盘的根目录，如下图：  
 
-![usbformat](pic/usb2.png)  
+![pic](pic/usb2.png)  
 注意：根据型号不同，分别是```mv100/mv200/mv300```的子文件夹。
 
 ### 拆开外壳，准备短接点
@@ -65,23 +65,23 @@ sidebar_position: 2
 所有hi3798mv100型号的机顶盒短接点都可以通用的短接点：  
 CPU 右上角的 1，2 脚 短接法：  
 :::  
-![usbformat](pic/cpu12.png)  
+![pic](pic/cpu12.png)  
 个别已知的例子如下：  
 例子 1 ：华为悦盒 ec6108v9c 短接 J16 （用镊子把这两个孔连上）  
 华为悦盒 ec6108v9 短接 J15  
 注意：如果你发现自己的ec6108v9板子是J16 请使用mdmo1g的刷机包。（部分商家外壳标识不规范）  
  
-![usbformat](pic/ec6108v9c.png)  
+![pic](pic/ec6108v9c.png)  
 
 例子 2 ：UNT400B 短接图 （用镊子把这两个孔连上）  
-![usbformat](pic/unt400b.png)  
+![pic](pic/unt400b.png)  
 
 #### hi3798mv200 的盒子
 :::tip
 hi3798mv200的通用短接办法：  
 靠近CPU的R37贴片靠外一侧，跟USB口铁壳（地线）短接
 :::
-![usbformat](pic/r37.jpg)  
+![pic](pic/r37.jpg)  
 
 #### hi3798mv300 的盒子
 :::tip
@@ -90,8 +90,8 @@ hi3798mv300的盒子目前没有发现通用的短接办法，
 短接 c46 （用镊子把这个贴片的两端轻轻而又稳稳地夹住）  
 小心别太用力，注意别损坏！
 :::
-![usbformat](pic/301h.jpg)  
-![usbformat](pic/301h2.png)  
+![pic](pic/301h.jpg)  
+![pic](pic/301h2.png)  
 
 ### 开始刷机
 
@@ -122,12 +122,20 @@ hi3798mv300的盒子目前没有发现通用的短接办法，
 - 整个过程如果你无法使用HDMI屏幕观察，也可以通过U盘的闪烁灯（常闪）判断是否在刷入；  
 - 如果刷完底包后一直无限重启，就是刷错了固件包，请重新更换正确的固件包。  
 
-![usbformat](pic/flash.png)  
-![usbformat](pic/flash2.png)  
+![pic](pic/flash.png)  
+![pic](pic/flash2.png)  
 
 
 ### 查找 IP 进入管理页面
 
+#### 在路由器管理页面查找到自动分配给盒子的 IP，浏览器输入 IP 进入系统管理页面
+
+分配的IP的mac寻址为 00:11:22:33:44:55，很容易查找。  
+![pic](pic/ip.png)  
+
+#### 在我的电脑-网络-主机名(hi3798mvxxx)-downloads文件夹下可以找到 IP。
+![pic](pic/ip2.png)  
+![pic](pic/ip3.png)  
 
 
 ##  知识点
