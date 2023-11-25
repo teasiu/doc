@@ -17,12 +17,14 @@ title: 系统固件下载
 
 ## 网友捐赠下载节点服务器
 
+以下3个下载节点文件都一致。
+
 ### 移动线路 100M网速
 
 | 芯片机型    | 刷机类型   | 下载地址 | 系统平台 | 备注 |
 | ----------- | --------- | ---- | -------- | ---------- |
-|  hi3798mv100 | TTL串口刷机 | 1G   | armv7     |        | 
-|  hi3798mv200  | TTL串口刷机 | 1G   | arm64     |        |
+|  hi3798mv100 | TTL串口刷机 | [TTL-hi3798mv100-32bit.zip](https://node.histb.com:9088/update/system/TTL-hi3798mv100-32bit.zip)  | armv7     |        | 
+|  hi3798mv200  | TTL串口刷机 | [TTL-hi3798mv200-64bit.zip](https://node.histb.com:9088/update/system/TTL-hi3798mv200-64bit.zip)   | arm64     |        |
 
 
 ### 电信线路 50M网速
