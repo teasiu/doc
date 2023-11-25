@@ -17,7 +17,7 @@ sidebar_position: 1
 | Windows    | [海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
 | Linux      | [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
 
-<img src="/img/ch340.png" alt="usb2ttl" width="200" height="200"> <img src="/img/hitool-ttl-line.png" alt="杜邦线" width="200" height="200">
+<img src="/img/ch340.png" alt="usb2ttl" width="100" height="100"> <img src="/img/hitool-ttl-line.png" alt="杜邦线" width="100" height="100">
 
 ## 确认机顶盒reg名称
 
