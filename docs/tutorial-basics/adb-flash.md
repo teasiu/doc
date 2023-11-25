@@ -35,19 +35,22 @@ sidebar_position: 3
 cat /dev/block/mmcblk0p1 | grep -a hi3798m
 ```
 
-得到下图的数值： ```hi3798mdmo1g```  
+得到下图的数值： ```hi3798mv100  mdmo1g```  
 
 ![pic](pic/grepreg.png)  
 
-注意，当你输入cat /dev/block/mmcblk0p1返回信息是没有这个文件或者文件夹时，  
-继续检查 ls -al /dev/block/ ，假如看到有mtdblk字样，代表你这个盒子闪存是NAND，请放弃。  
+注意，当你输入```cat /dev/block/mmcblk0p1```返回信息是没有这个文件或者文件夹时，  
+继续检查 ```ls -al /dev/block/``` ，假如看到有```mtdblk```字样，代表你这个盒子闪存是 NAND，请放弃。  
 
 ## 根据盒子型号自制烧片器
 
-1.下载你对应的reg名称的TTL线刷固件包，解压；  
-2.打开海兔工具，选择芯片，选择烧写emmc选项卡，浏览打开解压包里的XML分区表文件；  
+1.下载你对应的 reg 名称的 TTL 线刷固件包，解压；  
+2.打开海兔工具，选择芯片，选择烧写 emmc 选项卡，浏览打开解压包里的 XML 分区表文件；  
 3.按照下图例子，制作烧片器：  
 ![pic](pic/hitool-mkflash.png)  
 
-
+:::tip
+烧片器长度计算：最后一个分区的开始地址 + 最后一个分区的 img 文件的大小  
+比如：610M + 616M = 1226M，你就输入```1226M```字样即可。  
+:::
 
