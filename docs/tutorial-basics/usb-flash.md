@@ -134,7 +134,8 @@ hi3798mv300的盒子目前没有发现通用的短接办法，
 ![pic](pic/ip.png)  
 
 2. 在我的电脑-网络-主机名(hi3798mvxxx)-downloads文件夹下可以找到 IP。
-![pic](pic/ip2.jpg) ![pic](pic/ip3.jpg)  
+![pic](pic/ip2.jpg)  
+![pic](pic/ip3.jpg)  
 
 3. windows的cmd下，ping主机名，也可以找到IP。  
 ![pic](pic/ip4.jpg)  
