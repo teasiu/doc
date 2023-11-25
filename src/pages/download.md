@@ -12,14 +12,14 @@ title: 系统固件下载
 ## 2.justlist 天翼云盘
 [https://dl.histb.com](https://dl.histb.com)
 
-## 3.onedrive 2M网速
+## 3.onedrive
 [https://onedrive.ecoo.top](https://onedrive.ecoo.top)
 
 ## 网友捐赠下载节点服务器
 
 以下3个下载节点文件都一致。
 
-### 移动线路 100M网速
+### 1.移动线路 100M网速
 
 | 芯片机型    | 刷机类型   | 下载地址 | 系统平台 | 备注 |
 | ----------- | --------- | ---- | -------- | ---------- |
@@ -28,7 +28,7 @@ title: 系统固件下载
 |  hi3798mv300  | TTL串口刷机 | [TTL-hi3798mv300-64bit.zip](https://node.histb.com:9088/update/system/TTL-hi3798mv300-64bit.zip)   | arm64     |        |
 
 
-### 电信线路 50M网速
+### 2.电信线路 50M网速
 
 | 芯片机型    | 刷机类型   | 下载地址 | 系统平台 | 备注 |
 | ----------- | --------- | ---- | -------- | ---------- |
@@ -36,7 +36,7 @@ title: 系统固件下载
 |  hi3798mv200  | TTL串口刷机 | [TTL-hi3798mv200-64bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv200-64bit.zip)   | arm64     |        |
 |  hi3798mv300  | TTL串口刷机 | [TTL-hi3798mv300-64bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv300-64bit.zip)   | arm64     |        |
 
-### 香港线路 30M网速
+### 3.香港线路 30M网速
 
 | 芯片机型    | 刷机类型   | 下载地址 | 系统平台 | 备注 |
 | ----------- | --------- | ---- | -------- | ---------- |
