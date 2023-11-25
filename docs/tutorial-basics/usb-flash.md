@@ -164,3 +164,4 @@ bootcmd=run flashrootfs;
 本教程写到这里基本结束了，想说的是，那些拿着作者的教程去卖钱的人士，是不是应该自觉捐款以安慰作者拔凉的心？  
 
 
+![pic](pic/zhangshang.jpg) 
