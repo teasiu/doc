@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## 准备工作
 
-- 一根USB转TTL设备小板，杜邦线，排针，或需要电络铁；
+- 一套USB转TTL设备小板（推荐CH340G），杜邦线，排针，或需要电络铁；
 - Hitool工具（华为海思官方刷机工具）；
 - 一根网线连接机顶盒到路由器的LAN口；
 
@@ -17,8 +17,7 @@ sidebar_position: 1
 | Windows    | [海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
 | Linux      | [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
 
-![图片描述](/img/ch340.png)
-![图片描述](/img/hitool-ttl-line.png)
+![usb2ttl](/img/ch340.png)![杜邦线](/img/hitool-ttl-line.png)
 
 
 ## 确认机顶盒reg名称
