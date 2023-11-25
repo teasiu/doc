@@ -51,6 +51,27 @@ cat /dev/block/mmcblk0p1 | grep -a hi3798m
 
 :::tip
 烧片器长度计算：最后一个分区的开始地址 + 最后一个分区的 img 文件的大小  
-比如：610M + 616M = 1226M，你就输入```1226M```字样即可。  
+比如：610M + 616M = 1226M，你就输入 ```1226M``` 字样即可。  
 :::
+
+## 自制烧片器放到准备好的U盘
+
+保存上面制作的emmc.flash文件，并复制到前面fat32格式化后的U盘根目录
+
+## 插到盒子上进去adb后台烧写
+
+将带有 emmc.flash 的 U 盘插入盒子的 usb 口上；  
+在 adb shell 或者 telnet 登录安卓后台的窗口输入 df -h 查看u盘是否自动挂载好；  
+如果发现有 sda1 存在，继续输入 ls -al /mnt/sda/sda1 查看是否存在 emmc.flash 文件；  
+
+![pic](pic/usbfile.png)  
+
+检查上面步骤都正确以后，输入以下命令进行烧写。  
+```bash
+dd if=/mnt/sda/sda1/emmc.flash of=/dev/block/mmcblk0 bs=1024
+```
+
+![pic](pic/doflash.png)  
+
+注意：
 
