@@ -23,11 +23,11 @@ sidebar_position: 1
 ## 确认机顶盒reg名称
 
 - [什么是机顶盒reg名称？如何知道我的机顶盒reg名称？](https://www.ecoo.top/getreg.html)
-- [目前作者开发支持适配的机型列表](devices)
+- [目前作者开发支持适配的机型列表](/devices)
 
 ## 下载匹配的固件
 
-- [作者发布的官方网站下载地址](download)
+- [作者发布的官方网站下载地址](/download)
 
 ## 刷机
 
