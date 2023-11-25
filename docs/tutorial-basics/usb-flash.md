@@ -29,6 +29,7 @@ sidebar_position: 2
 ### 下载对应盒子芯片型号的固件
 根据[设备适配表](/devices/)，确定你的盒子是哪个fastboot简称的型号，  
 下载下表对应的固件包：  
+
 | CPU 型号            | fastboot简称        | 下载地址 |  
 | ------------------ | --------------------- | ----------------- |  
 | hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1a-usb-flash.zip)|  
