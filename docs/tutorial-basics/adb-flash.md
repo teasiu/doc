@@ -42,4 +42,12 @@ cat /dev/block/mmcblk0p1 | grep -a hi3798m
 注意，当你输入cat /dev/block/mmcblk0p1返回信息是没有这个文件或者文件夹时，  
 继续检查 ls -al /dev/block/ ，假如看到有mtdblk字样，代表你这个盒子闪存是NAND，请放弃。  
 
+## 根据盒子型号自制烧片器
+
+1.下载你对应的reg名称的TTL线刷固件包，解压；  
+2.打开海兔工具，选择芯片，选择烧写emmc选项卡，浏览打开解压包里的XML分区表文件；  
+3.按照下图例子，制作烧片器：  
+![pic](pic/hitool-mkflash.png)  
+
+
 
