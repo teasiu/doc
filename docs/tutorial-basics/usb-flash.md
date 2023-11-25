@@ -11,6 +11,7 @@ sidebar_position: 2
 - 一个 U盘，需要格式化为 FAT16 或者 FAT32 文件系统；  
 这个U盘必须是2.0协议的普通U盘，最好是牌子正品的。  
 转接器或者硬盘盒之类的 99% 无法被 CPU 即时识别。  
+建议 1G-64G 之间容量的 U 盘。  
 
 - 短接板子电路的工具：镊子、刀片或者小铜线；  
 - 根据网络搜索，或者厂家电路图，找出你的机顶盒型号的短接点。
@@ -22,7 +23,7 @@ sidebar_position: 2
 请务必使用此工具格式化你的 U 盘：  
 ![usbformat](pic/usb.png)  
 下载地址：  
-![神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
+[神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
 
 ##  知识点
 
