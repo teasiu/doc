@@ -21,9 +21,23 @@ sidebar_position: 2
 
 ### 格式化 U 盘
 请务必使用此工具格式化你的 U 盘：  
+它能把 U 盘格式化为标准的 fat32 格式，并且能让 99% 的老旧 CPU 识别；  
 ![usbformat](pic/usb.png)  
 下载地址：  
 [神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
+
+### 下载对应盒子芯片型号的固件
+根据[设备适配表](/devices/)，确定你的盒子是哪个fastboot简称的型号，  
+下载下表对应的固件包：  
+| CPU 型号            | fastboot简称        | 下载地址 | 
+| ------------------ | --------------------- | ----------------- | 
+| hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1a-usb-flash.zip)|
+| hi3798mv100 | mdmo1b | [mv100-mdmo1b-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1b-usb-flash.zip)|
+| hi3798mv100 | mdmo1c | [mv100-mdmo1c-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1c-usb-flash.zip)|
+| hi3798mv100 | mdmo1d | [mv100-mdmo1d-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1d-usb-flash.zip)|
+| hi3798mv100 | mdmo1f | [mv100-mdmo1f-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1f-usb-flash.zip)|
+| hi3798mv100 | mdmo1g | [mv100-mdmo1g-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1g-usb-flash.zip)|
+| hi3798mv200 | mv2dma | [mv200-mv2dma-usb-flash.zip](https://node2.histb.com/update/system/mv200-mv2dma-usb-flash.zip)|
 
 ##  知识点
 
