@@ -20,8 +20,11 @@ sidebar_position: 2
 ##  刷机步骤
 
 ### 格式化 U 盘
+
+:::caution
 请务必使用此工具格式化你的 U 盘：  
 它能把 U 盘格式化为标准的 fat32 格式，并且能让 99% 的老旧 CPU 识别；  
+:::
 ![usbformat](pic/usb.png)  
 下载地址：  
 [神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
@@ -60,12 +63,11 @@ sidebar_position: 2
 CPU 右上角的 1，2 脚 短接法：  
 :::  
 ![usbformat](pic/cpu12.png)  
-:::tip
 个别已知的例子如下：  
 例子 1 ：华为悦盒 ec6108v9c 短接 J16 （用镊子把这两个孔连上）  
-华为悦盒 ec6108v9 短接 J15
+华为悦盒 ec6108v9 短接 J15  
 注意：如果你发现自己的ec6108v9板子是J16 请使用mdmo1g的刷机包。（部分商家外壳标识不规范）  
-:::  
+ 
 ![usbformat](pic/ec6108v9c.png)  
 
 例子 2 ：UNT400B 短接图 （用镊子把这两个孔连上）  
@@ -76,9 +78,9 @@ CPU 右上角的 1，2 脚 短接法：
 hi3798mv200的通用短接办法：  
 靠近CPU的R37贴片靠外一侧，跟USB口铁壳（地线）短接
 :::
-![usbformat](pic/r37.jpg)
+![usbformat](pic/r37.jpg)  
 
-
+#### hi3798mv200 的盒子
 ##  知识点
 
 - 首先关闭盒子电源；插上有刷机文件的U盘；短接好盒子的短接点；打开电源；5秒左右放开短接；即可刷机。
