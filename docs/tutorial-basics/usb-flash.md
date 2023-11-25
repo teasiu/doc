@@ -17,7 +17,7 @@ sidebar_position: 2
 - 根据网络搜索，或者厂家电路图，找出你的机顶盒型号的短接点。
 - Windows7以上电脑系统。  
 
-##  开始刷机
+##  刷机步骤
 
 ### 格式化 U 盘
 请务必使用此工具格式化你的 U 盘：  
@@ -45,6 +45,19 @@ sidebar_position: 2
 | hi3798mv300 | mv3dmm | [mv300-mv3dmm-usb-flash.zip](https://node2.histb.com/update/system/mv300-mv3dmm-usb-flash.zip)|  
 
 ### 解压到 U 盘
+
+将固件包解压到 U 盘的根目录，如下图：  
+
+![usbformat](pic/usb2.png) 
+
+### 拆开外壳，准备短接点
+以下是几种已知的型号短接点，作为示例：  
+
+#### hi3798mv100 的盒子
+所有hi3798mv100型号的机顶盒短接点都可以通用的短接点：  
+CPU 右上角的 1，2 脚 短接法：  
+![usbformat](pic/cpu12.png) 
+
 
 ##  知识点
 
