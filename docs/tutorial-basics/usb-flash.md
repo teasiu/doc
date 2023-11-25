@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# USB 刷机
+# USB 刷机(海思)
 
 短接盒子的电路，让机顶盒从usb磁盘读取fastboot.bin启动，配合启动指令进行刷入NAS系统。
 
