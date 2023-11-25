@@ -71,10 +71,10 @@ CPU 右上角的 1，2 脚 短接法：
 华为悦盒 ec6108v9 短接 J15  
 注意：如果你发现自己的ec6108v9板子是J16 请使用mdmo1g的刷机包。（部分商家外壳标识不规范）  
  
-![pic](pic/ec6108v9c.png)  
+![pic](pic/ec6108v9c.jpg)  
 
 例子 2 ：UNT400B 短接图 （用镊子把这两个孔连上）  
-![pic](pic/unt400b.png)  
+![pic](pic/unt400b.jpg)  
 
 #### hi3798mv200 的盒子
 :::tip
