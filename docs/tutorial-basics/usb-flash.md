@@ -26,8 +26,10 @@ sidebar_position: 2
 它能把 U 盘格式化为标准的 fat32 格式，并且能让 99% 的老旧 CPU 识别；  
 :::
 ![usbformat](pic/usb.png)  
+:::tip
 下载地址：  
 [神雕U盘格式化小工具](https://www.ecoo.top/update/soft_init/USBFormat.exe)  
+:::
 
 ### 下载对应盒子芯片型号的固件
 根据[设备适配表](/devices/)，确定你的盒子是哪个fastboot简称的型号，  
