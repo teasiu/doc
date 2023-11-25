@@ -146,4 +146,14 @@ hi3798mv300的盒子目前没有发现通用的短接办法，
 
 ##  知识点  
 
+能使用 U 盘刷入系统，是作者其中之一的创新，  
+在uboot代码中添加了run命令函数，可以让其具有run common的能力，  
+然后使用bootargs的启动指令，将U盘中的文件通过自创指令写入emmc，  
+具体的实现例子如：  
+```html
+loadfiler=fatload usb 0 0x1000000 mv100/recoverybox32.ext4
+flashpartitionr=mmc write.ext4sp 0x0 0x1000000 0x11000 0x20000
+flashrootfs=run loadfiler flashpartitionr
+bootcmd=run flashrootfs;
+```
 
