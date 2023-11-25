@@ -17,7 +17,7 @@ sidebar_position: 1
 | Windows    | [海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
 | Linux      | [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
 
-<img src="/img/ch340.png" alt="usb2ttl" width="40" height="40"> <img src="/img/hitool-ttl-line.png" alt="杜邦线" width="40" height="40">
+![usb2ttl](/img/ch340.png) ![杜邦线](/img/hitool-ttl-line.png)
 
 ## 确认机顶盒reg名称
 
@@ -28,7 +28,7 @@ sidebar_position: 1
 
 - [作者发布的官方网站下载地址](/download)
 
-## 刷机
+## 刷机技术要领
 
 20220808开始的固件，在刷机完成后，还需要耐心等待3分钟左右的初始化过程，
 
