@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+
 ---
 
 # TTL 刷机(海思)
@@ -23,7 +24,7 @@ sidebar_position: 1
 
 ## 确认机顶盒reg名称
 
-- [什么是机顶盒reg名称？如何知道我的机顶盒reg名称？](https://www.ecoo.top/getreg.html)
+- [什么是机顶盒reg名称？如何知道我的机顶盒reg名称？](/regname)
 - [目前作者开发支持适配的机型列表](/devices)
 - 也可以通过下面步骤的跑码信息获得机顶盒的硬件资料。
 
