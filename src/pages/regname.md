@@ -27,4 +27,4 @@ hi3798mv2dmc_hi3798mv200_DDR4-2133_2GB_16bitx2_4layers_emmc.reg
 1、利用串口读写器 TTL 读取。或详细参考[TTL线刷教程](/docs/tutorial-basics/ttl-flash)  
 把 usb 转 ttl 小板插入电脑，用杜邦线和针脚连接到板子的 GDN、TX、RX，  
 使用串口终端跑码读取 fastboot 的参数，如下图：  
-![pic]()
+
