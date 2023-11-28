@@ -9,7 +9,7 @@ title: 系统最新升级公告
 
 ## 一、最新系统更新和软件更新
 
-:::tips
+:::tip
 详情请浏览 [系统更新和软件更新](/docs/nas-skill/otaupdate) 的所有章节。
 :::
 
