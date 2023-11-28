@@ -122,5 +122,11 @@ bash <(curl https://ecoo.top/s805_upgrade.sh)
 
 ## 常用脚本ota更新
 
+- ota常用的脚本更新命令：  
+
+```bash
+sudo nasupdate
+```
+
 - ota升级的细节，一般会在社区发布帖子进行公布，请自行留意更新。
 - ota升级原则上是修复或新增系统的某些功能，不会影响现有系统使用中的程序和用户数据。
