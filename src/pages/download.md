@@ -45,7 +45,7 @@ title: 系统固件下载
 | ----------- | --------- | ---- | -------- | ---------- |
 |hi3798mv100 | TTL串口刷机包 | [TTL-hi3798mv100-32bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv100-32bit.zip)| armv7|内含全部100机型| 
 |hi3798mv200  | TTL串口刷机包 | [TTL-hi3798mv200-64bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv200-64bit.zip)| arm64|内含全部200机型|
-|hi3798mv300  | TTL串口刷机包 | [TTL-hi3798mv300-64bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv300-64bit.zip)| arm64|内含全部200机型|
+|hi3798mv300  | TTL串口刷机包 | [TTL-hi3798mv300-64bit.zip](https://node3.histb.com:9088/update/system/TTL-hi3798mv300-64bit.zip)| arm64|内含全部300机型|
 |hi3798mv200恩兔| TTL串口刷机包 | [TTL-hi3798mv200-n2ns1-64bit.zip](https://node.histb.com:9088/update/system/TTL-hi3798mv200-n2ns1-64bit.zip)| arm64|N2特别版|
 |hi3798mv100 | USB刷机包 | [hi3798mv100-mdmo1a-usb-flash.zip](https://node3.histb.com:9088/update/system/hi3798mv100-mdmo1a-usb-flash.zip)  | armv7|        | 
 |hi3798mv100 | USB刷机包 | [hi3798mv100-mdmo1b-usb-flash.zip](https://node3.histb.com:9088/update/system/hi3798mv100-mdmo1b-usb-flash.zip)  | armv7|        |
