@@ -54,6 +54,36 @@ apt-get update
 apt-get upgrade
 ```
 
+### 软件卸载和安装
+
+支持通过apt包管理器进行软件的卸载或安装。以下例子：  
+
+- 安装git自建仓库软件：  
+
+```bash
+sudo apt-get install gitweb-histb -y
+```
+
+- 卸载git自建仓库软件：  
+
+```bash
+sudo apt-get purge gitweb-histb -y
+sudo apt-get autoremove
+```
+
+- 内置的软件包支持卸载的，可参考如下列表：  
+```html
+samba-histb
+tailscale-histb
+transmission-histb
+ttyd-histb
+typecho-histb
+cronweb-histb
+ddns-histb
+filebrowser-histb
+frpc-histb
+h5ai-histb
+```
 
 ## 旧版本升级  
 
