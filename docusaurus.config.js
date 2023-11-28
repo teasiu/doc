@@ -36,15 +36,17 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/teasiu/doc/blob/main/',
+          editUrl: ({ docPath }) => {
+            return `https://holocron.so/github/pr/teasiu/doc/main/editor/docs/${docPath}`
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/teasiu/doc/blob/main/',
+          editUrl: ({ docPath }) => {
+            return `https://holocron.so/github/pr/teasiu/doc/main/editor/blog/${docPath}`
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
