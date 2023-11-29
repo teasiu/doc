@@ -28,6 +28,9 @@ sidebar_position: 1
 
   浏览器 `<IP>:7681` 进入
 
+![](./img/login.png)
+
+
 ## 修改密码：
 
 终端输入以下命令进行更改：
