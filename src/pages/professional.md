@@ -31,7 +31,7 @@ hi3798Mv100：除极少部分盒子（厂家阉割）外，90%的都支持wifi�
 
 hi3798Mv200：目前测试仅N71和hc2910的大百盒发现支持的wifi；  
 
-![](./img/pro1.jpg)  
+![img](./img/pro1.jpg)  
 
 
 ### 2.Linux Cups 打印服务系统
@@ -42,6 +42,8 @@ hi3798Mv200：目前测试仅N71和hc2910的大百盒发现支持的wifi；
 
 配置方法和适配打印机，请自行搜索 “linux cups 支持打印机” “linux cups 使用教程”  
 
+![img](./img/pro-printer1.jpg)  
+![img](./img/pro-printer2.jpg)   
 
 ### 3.首页去掉广告图片
 
