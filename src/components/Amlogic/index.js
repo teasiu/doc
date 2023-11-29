@@ -20,7 +20,7 @@ const FeatureList = [
     description: (
       <>
         内置宝塔程序,预编译并内置全家桶 LNMP 套件。<br />
-        <a href="https://www.ecoo.top/baota" target="_blank">更多详情</a>
+        <a href="/baota.html" target="_blank">更多详情</a>
       </>
     ),
   },
