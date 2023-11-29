@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>海纳思系统官方公告</title>
+<style>
+body {
+    width: 40em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+.content pre{
+    position: relative;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+pre .btn-pre-copy{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0,0%,54.9%,.8);
+    transition: color .1s;
+}
+</style>
+<script src="./baota/jquery.min.js"></script>
+<script>
+$(function(){
+    //给每一串代码元素增加复制代码节点
+    let preList = $(".content pre");
+    for (let pre of preList) {
+        //给每个代码块增加上“复制代码”按钮
+        let btn = $("<span class=\"btn-pre-copy\" onclick='preCopy(this)'>复制代码</span>");
+        btn.prependTo(pre);
+    }
+});
+/**
+* 执行复制代码操作
+* @param obj
+*/
+function preCopy(obj) {
+    //执行复制
+    let btn = $(obj);
+    let pre = btn.parent();
+    //为了实现复制功能。新增一个临时的textarea节点。使用他来复制内容
+    let temp = $("<textarea></textarea>");
+    //避免复制内容时把按钮文字也复制进去。先临时置空
+    btn.text("");
+    temp.text(pre.text());
+    temp.appendTo(pre);
+    temp.select();
+    document.execCommand("Copy");
+    temp.remove();
+    //修改按钮名
+    btn.text("复制成功");
+    //一定时间后吧按钮名改回来
+    setTimeout(()=> {
+        btn.text("复制代码");
+    },1500);
+}
+</script>
+</head>
+<body>
+
+<header>
+	<h1>海纳思宝塔专用固件安装和使用说明</h1>
+</header>
+
+<h2>1.一键切换系统命令</h2>
+请根据不同机型在 SSH 终端执行不同命令一键切换系统。
+<br/>复制以下代码粘贴到终端后，按回车键。
+<br/>注意：这是全新安装专用固件，原系统如有资料请注意保存。
+<h3>a.海思机顶盒 32 位系统：hi3798mv100 CPU机型</h3>
+mv100<div class="content"><pre>bash <(curl https://www.ecoo.top/mv100-bt.sh)</pre> </div>
+<h3>b.海思机顶盒 64 位系统：hi3798mv200/300 CPU机型</h3>
+mv200/300<div class="content"><pre>bash <(curl https://www.ecoo.top/mv23-bt.sh)</pre> </div>
+<h3>c.玩客云盒子 32 位系统：晶晨S805 CPU机型</h3>
+s805<div class="content"><pre>bash <(curl https://www.ecoo.top/s805-bt.sh)</pre> </div>
+<br/>
+<br/>
+<br/>图例
+<br/>
+<img src="./baota/1.png">
+<br/>
+<br/>
+<h2>2.安装后首次运行执行激活</h2>
+<br/>根据路由器自动分配的 IP 使用 SSH 终端进入系统，
+<br/>直接浏览器打开 IP 是没有网页的，
+<br/>在 SSH 终端输入 setup-bt 后回车，
+<br/>按照提示获取激活码，粘贴激活码，回车，等待系统自动激活后的安装。
+<br/>注意，未激活的系统将无法正常使用。
+<br/><b>激活码是绑定 CPU 的永久激活码，重新刷机或重置系统都可以继续使用。</b>
+<br/>激活码每台10元，扫码群主可获得。
+<br/>花费无数日夜，适配和开发不易，为了作者继续维护，感谢支持！
+<br/>
+<br/>图例
+<br/>
+<img src="./baota/2.png">
+<br/>
+<br/>
+<h2>3.激活后进入宝塔</h2>
+<br/>注意，尚未建站点（或尚未设置默认站点）之前，IP首页是没有显示的。
+<br/>图例
+<br/>
+<img src="./baota/3.png">
+<br/>
+<img src="./baota/4.png">
+<br/>
+<br/>
+<img src="./baota/5.jpg">
+<br/>
+<br/>
+<img src="./baota/6.jpg">
+<br/>
+<br/>
+<br/>
+<h2>4.进阶玩法（有空了再补充写）</h2>
+<br/>a. 修改盒子mac地址
+<br/>b. 使用公网ip或域名从外网访问自建站点
+<br/>c. 使用内网穿透从外网访问自建站点
+<br/>d. 将系统安装到TF卡或者U盘或者USB移动硬盘，达到扩容目的
+<br/>e. 自建影视自动更新网站
+<br/>。。。。
+<br/>
+<br/>
+<h1>后记</h1>
+<br/>由于宝塔面板官方不再支持 armv7-32 位 CPU 的安装，所以，群主花费不少功夫预制编译了包含全家桶 LNMP 的专用固件。 
+<br/>由于宝塔面板的官方安装方式是靠编译安装的，多数玩家没有能力进行安装过程判断，所以才有了宝塔专用固件。
+<br/>通过预制编译好的固件，直接运行宝塔，对硬件的需求就降低了，可以很流畅运行。
+<br/>如果你想更多的学习什么是宝塔，如何使用，请浏览宝塔官网网站。www.bt.cn
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<footer>
+	版权 © <span class="year">2023</span> <a href="http://www.ecoo.top/">www.ecoo.top</a>
+</footer>
+<br/><br/>
+
+
+</body>
+</html>
