@@ -21,7 +21,7 @@ title: 系统最新升级公告
 - 制作开通后，一键命令 `vipupgrade` 升级即可。
 
 :::tip
-[专业版有什么区别？](https://www.ecoo.top/professional.html)
+[社区版和专业版有什么区别？](/professional)
 :::
 
 
