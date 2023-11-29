@@ -24,11 +24,26 @@ hi3798mv2dmc_hi3798mv200_DDR4-2133_2GB_16bitx2_4layers_emmc.reg
 
 ## 二、获取 reg 名称的四种常用方法
 
+简单介绍以下四种可以获得你的机型对用的regname  
+
 ### 1.串口跑码读取参数
+
 利用串口读写器 TTL 读取。或详细参考[TTL线刷教程](/docs/tutorial-basics/ttl-flash)  
 把 usb 转 ttl 小板插入电脑，用杜邦线和针脚连接到板子的 GDN、TX、RX，  
 使用串口终端跑码读取 fastboot 的参数，如下图：  
 
 ![pic](img/hitool-run-reg.png)
 
-### 2.
+### 2.利用现有安卓系统后台终端读取参数
+
+破解你的盒子安卓系统，adb进去后台，在adb shell终端输入。或详细参考[ADB 线刷教程](/docs/tutorial-basics/adb-flash)  
+
+adb终端输入以下命令：  
+```bash
+cat /dev/block/mmcblk0p1 | grep -a hi3798
+```
+
+将会得到如下图的结果，包括了你的盒子的专用 reg 名称：  
+
+![pic](img/grepreg.png)
+
