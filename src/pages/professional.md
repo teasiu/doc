@@ -73,3 +73,12 @@ kaitong-frp
 ![img](./img/pro-v2raya1.jpg)   
 ![img](./img/pro-v2raya2.jpg) 
 
+## 购买专业版
+
+- 升级到专业版（40元）  
+- 注意，目前仅支持mv100/mv200通用机型；  
+- 终端输入 nasupdate ；  
+- 接着输入 histb ；  
+- 将会得到一个机顶盒识别码，将此码复制后发给群主；  
+- 制作开通后，一键命令 vipupgrade 升级即可。  
+
