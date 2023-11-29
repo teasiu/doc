@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         包含wifi功能，打印功能，内网穿透的专业版。<br />
-        <a href="https://www.ecoo.top/professional.html" target="_blank">更多详情</a>
+        <a href="/professional" target="_blank">更多详情</a>
       </>
     ),
   },
