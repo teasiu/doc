@@ -88,7 +88,7 @@ function PolicyEnforcement() {
 
 function OpenCollective() {
     return (
-      <iframe title="Sponsors" src="changeslog.html" style={{width: "100%", height: "900px", display: "block"}}></iframe>
+      <iframe title="Sponsors" src="juanzhu.html" style={{width: "100%", height: "900px", display: "block"}}></iframe>
     );
 }
 
