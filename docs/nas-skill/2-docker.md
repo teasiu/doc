@@ -4,12 +4,14 @@ sidebar_position: 2
 
 # docker使用
 
-内核支持直接安装ubuntu20.04的docker.io
+海纳思系统内置了一键安装 docker 程序的脚本；  
+直接一键命令即可安装，包含docker-compose；  
+在终端输入这个命令即可 ```install-docker.sh```  
 
 ## 安装docker程序
 
 ```bash
-apt update && apt install docker.io
+install-docker.sh
 ```
 
 ```consle
