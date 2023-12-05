@@ -63,7 +63,7 @@ const config = {
         title: 'HiNAS',
         logo: {
           alt: 'histb Logo',
-          src: './img/hinas3x7.png',
+          src: './img/5221.png',
         },
         items: [
           {
