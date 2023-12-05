@@ -130,14 +130,7 @@ const config = {
             ],
           },
         ],
-
-        copyright:
-		<>
-		{'Copyright © '}
-		{new Date().getFullYear()}
-		{' '}
-		<a href="https://beian.miit.gov.cn/">粤ICP备2022054080号</a>
-		</>
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://beian.miit.gov.cn/">粤ICP备2022054080号</a>`,
 
       },
       prism: {
