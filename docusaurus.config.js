@@ -60,10 +60,10 @@ const config = {
     ({
       metadata: [{name: "keywords", content: "海纳思系统,海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统"}],
       navbar: {
-        title: 'HiNAS',
+        title: 'HiNas',
         logo: {
           alt: 'histb Logo',
-          src: './img/5221.png',
+          src: './img/hinaslogo.png',
         },
         items: [
           {
@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} www.ecoo.top-粤ICP备2022054080号`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="http://www.beian.miit.gov.cn">粤ICP备2022054080号</a>`,
 
       },
       prism: {
