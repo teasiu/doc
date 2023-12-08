@@ -44,7 +44,7 @@ title: 系统固件下载
 |hi3798mv100 | USB刷机包 | [mv100-mdmo1g-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1g-usb-flash.zip)  | armv7|        |
 |hi3798mv200 | USB刷机包 | [mv200-mv2dmb-usb-flash-64.zip](https://node.histb.com:9088/update/system/mv200-mv2dmb-usb-flash-64.zip)  | arm64|        |
 |hi3798mv300 | USB刷机包 | [mv300-mv3dmw-usb-flash-64.zip](https://node.histb.com:9088/update/system/mv300-mv3dmw-usb-flash-64.zip)  | arm64|        |
-|玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://alist.ecoo.top/d/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
+|玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://node.histb.com:9088/update/system/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
 
 
 ### 2.电信线路 50M网速
@@ -63,7 +63,7 @@ title: 系统固件下载
 |hi3798mv100 | USB刷机包 | [mv100-mdmo1g-usb-flash.zip](https://node3.histb.com:9088/update/system/mv100-mdmo1g-usb-flash.zip)  | armv7|        |
 |hi3798mv200 | USB刷机包 | [mv200-mv2dmb-usb-flash-64.zip](https://node3.histb.com:9088/update/system/mv200-mv2dmb-usb-flash-64.zip)  | arm64|        |
 |hi3798mv300 | USB刷机包 | [mv300-mv3dmw-usb-flash-64.zip](https://node3.histb.com:9088/update/system/mv300-mv3dmw-usb-flash-64.zip)  | arm64|        |
-|玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://alist.ecoo.top/d/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
+|玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://node3.histb.com:9088/update/system/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
 
 ### 3.香港线路 30M网速
 
@@ -81,5 +81,5 @@ title: 系统固件下载
 |  hi3798mv100 | USB刷机包 | [mv100-mdmo1g-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1g-usb-flash.zip)  | armv7|        |
 |  hi3798mv200 | USB刷机包 | [mv200-mv2dmb-usb-flash-64.zip](https://node2.histb.com/update/system/mv200-mv2dmb-usb-flash-64.zip)  | arm64|        |
 |  hi3798mv300 | USB刷机包 | [mv300-mv3dmw-usb-flash-64.zip](https://node2.histb.com/update/system/mv300-mv3dmw-usb-flash-64.zip)  | arm64|        |
-|  玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://alist.ecoo.top/d/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
+|  玩客云S805晶晨| USB刷机包 | [Ubuntu_hinas_s805_armhf.zip](https://node2.histb.com/update/system/s805/Ubuntu_hinas_s805_armhf_5.15.79.img.zip)| armv7| 确保已刷底包 |  
 

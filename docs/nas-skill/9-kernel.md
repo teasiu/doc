@@ -39,7 +39,7 @@ sudo apt-get install kernel-histb -y
 | hi3798mv200 | arm64 | 移动1 | [hi_kernel-hi3798mv200.bin](https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200.bin) |
 |  |  | 香港2 |[hi_kernel-hi3798mv200.bin](https://node2.histb.com/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200.bin)  |
 |  |  | 电信3 |[hi_kernel-hi3798mv200.bin](https://node3.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200.bin)  |
-| hi3798mv300 | arm64 | 移动1 | [hi_kernel-hi3798mv300.bin](https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200.bin) |
+| hi3798mv300 | arm64 | 移动1 | [hi_kernel-hi3798mv300.bin](https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv300.bin) |
 |  |  | 香港2 |[hi_kernel-hi3798mv300.bin](https://node2.histb.com/update/soft_init/kernels/arm64/hi_kernel-hi3798mv300.bin)  |
 |  |  | 电信3 |[hi_kernel-hi3798mv300.bin](https://node3.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv300.bin)  |
 | mv200恩兔特别版 | arm64 | 移动1 | [hi_kernel-hi3798mv200-n2ns1.bin](https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200-n2ns1.bin) |
@@ -58,17 +58,33 @@ sudo apt-get install kernel-histb -y
 ### hi3798mv100机型
 
 hi3798mv100机型是 armv7 ; 也就是我们理解的 32 位；  
-将内核上传进去系统里，在当前位置执行如下命令：  
+将内核上传进去系统里，或者在当前位置执行如下命令：  
 ```bash
+wget https://node.histb.com:9088/update/soft_init/kernels/armhf/hi_kernel-hi3798mv100.bin -O hi_kernel-hi3798mv100.bin
 dd if=hi_kernel-hi3798mv100.bin of=/dev/mmcblk0p6 bs=1024 count=20480
 ```
 
 ### hi3798mv200/300机型
 
-将内核上传进去系统里，在当前位置执行如下命令：  
+将内核上传进去系统里，或者在当前位置执行如下命令：  
 ```bash
+wget https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200.bin -O hi_kernel-hi3798mv200.bin
 dd if=hi_kernel-hi3798mv200.bin of=/dev/mmcblk0p6 bs=1024 count=40960
 ```
+
+```bash
+wget https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv300.bin -O hi_kernel-hi3798mv300.bin
+dd if=hi_kernel-hi3798mv300.bin of=/dev/mmcblk0p6 bs=1024 count=40960
+```
+
+### hi3798mv200恩兔特别版机型
+
+将内核上传进去系统里，或者在当前位置执行如下命令：  
+```bash
+wget https://node.histb.com:9088/update/soft_init/kernels/arm64/hi_kernel-hi3798mv200-n2ns1.bin -O hi_kernel-hi3798mv200-n2ns1.bin
+dd if=hi_kernel-hi3798mv200-n2ns1.bin of=/dev/mmcblk0p6 bs=1024 count=40960
+```
+
 
 执行完后，重启系统即可。
 
