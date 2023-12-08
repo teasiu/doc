@@ -15,12 +15,10 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
 		<div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="img/logo.svg" alt="Policy Persistence" style={{ marginRight: '1rem' }} />
-          <div>
+          <img src="img/logo.svg" alt="logo" style={{ marginRight: '1rem' }} />
+         </div>
             <h1 className="hero__title">{siteConfig.title}</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
-          </div>
-        </div>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to={useBaseUrl("docs/category/机顶盒刷机教程")}>保姆级刷机教程</Link>
           <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to="download">最新固件下载</Link>
