@@ -72,7 +72,7 @@ const config = {
             position: 'left',
             label: '使用教程手册',
           },
-          {to: '/gonggao', label: '系统升级公告', position: 'left'},
+          {to: '/news', label: '系统升级公告', position: 'left'},
           {to: '/download', label: '固件下载', position: 'left'},
           {
             href: 'https://bbs.histb.com',
