@@ -15,7 +15,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
 		<div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="img/logo.svg" alt="logo" style={{ marginRight: '1rem' }} />
+          <img src="img/logo.svg" alt="logo" />
          </div>
             <h1 className="hero__title">{siteConfig.title}</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
