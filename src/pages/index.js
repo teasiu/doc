@@ -14,6 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+      <img src="img/logo.svg" alt="Policy Persistence" width="400" height="466" />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -25,7 +26,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--success button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} 
-            to={useBaseUrl("gonggao")}>
+            to={useBaseUrl("news")}>
             系统最新升级公告
           </Link>
           <Link
