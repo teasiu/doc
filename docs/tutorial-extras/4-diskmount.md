@@ -71,4 +71,5 @@ automount -a
 ```
 系统会将你的磁盘自动挂载到 ```/mnt/sda1``` 或者 ```/mnt/mmcblk1p1```
 
+![sdx](img/mounted.png)  
 
