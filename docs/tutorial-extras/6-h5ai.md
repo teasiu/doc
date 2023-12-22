@@ -5,7 +5,7 @@ sidebar_position: 6
 # 网盘使用
 采用H5ai开源软件，nginx+php环境搭建，一个轻量而又强大的个人网盘分享程序。
 
-## 使用指南
+## 使用
 程序位置: /var/www/html/files/
 
 默认登陆用户名和密码 ***admin*** ***admin***
@@ -21,12 +21,14 @@ sidebar_position: 6
 
 例子：
 ```bash
+#创建一个新的外置磁盘的文件夹
 mkdir /mnt/sda1/files
-#创建一个外置磁盘的文件夹
-chown -R www-data:www-data /mnt/sda1/files
 #给这个文件夹赋权
+chown -R www-data:www-data /mnt/sda1/files
+#删除原来的默认链接
+rm /var/www/html/files/home
+#创建这个新文件夹的软链接到默认home的位置
 ln -sf /mnt/sda1/files /var/www/html/files/home
-#创建这个文件夹的软链接到默认home的位置
 ```
 
 也可以个性化你指定位置的页首或页脚显示，例如：
@@ -35,12 +37,14 @@ echo "## 这是外置磁盘链接到home的页首显示" > /mnt/sda1/files/_h5ai
 echo "## 这是外置磁盘链接到home的页脚说明" > /mnt/sda1/files/_h5ai.footer.md
 ```
 
+一旦修改到外置磁盘位置，上传小插件也跟随到了新位置。
+
 ## 访问密码修改
 - 更改密码
 
 ```bash
-echo -n 'admin:' | tee /etc/nginx/passwords.list
-openssl passwd -apr1 | tee -a /etc/nginx/passwords.list
+echo -n 'admin:' | tee /etc/nginx/passwords-h5ai.list
+openssl passwd -apr1 | tee -a /etc/nginx/passwords-h5ai.list
 nginx -s reload
 ```
 
@@ -54,7 +58,7 @@ vi /etc/nginx/locations.d/h5ai
 ```bash
 #将后面两行删掉即可：
 auth_basic "admin";
-auth_basic_user_file /etc/nginx/passwords.list;
+auth_basic_user_file /etc/nginx/passwords-h5ai.list;
 #最后重启一下nginx服务
 nginx -s reload
 ```
