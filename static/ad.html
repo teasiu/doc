@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>海纳思系统官方通告</title>
-<style>
-body {
-    width: 40em;
-    margin: 0 auto;
-    font-family: Tahoma, Verdana, Arial, sans-serif;
-}
-.content pre{
-    position: relative;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-}
-pre .btn-pre-copy{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    color: hsla(0,0%,54.9%,.8);
-    transition: color .1s;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>广告页面</title>
+  <style>
+    /* 让页面内容充满整个视口 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* 居中显示内容 */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* 使图片适应手机屏幕 */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script>
+    let clickCount = 0;
+
+    function recordClick() {
+      // 增加点击计数
+      clickCount++;
+
+      // 在这里可以添加其他记录点击的操作，比如发送到服务器等
+
+      // 跳转到链接地址
+      window.location.href = "https://www.521f.com";
+    }
+  </script>
 </head>
 <body>
+  <h1>是兄弟就找我，无兄弟不传奇！</h1>
+  <!-- 点击图片调用recordClick函数 -->
+  <a href="javascript:void(0);" onclick="recordClick();">
+    <img src="ad.jpg" alt="广告图片">
+  </a>
+  <!-- 显示点击次数 -->
+  <p>点击次数: <span id="clickCountDisplay">0</span></p>
 
-<header>
-	<h1>海纳思系统官方广告位招租</h1>
-</header>
-
-<h2>22000+装机数</h2>
-<h2>日活6000+</h2>
-<h2>日增约100台</h2>
-<h2>要求：符合海纳思服务器的环境需求</h2>
-<h2>捐助并投放，与作者共赢！请联系本站</h2>
-<br/>
-<br/>
-
-<footer>
-	版权 © <span class="year">2023</span> <a href="http://www.ecoo.top/">www.ecoo.top</a>
-</footer>
-<br/><br/>
-
-
+  <script>
+    // 在页面加载后更新点击次数的显示
+    document.getElementById("clickCountDisplay").innerText = clickCount;
+  </script>
 </body>
 </html>
