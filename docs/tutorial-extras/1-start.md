@@ -20,7 +20,7 @@ sidebar_position: 1
 
 - 建议使用 SSH 终端管理器登录后台
 
-  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://dl.histb.com/#/list/189cn/82531180155783956) 工具，
+  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://node2.histb.com/update/soft_init/MobaXterm.zip) 工具，
 
   Linux 操作系统直接 `ssh root@<IP>`
 
@@ -47,7 +47,7 @@ passwd: password updated successfully
 root@hi3798mv200:~#
 ```
 
-提示输入两次新的密码，回车后，提示修改成功的英文 success
+提示输入两次新的密码，回车后，提示修改成功的英文 successfully
 
 **注意**：密码是不会显示的，盲敲输入后按回车即可。
 

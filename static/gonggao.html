@@ -32,77 +32,19 @@ pre .btn-pre-copy{
     transition: color .1s;
 }
 </style>
-<script src="./baota/jquery.min.js"></script>
-<script>
-$(function(){
-    //给每一串代码元素增加复制代码节点
-    let preList = $(".content pre");
-    for (let pre of preList) {
-        //给每个代码块增加上“复制代码”按钮
-        let btn = $("<span class=\"btn-pre-copy\" onclick='preCopy(this)'>复制代码</span>");
-        btn.prependTo(pre);
-    }
-});
-/**
-* 执行复制代码操作
-* @param obj
-*/
-function preCopy(obj) {
-    //执行复制
-    let btn = $(obj);
-    let pre = btn.parent();
-    //为了实现复制功能。新增一个临时的textarea节点。使用他来复制内容
-    let temp = $("<textarea></textarea>");
-    //避免复制内容时把按钮文字也复制进去。先临时置空
-    btn.text("");
-    temp.text(pre.text());
-    temp.appendTo(pre);
-    temp.select();
-    document.execCommand("Copy");
-    temp.remove();
-    //修改按钮名
-    btn.text("复制成功");
-    //一定时间后吧按钮名改回来
-    setTimeout(()=> {
-        btn.text("复制代码");
-    },1500);
-}
-</script>
+
 </head>
 <body>
 
 <header>
-	<h1>海纳思系统官方最新公告</h1>2023年12月01日
+	<h1>海纳思系统官方广告位招租</h1>
 </header>
 
-<h2>一键升级系统或切换系统命令</h2>
-<br/>
-<h3>1.一键升级到最新专业版（40元）</h3>
-<br/>注意，目前支持海思芯片mv100/mv200/mv300所有机型；
-<br/>终端输入nasupdate
-<br/>接着输入histb
-<br/>将会得到一个机顶盒识别码，将此码复制后发给群主，等待通知一键命令升级。即可。
-<br/>
-<br/><a href="http://www.ecoo.top/professional">专业版有什么区别？</a>
-<br/>
-<h4>仅内网穿透服务，25 元/年</h4>
-终端输入nasupdate
-<br/>接着输入histb
-<br/>将会得到一个机顶盒识别码，将此码复制后发给群主，
-<br/>开通账号后输入kaitong-frp即可使用。
-<br/><br/>
-<h3>2.从老版本一键升级到20231201版本</h3>
-统一方法：
-<br/>在终端输入 nasupdate 然后输入 nasupgrade 即可一键全新升级新版本。
-<br/>
-<br/>注意，本方法不适合 《恩兔N2》
-<br/>
-<br/>或者更老的版本升级，请复制下面的命令粘贴到终端按回车运行
-<br/>mv100<div class="content"><pre>bash <(curl https://ecoo.top/mv100_upgrade.sh)</pre> </div>
-mv200<div class="content"><pre>bash <(curl https://ecoo.top/mv200_upgrade.sh)</pre> </div>
-mv300<div class="content"><pre>bash <(curl https://ecoo.top/mv300_upgrade.sh)</pre> </div>
-N2 恩兔专用<div class="content"><pre>bash <(curl https://ecoo.top/n2_upgrade.sh)</pre> </div>
-玩客云 S805 专用<div class="content"><pre>bash <(curl https://ecoo.top/s805_upgrade.sh)</pre> </div>
+<h2>22000+装机数</h2>
+<h2>日活6000+</h2>
+<h2>日增约100台</h2>
+<h2>要求：符合海纳思服务器的环境需求</h2>
+<h2>捐助并投放，与作者共赢！请联系本站</h2>
 <br/>
 <br/>
 

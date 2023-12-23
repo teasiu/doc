@@ -2,11 +2,11 @@
 sidebar_position: 6
 ---
 
-# 网盘使用
+# h5ai网盘使用
 采用H5ai开源软件，nginx+php环境搭建，一个轻量而又强大的个人网盘分享程序。
 
 ## 使用
-程序位置: /var/www/html/files/
+程序和文档位置: /var/www/html/files/
 
 默认登陆用户名和密码 ***admin*** ***admin***
 
@@ -40,11 +40,13 @@ echo "## 这是外置磁盘链接到home的页脚说明" > /mnt/sda1/files/_h5ai
 一旦修改到外置磁盘位置，上传小插件也跟随到了新位置。
 
 ## 访问密码修改
-- 更改密码
+- 更改密码  
+- 下面例子的`admin`是用户名，你可以自己自定义比如`zhangsan`
 
 ```bash
 echo -n 'admin:' | tee /etc/nginx/passwords-h5ai.list
 openssl passwd -apr1 | tee -a /etc/nginx/passwords-h5ai.list
+#在这个位置需要输入两次密码
 nginx -s reload
 ```
 

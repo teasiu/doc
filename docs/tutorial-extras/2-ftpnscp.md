@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # 管理服务器文档
 
-😀️建议使用 [FileZilla](https://www.filezilla.cn/download/client) 或者 [WinSCP](https://winscp.net/eng/download.php) 进行文件传输管理
+😀️建议使用 [FileZilla](https://www.filezilla.cn/download/client) 或者 [MobaXterm](https://node2.histb.com/update/soft_init/MobaXterm.zip) 工具进行文件传输管理
 
 ## 说明
 
