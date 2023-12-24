@@ -1,9 +1,22 @@
 ---
 slug: welcome
-title: 欢迎
+title: 提供远程协助技术指导
 authors: [teasiu,xjm]
 tags: [hello, hi3798m]
 ---
 
-The blog supports tags as well!
+## 作者提供以下服务内容远程技术指导：
+
+- 任意一次系统的使用疑难解决 20元  
+- 定制单机版纯净系统 30元  
+- 远程协助刷机指导服务 30元  
+- 将海纳思系统安装到TF卡或U盘或移动硬盘 30元  
+- 其它 linux 相关知识传授 80元/小时
+
+
+## 提问的智慧
+
+- 
+
+## 单机版纯净系统
 
