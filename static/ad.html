@@ -7,8 +7,8 @@
     /* 让页面内容充满整个视口 */
     html, body {
       height: 100%;
-      margin: 0;
-      padding: 0;
+      margin: 10px;
+      padding: 10px;
     }
 
     /* 居中显示内容 */
@@ -24,64 +24,65 @@
       max-width: 100%;
       height: auto;
     }
+
+    /* 页脚样式 */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 5px 0;
+    }
   </style>
 </head>
 <body>
-  <br/>
+
   <h1>是兄弟就找我，无兄弟不传奇！</h1>
-  <a href="https://www.521f.com">
-    <img src="ad.jpg" alt="广告图片">
+  <a href="?hinas" onclick="trackVisit()">
+    <img id="adImage" src="ad.jpg" alt="广告图片">
   </a>
-<script language="JavaScript">
-<!-- 
-var caution = false
-function setCookie(name, value, expires, path, domain, secure) {
-        var curCookie = name + "=" + escape(value) +
-                ((expires) ? "; expires=" + expires.toGMTString() : "") +
-                ((path) ? "; path=" + path : "") +
-                ((domain) ? "; domain=" + domain : "") +
-                ((secure) ? "; secure" : "")
-        if (!caution || (name + "=" + escape(value)).length <= 4000)
-                document.cookie = curCookie
-        else
-                if (confirm("Cookie exceeds 4KB and will be cut!"))
-                        document.cookie = curCookie
-}
-function getCookie(name) {
-        var prefix = name + "="
-        var cookieStartIndex = document.cookie.indexOf(prefix)
-        if (cookieStartIndex == -1)
-                return null
-        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-        if (cookieEndIndex == -1)
-                cookieEndIndex = document.cookie.length
-        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
-}
-function deleteCookie(name, path, domain) {
-        if (getCookie(name)) {
-                document.cookie = name + "=" + 
-                ((path) ? "; path=" + path : "") +
-                ((domain) ? "; domain=" + domain : "") +
-                "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+
+  <footer>
+    <p>点击链接访问次数: <span id="visitCount">加载中...</span></p>
+  </footer>
+
+  <script>
+    // 获取并显示访问次数
+    function getVisitCount() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            document.getElementById('visitCount').innerText = xhr.responseText;
+          } else {
+            console.error('获取访问次数失败');
+          }
         }
-}
-function fixDate(date) {
-        var base = new Date(0)
-        var skew = base.getTime()
-        if (skew > 0)
-                date.setTime(date.getTime() - skew)
-}
-var now = new Date()
-fixDate(now)
-now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-var visits = getCookie("counter")
-if (!visits)
-        visits = 1
-else
-        visits = parseInt(visits) + 1
-setCookie("counter", visits, now)
-document.write("您是到访的第" + visits + "位用户！")
-// -->
-</script>
+      };
+      xhr.open('GET', 'ad_get_visit_count.php', true);
+      xhr.send();
+    }
+
+    // 点击图片时触发的函数，用于向后端发送访问计数请求
+    function trackVisit() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'ad_visit.php', true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          getVisitCount(); // 更新访问次数显示
+        }
+      };
+      xhr.send();
+      
+      // 更新图片的点击链接，可以将其指向实际的广告目标链接
+      document.getElementById('adImage').parentNode.href = "https://www.521f.com";
+    }
+
+    // 页面加载完成后获取并显示访问次数
+    window.onload = function() {
+      getVisitCount();
+    };
+  </script>
 </body>
 </html>
