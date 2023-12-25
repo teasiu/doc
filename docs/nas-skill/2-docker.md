@@ -108,6 +108,8 @@ Server: Docker Engine - Community
 注意：请确保你的磁盘稳定在线，否则将会程序错误无法访问 docker .
 :::
 
+请参考以下命令修改配置文件  
+
 ```html
 systemctl stop docker               # 停止 Docker 服务
 mkdir -p /mnt/sda1/docker           # 建立文件夹
@@ -116,11 +118,15 @@ vi /lib/systemd/system/docker.service   # 编辑配置文件
 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 插上一句 --data-root /mnt/sda1/docker 变为如下:
 ExecStart=/usr/bin/dockerd --data-root /mnt/sda1/docker -H fd:// --containerd=/run/containerd/containerd.sock
-systemctl daemon-reload
-systemctl start docker
+systemctl daemon-reload  # 更新启动组件
+systemctl start docker # 启动 docker 服务
 ```
 
-## 注意
+参考图例：
+![](./img/docker-root.jpg)  
+
+
+## 扩展
 
 海纳思系统内置了几个一键安装的脚本，非常便利。推荐需要时选择。
 
