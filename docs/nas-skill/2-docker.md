@@ -111,7 +111,7 @@ Server: Docker Engine - Community
 注意：请确保你的磁盘稳定在线，否则将会程序错误无法访问 docker .
 :::
 
-请参考以下命令修改配置文件  
+请参考以下命令修改配置文件`/lib/systemd/system/docker.service`  
 
 ```html
 systemctl stop docker               # 停止 Docker 服务
@@ -127,6 +127,8 @@ systemctl start docker # 启动 docker 服务
 
 参考图例：
 ![](./img/docker-root.jpg)  
+
+修改完毕，重启服务后，你再执行拉取的镜像和运行的容器，就会到你指定的磁盘了。
 
 
 ## 扩展
