@@ -14,37 +14,37 @@ sidebar_position: 2
 install-docker.sh
 ```
 
-```consle
-root@hi3798mv200:~# docker version
-Client:
- Version:           20.10.12
- API version:       1.41
- Go version:        go1.16.2
- Git commit:        20.10.12-0ubuntu2~20.04.1
- Built:             Wed Apr  6 02:16:12 2022
- OS/Arch:           linux/arm64
- Context:           default
- Experimental:      true
+![](./img/install-docker.png)
 
-Server:
+```consle
+root@hinas:~# docker version
+Client: Docker Engine - Community
+ Version:           24.0.7
+ API version:       1.43
+ Go version:        go1.20.10
+ Git commit:        afdd53b
+ Built:             Thu Oct 26 09:08:47 2023
+ OS/Arch:           linux/arm
+ Context:           default
+
+Server: Docker Engine - Community
  Engine:
-  Version:          20.10.12
-  API version:      1.41 (minimum version 1.12)
-  Go version:       go1.16.2
-  Git commit:       20.10.12-0ubuntu2~20.04.1
-  Built:            Thu Feb 10 15:03:35 2022
-  OS/Arch:          linux/arm64
+  Version:          24.0.7
+  API version:      1.43 (minimum version 1.12)
+  Go version:       go1.20.10
+  Git commit:       311b9ff
+  Built:            Thu Oct 26 09:08:47 2023
+  OS/Arch:          linux/arm
   Experimental:     false
  containerd:
-  Version:          1.5.9-0ubuntu1~20.04.4
-  GitCommit:
+  Version:          1.6.26
+  GitCommit:        3dd1e886e55dd695541fdcd67420c2888645a495
  runc:
-  Version:          1.1.0-0ubuntu1~20.04.1
-  GitCommit:
+  Version:          1.1.10
+  GitCommit:        v1.1.10-0-g18a0cb0
  docker-init:
   Version:          0.19.0
-  GitCommit:
-
+  GitCommit:        de40ad0
 ```
 
 - 拉取镜像
