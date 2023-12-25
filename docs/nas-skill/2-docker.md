@@ -69,6 +69,9 @@ Server: Docker Engine - Community
 
   会列出所有运行中的容器名称和 ```id```
 
+![](./img/containerid.jpg)
+
+
 - 停止运行中的容器
 
   ```bash
