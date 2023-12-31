@@ -34,6 +34,8 @@ reg name : mdmo1g
 
 ![](./v9c.jpg)  
 
+![](./v9c-pack.png)  
+
 
 
 ## Hi3798mv200
