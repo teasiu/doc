@@ -29,5 +29,14 @@ sudo apt update && sudo apt install frpc-histb
 
 ## 开通 frpc 账号
 
+如果你没有自己搭建的 frps 服务器，可以捐赠 25 元1年，使用作者搭建的。
+
+未开通前：终端输入 `kaitong-frp`  
+
+![](./img/frpc1.jpg)  
+
+将你的设备识别码发给作者，捐赠后，继续输入 `kaitong-frp` 即可开通。
+
+
 ## 手动配置案例
 
