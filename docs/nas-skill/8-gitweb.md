@@ -113,11 +113,13 @@ fastcgi_param GIT_PROJECT_ROOT /mnt/sda1/gitweb;
 
 3.如果原来已经有的仓库需要迁移，就拷贝过去  
 
-/mnt/sda1/gitweb
-
 ```bash
 cp -ar /var/lib/git/* /mnt/sda1/gitweb/
 ```
+
+4.最后，重启一次机顶盒
+
+
 
 ## 注意事项
 
