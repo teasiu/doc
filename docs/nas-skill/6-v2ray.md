@@ -194,3 +194,9 @@ curl --socks5 127.0.0.1:10808 google.com
 
 ## 注意事项
 
+- 注意配置文件的 json 格式问题。  
+- 注意定期 `systemctl restart v2ray` 保持联通。  
+- 如果盒子本身需要使用代理，则输入命令 `export https_proxy="127.0.0.1:10809"` 即可  
+- 停止使用则 `unset https_proxy`  
+
+
