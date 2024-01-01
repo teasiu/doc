@@ -91,4 +91,9 @@ remotePort = 21590
 
 ![](./img/frpc3.jpg)
 
+:::tip
+无论你重置系统或者重新刷机，海思芯片的机顶盒，账号是绑定cpu的，  
+都可以在终端输入 `nasupdate` 然后输入 `kaitong-frp` 命令复通。
+:::
+
 
