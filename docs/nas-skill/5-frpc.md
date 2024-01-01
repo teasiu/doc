@@ -121,7 +121,34 @@ requestHeaders.set.x-from-where = "frp"
 ```
 
 
-### 3.增加穿透访问其他端口的程序或者其他局域网内设备
+### 3.增加穿透访问其他端口的程序
 
-你可以通过修改
+你可以通过修改 `/etc/frp/frpc.toml` 配置文件，增加你需要的穿透。
+
+这里举两个例子：  
+
+1.穿透盒子的 `青龙面板` 程序5700端口(用默认域名)  
+
+```bash
+[[proxies]]
+name = "zhangsandeqinglong"
+type = "http"
+localPort = 5700
+subdomain = "zhangsandeqinglong"
+```
+
+这样你就可以访问域名直达你的青龙面板程序了： `http://zhangsandeqinglong.any168.net`  
+
+2.穿透盒子的 `青龙面板` 程序5700端口(用自己的域名)
+
+```bash
+[[proxies]]
+name = "zhangsandeqinglong"
+type = "http"
+localPort = 5700
+customDomains = ["ql.yourdomain.com"]
+```
+
+这样你就可以访问域名直达你的青龙面板程序了： `http://ql.yourdomain.com` 
+
 
