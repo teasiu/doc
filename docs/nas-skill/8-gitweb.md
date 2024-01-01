@@ -92,12 +92,17 @@ rm -rf /var/lib/git/abc.git
 ## 将仓库存储空间迁移到外置硬盘
 
 为了更大的存储空间，迁移到外置的硬盘，比如 `/mnt/sda1`   
-在挂载的硬盘里建立文件夹 gitweb ```mkdir -p /mnt/sda1/gitweb```   
+在挂载的硬盘里建立文件夹 gitweb 
+```bash
+mkdir -p /mnt/sda1/gitweb
+```   
+
 只需要修改几处配置文件即可：  
 
 1.修改配置文件： `/etc/gitweb.conf`    
 
 将第2行的 ```$projectroot = "/var/lib/git";```    
+
 修改为： ```$projectroot = "/mnt/sda1/gitweb";```   
 
 2.修改nginx文件 `/etc/nginx/sites-available/nginx_gitweb`   
