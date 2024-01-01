@@ -33,4 +33,12 @@ sudo apt-get autoremove -y
 
 ## 使用
 
+### 1.配置文件和位置
+
+- nginx的配置文件在 `/etc/nginx/sites-available/nginx_gitweb`   
+- git仓库根目录在  `/var/lib/git`   
+
+### 2.
+
+
 ## 注意事项
