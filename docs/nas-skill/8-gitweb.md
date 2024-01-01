@@ -83,6 +83,42 @@ git clone root@192.168.111.155:/var/lib/git/abc.git
 git clone http://192.168.111.155:8011/clone/abc.git
 ```
 
+### 7.删除仓库 `abc` 
+
+```bash
+rm -rf /var/lib/git/abc.git
+```
+
+## 将仓库存储空间迁移到外置硬盘
+
+为了更大的存储空间，迁移到外置的硬盘，比如 `/mnt/sda1`   
+在挂载的硬盘里建立文件夹 gitweb ```mkdir -p /mnt/sda1/gitweb```   
+只需要修改几处配置文件即可：  
+
+1.修改配置文件： `/etc/gitweb.conf`    
+
+将地2行的 ```$projectroot = "/var/lib/git";```    
+修改为： ```$projectroot = "/mnt/sda1/gitweb";```   
+
+2.修改nginx文件 `/etc/nginx/sites-available/nginx_gitweb`   
+
+将第24行的  
+```bash
+fastcgi_param GIT_PROJECT_ROOT /var/lib/git;
+```
+修改为：  
+```bash
+fastcgi_param GIT_PROJECT_ROOT /mnt/sda1/gitweb;
+```
+
+3.如果原来已经有的仓库需要迁移，就拷贝过去  
+
+/mnt/sda1/gitweb
+
+```bash
+cp -ar /var/lib/git/* /mnt/sda1/gitweb/
+```
+
 ## 注意事项
 
 等待群友体验和反馈
