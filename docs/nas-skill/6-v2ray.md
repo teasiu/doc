@@ -92,11 +92,11 @@ sidebar_position: 6
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "northflank2.hi-op.tk"
+          "serverName": "nf.hi-op.tk"
         },
         "wsSettings": {
           "headers": {
-            "Host": "northflank2.hi-op.tk"
+            "Host": "nf.hi-op.tk"
           },
           "path": "/vmess"
         }
@@ -157,5 +157,12 @@ systemctl daemon-reload
 systemctl restart v2ray
 ```
 
-## 注意事项
+测试是否联通外网：
+
+```bash
+curl 
+```
+
+
+## 应用
 
