@@ -18,6 +18,11 @@ sudo apt-get update
 sudo apt-get install gitweb-histb -y
 ```
 
+安装完成后，首页的内网选项页就会增加一个图标，点击进去即可  
+![](./img/gitweb1.jpg)  
+![](./img/gitweb2.jpg)    
+
+
 ### 卸载
 
 在终端中输入如下命令即可卸载：  
