@@ -82,6 +82,9 @@ git clone root@192.168.111.155:/var/lib/git/abc.git
 ```bash
 git clone http://192.168.111.155:8011/clone/abc.git
 ```
+为什么作者做这个方案？因为这样，如果用户有公网IP或者穿透域名到8011端口，  
+用户就可以远程 git clone 啦！体贴吧。 
+
 
 ### 7.删除仓库 `abc` 
 
