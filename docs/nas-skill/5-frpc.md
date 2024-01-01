@@ -24,6 +24,8 @@ sudo apt purge frpc-histb
 
 ```bash
 sudo apt update && sudo apt install frpc-histb
+sudo reboot
+#重新安装可能需要重启系统
 ```
 
 
@@ -79,6 +81,14 @@ remotePort = 21590
 客户端远程登录示例：21590端口是一个例子，请填写你的盒子实际分配的端口。  
 ![](./img/frpc2.png)
 
+### 2.远程访问你的盒子首页
 
+开通后，会默认分配一个域名到你的盒子首页：
+
+这个域名可以直达你的盒子首页外网的程序。相当于你的盒子首页就是一个公开的网站。
+
+你可以在 `使用说明`里找到这个域名；或者终端输入 `kaitong-frp -u` 显示出来。
+
+![](./img/frpc3.jpg)
 
 
