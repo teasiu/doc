@@ -144,7 +144,7 @@ sidebar_position: 6
 安全：`tls`  
 id密钥：`6cb24e08-069f-4b20-83bc-d9ebc1481e35`  
 服务器域名：`nf.hi-op.tk`  
-伪装文件夹：`/vmess` 
+伪装文件夹：`/vmess`   
 共享端口：`10808`  `10809`  
 
 这些就是你的节点的关键信息，替换后即可。
@@ -160,8 +160,12 @@ systemctl restart v2ray
 测试是否联通外网：
 
 ```bash
-curl 
+curl --socks5 127.0.0.1:10808 google.com
 ```
+
+当你看到返回信息有301字样，则顺利联通外网，你就可以通过你的节点进行代理上网了。
+
+![](./img/curl-google.jpg)  
 
 
 ## 应用
