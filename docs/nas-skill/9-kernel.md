@@ -17,12 +17,25 @@ sidebar_position: 9
 
 ### 使用 APT 直接获取新内核
 
-在终端中输入如下命令即可更新（还在开发中）：  
+在终端中输入如下命令即可更新：  
 
 ```bash
 sudo apt-get update
-sudo apt-get install kernel-histb -y
+sudo apt-get search histb kernel
 ```
+
+你会得到一个类似下图的匹配你的机顶盒的海思新内核。
+
+![](./img/apt-search.jpg)  
+
+接着执行你机顶盒对应的机型安装新内核，最后重启系统即可。  
+```
+sudo apt install kernel-hi3798mv200-82120168
+或者例如：
+sudo apt install kernel-hi3798mv100-82120168
+```
+
+
 
 ### 新内核包含在最新的刷机包里
 
