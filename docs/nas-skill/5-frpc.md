@@ -179,5 +179,14 @@ systemctl restart frpc		#重启服务
 
 第二步：使用这个域名建站；  
 
+![](./img/frpc4.jpg)  
+
+第三步：设置为默认站点；  
+第四步：我就建个站：  
+
+![](./img/frpc5.jpg)
+
+
+
 
 
