@@ -171,5 +171,13 @@ frpc -c /etc/frp/frpc.toml		#试运行上面修改过的配置
 systemctl restart frpc		#重启服务
 ```
 
+## 拓展 （机智的用法）
+
+如果你使用的是 [宝塔专用固件](/baota)，你就可以轻松搭建自己的站点。   
+
+第一步： `kaitong-frp` 获得穿透分配的域名；   
+
+第二步：使用这个域名建站；  
+
 
 
