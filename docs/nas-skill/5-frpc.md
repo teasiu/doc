@@ -28,6 +28,10 @@ sudo reboot
 #重新安装可能需要重启系统
 ```
 
+:::tip
+FRP软件的的官方教程：[FRP官方教程网站](https://gofrp.org/zh-cn/docs/)
+:::
+
 
 ## 开通 frpc 账号
 
@@ -87,13 +91,37 @@ remotePort = 21590
 
 这个域名可以直达你的盒子首页外网的程序。相当于你的盒子首页就是一个公开的网站。
 
-你可以在 `使用说明`里找到这个域名；或者终端输入 `kaitong-frp -u` 显示出来。
+你可以在 `使用说明` 里找到这个域名；或者终端输入 `kaitong-frp -u` 显示出来。
 
 ![](./img/frpc3.jpg)
 
 :::tip
-无论你重置系统或者重新刷机，海思芯片的机顶盒，账号是绑定cpu的，  
+无论你重置系统或者重新刷机，海思芯片的机顶盒，账号是绑定cpu的，(S805盒子重置系统也不会变)  
 都可以在终端输入 `nasupdate` 然后输入 `kaitong-frp` 命令复通。
 :::
 
+注意：一个穿透的域名对应一个穿透的端口。
+
+配置文件里的穿透模块示例：  
+
+```bash
+[[proxies]]
+name = "xxxxx"
+type = "https"
+subdomain = "nas-xxxxx"
+#如果你有自己的域名,可以同时打开这行,你的域名要解析到frps服务器
+#customDomains = ["hinas.yourdomain.com"]
+[proxies.plugin]
+type = "https2http"
+localAddr = "127.0.0.1:80"
+#如果使用自己的域名,请自行制作你的SSL替换到下面文件位置
+crtPath = "/etc/frp/slitaz.tk.crt"
+keyPath = "/etc/frp/slitaz.tk.key"
+requestHeaders.set.x-from-where = "frp"
+```
+
+
+### 3.增加穿透访问其他端口的程序或者其他局域网内设备
+
+你可以通过修改
 
