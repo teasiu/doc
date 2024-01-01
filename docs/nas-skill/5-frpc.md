@@ -40,3 +40,39 @@ sudo apt update && sudo apt install frpc-histb
 
 ## 手动配置案例
 
+如果你开通的是作者的 frpc 账号，首次使用是默认穿透 22 端口和 web 程序的 443 端口。
+
+配置文件位置： `/etc/frp/frpc.toml`
+
+此时，你可以使用两个基本功能：  
+
+### 1. 远程 ssh 访问盒子终端后台 
+
+```bash
+ssh -p xxxxx root@any168.net
+```
+
+xxxxx 是指随机分配给你账号的 frps 服务器端口。
+
+配置的模块示例：
+
+```bash
+...#前面的是账号信息（不可泄露）
+
+[[proxies]]
+name = "ssh-21590"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 21590
+
+#这里的21590端口就是直达你的盒子的网路
+```
+
+
+
+
+
+
+
+
