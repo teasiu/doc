@@ -149,6 +149,27 @@ localPort = 5700
 customDomains = ["ql.yourdomain.com"]
 ```
 
+你的域名需要解析到any168.net的IP。  
+
 这样你就可以访问域名直达你的青龙面板程序了： `http://ql.yourdomain.com` 
+
+注意：修改配置后，需要运行重启 frpc 服务命令
+
+```bash
+systemctl restart frpc
+```
+
+## 注意事项
+
+检查自己修改的配置是否成功(多人使用, 只能使用唯一的xxx名称):   
+```bash
+systemctl stop frpc			#先停止frp客户端的服务
+frpc -c /etc/frp/frpc.toml		#试运行上面修改过的配置
+#最后, 如果出现的都是蓝色的并且都显示success的结果, 则ok,
+#否则重新修改xxx的名称避免和其他人的设置重复
+#按ctrl+c结束命令
+systemctl restart frpc		#重启服务
+```
+
 
 
