@@ -97,19 +97,14 @@ rm -rf /var/lib/git/abc.git
 
 1.修改配置文件： `/etc/gitweb.conf`    
 
-将地2行的 ```$projectroot = "/var/lib/git";```    
+将第2行的 ```$projectroot = "/var/lib/git";```    
 修改为： ```$projectroot = "/mnt/sda1/gitweb";```   
 
 2.修改nginx文件 `/etc/nginx/sites-available/nginx_gitweb`   
 
-将第24行的  
-```bash
-fastcgi_param GIT_PROJECT_ROOT /var/lib/git;
-```
-修改为：  
-```bash
-fastcgi_param GIT_PROJECT_ROOT /mnt/sda1/gitweb;
-```
+将第24行的  `fastcgi_param GIT_PROJECT_ROOT /var/lib/git;`  
+
+修改为： `fastcgi_param GIT_PROJECT_ROOT /mnt/sda1/gitweb;`  
 
 3.如果原来已经有的仓库需要迁移，就拷贝过去  
 
