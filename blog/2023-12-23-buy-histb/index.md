@@ -13,11 +13,11 @@ tags: [hi3798m]
 
 型号：华为悦盒ec6108v9c  
 
-芯片：海思hi3798mv100  
+芯片：海思hi3798mv100  4核1.4Hz  coremark跑分 9000-10000  
 
 reg name : mdmo1g  
  
-1G 运存 + 8G 存储  
+1G 运存 + 8G 存储  USB2.0x2 支持TF卡  
 
 购机一律包含专业版固件，专业版详情请阅读 [社区版和专业版有什么区别？](/professional)  
 
@@ -48,11 +48,11 @@ reg name : mdmo1g
 
 型号：魔百盒cm301  
 
-芯片：海思hi3798mv300  
+芯片：海思hi3798mv300  四核1.6Hz  coremark跑分 20000-21000  
 
 reg name : mv3dmf  
  
-2G 运存 + 8G 存储  
+2G 运存 + 8G 存储  USB2.0x2 支持TF卡  
 
 购机一律包含专业版固件，专业版详情请阅读 [社区版和专业版有什么区别？](/professional)  
 
@@ -67,7 +67,6 @@ reg name : mv3dmf
 点击链接直接打开
 ```
 
-![](./cm301.jpg)  
 
 ![](./cm301-pack.png)  
 
