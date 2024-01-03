@@ -102,32 +102,32 @@ remotePort = 21590
 
 注意：一个穿透的域名对应一个穿透的端口。
 
-配置文件里的穿透模块示例：  
+配置文件里的穿透模块示例 (https)：  
 
 ```bash
 [[proxies]]
-name = "xxxxx"
+name = "wodemingzijiaozuozhangsan"
 type = "https"
-subdomain = "nas-xxxxx"
+subdomain = "nas-zhangsan"
 #如果你有自己的域名,可以同时打开这行,你的域名要解析到frps服务器
-#customDomains = ["hinas.yourdomain.com"]
+#customDomains = ["www.yourdomain.com"]
 [proxies.plugin]
 type = "https2http"
 localAddr = "127.0.0.1:80"
 #如果使用自己的域名,请自行制作你的SSL替换到下面文件位置
-crtPath = "/etc/frp/slitaz.tk.crt"
-keyPath = "/etc/frp/slitaz.tk.key"
+crtPath = "/etc/frp/yourdomain.crt"
+keyPath = "/etc/frp/yourdomain.key"
 requestHeaders.set.x-from-where = "frp"
 ```
 
 
-### 3.增加穿透访问其他端口的程序
+### 3.增加穿透访问其他端口的程序(http)
 
 你可以通过修改 `/etc/frp/frpc.toml` 配置文件，增加你需要的穿透。
 
 这里举两个例子：  
 
-1.穿透盒子的 `青龙面板` 程序5700端口(用默认域名)  
+1.穿透盒子的 `青龙面板` 程序5700端口(用默认any168.net域名)  
 
 ```bash
 [[proxies]]
@@ -137,9 +137,11 @@ localPort = 5700
 subdomain = "zhangsandeqinglong"
 ```
 
-这样你就可以访问域名直达你的青龙面板程序了： `http://zhangsandeqinglong.any168.net`  
+这样你就可以访问域名直达你的青龙面板程序了： `http://zhangsandeqinglong.any168.net`    
+注意，只需要填写子域名，这个子域名你可以自己定义，不能跟他人重复。  
 
-2.穿透盒子的 `青龙面板` 程序5700端口(用自己的域名)
+
+2.穿透盒子的 `青龙面板` 程序5700端口(用自己的个人域名)
 
 ```bash
 [[proxies]]
@@ -149,7 +151,8 @@ localPort = 5700
 customDomains = ["ql.yourdomain.com"]
 ```
 
-你的域名需要解析到any168.net的IP。  
+
+你的个人域名需要解析到any168.net的IP。终端输入 `nslookup any168.net` 可以获得服务器IP。    
 
 这样你就可以访问域名直达你的青龙面板程序了： `http://ql.yourdomain.com` 
 
@@ -158,6 +161,31 @@ customDomains = ["ql.yourdomain.com"]
 ```bash
 systemctl restart frpc
 ```
+
+
+### 4.增加穿透访问其他端口的程序(https)
+
+```bash
+[[proxies]]
+name = "wodemingzijiaozuozhangsan"
+type = "https"
+subdomain = "zhangsandeqinglong"
+[proxies.plugin]
+type = "https2http"
+localAddr = "127.0.0.1:5700"
+crtPath = "/etc/frp/frpc.crt"
+keyPath = "/etc/frp/frpc.key"
+requestHeaders.set.x-from-where = "frp"
+```
+
+这样你就可以访问域名直达你的青龙面板程序了： `https://zhangsandeqinglong.any168.net` 
+
+注意：修改配置后，需要运行重启 frpc 服务命令
+
+```bash
+systemctl restart frpc
+```
+
 
 ## 注意事项
 
