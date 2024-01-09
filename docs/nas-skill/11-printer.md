@@ -29,11 +29,13 @@ sidebar_position: 11
 
 ### 3.进入管理页面  
 
-浏览器会打开新窗口进入 CPUS 管理页面，选择 Administrator 标签然后点击 Add Printer 按钮进入添加打印机步骤  
+浏览器会打开新窗口进入 CPUS 管理页面，选择 `管理` 标签然后点击 `Add Printer` 按钮进入添加打印机步骤  
 
 用户名和密码，请填写用户名 root 和你设置的终端密码。（默认密码 ecoo1234）  
 
-![](./img/printer-cups.jpg)
+![](./img/printer-cups.jpg)  
 
+
+### 4.添加你的打印机  
 
 
