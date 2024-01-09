@@ -76,17 +76,21 @@ sidebar_position: 11
 如果你的打印机是惠普系列的打印机，根据官方要求，  
 首次使用需要执行一次许可认证。  
 
-在终端中输入命令 `ubuntu` 即可。  
+在终端中输入命令 `hp-plugin-ubuntu` 即可。  
+
+### 3.惠普系列打印机需要许可认证第二种方法
 
 或者增加安装一个工具包，然后在弹出的窗口界面点击同意。  
 
 ```bash
 apt update
-apt install pyqt5-dev-tool
+apt install pyqt5-dev-tools
 hp-plugin 
 ``` 
 
+![](./img/printer-hp-plugin.jpg)   
 
-![](./img/printer-hp-plugin.jpg)  
+![](./img/printer-hp-plugin2.jpg)  
+
 
 
