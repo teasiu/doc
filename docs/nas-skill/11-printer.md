@@ -66,6 +66,10 @@ sidebar_position: 11
 
 ### 1.本站收集的PPD打印机驱动文件
 
+:::tip
+[本站收集的PPD打印机驱动文件](https://alist.ecoo.top/aliyun/Linux%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8)
+:::
+
 
 ### 2.惠普系列打印机需要许可认证
 
