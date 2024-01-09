@@ -62,6 +62,27 @@ sidebar_position: 11
 ![](./img/printer-test.png)
 
 
+## 注意事项  
 
+### 1.本站收集的PPD打印机驱动文件
+
+
+### 2.惠普系列打印机需要许可认证
+
+如果你的打印机是惠普系列的打印机，根据官方要求，  
+首次使用需要执行一次许可认证。  
+
+在终端中输入命令 `ubuntu` 即可。  
+
+或者增加安装一个工具包，然后在弹出的窗口界面点击同意。  
+
+```bash
+apt update
+apt install pyqt5-dev-tool
+hp-plugin 
+``` 
+
+
+![](./img/printer-hp-plugin.jpg)  
 
 
