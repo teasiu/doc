@@ -92,5 +92,6 @@ hp-plugin
 
 ![](./img/printer-hp-plugin2.jpg)  
 
+最后继续进行打印测试即可。  
 
 
