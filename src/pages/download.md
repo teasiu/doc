@@ -12,13 +12,13 @@ title: 系统固件下载
 ## 固件下载分流地址
 
 ## 1.alist 阿里云盘
-[https://alist.ecoo.top](https://alist.ecoo.top)
+[https://alist.ecoo.top](https://alist.ecoo.top/aliyun/system)
 
 ## 2.justlist 天翼云盘
-[https://dl.histb.com](https://dl.histb.com)
+[https://dl.histb.com](https://dl.histb.com/#/list/189cn/723241104505487269)
 
 ## 3.onedrive
-[https://onedrive.ecoo.top](https://onedrive.ecoo.top)
+[https://onedrive.ecoo.top](https://onedrive.ecoo.top/zh-CN/20231201/)
 
 ## 4.百度网盘永久分享
 [百度网盘+提取码 ecoo](https://pan.baidu.com/s/1jleQ-9j4rSw0cwxeYLzyPg?pwd=ecoo)  
