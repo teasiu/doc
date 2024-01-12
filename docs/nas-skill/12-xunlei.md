@@ -68,6 +68,9 @@ sudo uninstall-xunlei.sh
 ![](./img/xunlei3.jpg)  
 
 
+## 备注
+
+本程序收集于开源网络，原址在 `https://github.com/cnk3x/xunlei/` ,非官方。
 
 
 
