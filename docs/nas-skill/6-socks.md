@@ -13,7 +13,7 @@ sidebar_position: 6
 ## 开始搭建
 
 :::tip
-在海纳思系统后台终端输入 ```install-v2ray.sh``` 即可一键搭建v2ray客户端
+在海纳思系统后台终端输入 ```install-v2ray.sh --version v5.6.0``` 即可一键搭建v2ray客户端
 :::
 
 如下图：  
