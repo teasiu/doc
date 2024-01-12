@@ -28,7 +28,7 @@ sudo apt install install-xunlei
 
 :::tip
 你必须事先插入一个 U 盘或者 USB 硬盘或 TF 卡， 作为迅雷下载的目的地磁盘。  
-并使用 format-disk.sh 将它格式化为 ext4 文件系统、
+并使用 format-disk.sh 将它格式化为 ext4 文件系统.  
 :::
 
 接着运行一键脚本即可安装：  
@@ -50,6 +50,12 @@ sudo install-xunlei.sh
 ![](./img/xunlei4.jpg)  
 
 扫码登录你的迅雷账号即可。  
+
+:::tip
+迅雷下载目的地文件夹是你的挂载磁盘 `/mnt/sda1` 的 `xunleidownloads`  
+迅雷配置文件位置在 `/opt/xunlei`
+:::
+
 
 ## 一键卸载迅雷
 
