@@ -26,7 +26,7 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
-
+  
   presets: [
     [
       'classic',
@@ -55,6 +55,12 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [require.resolve("@cmfcmf/docusaurus-search-local"), {
+      indexPages: true
+    }],
+  ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
