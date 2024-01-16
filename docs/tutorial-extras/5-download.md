@@ -67,3 +67,35 @@ vi /usr/local/aria2/aria2.conf
 
 ![](./img/transmission.png)
 
+## 直接下载到电脑共享文件夹
+
+打开文件管理器，新建文件夹share，右键文件夹，点击属性，选择共享选项，点击共享按钮
+
+![](.\img\shareFolderSetting1.png)
+
+
+
+设置共享用户，可以选择Everyone或者创建一个用于共享的账号，这里以账号”ZX“为例
+
+![](.\img\shareFolderSetting2.png)
+
+修改权限级别为“读取/写入”，最后确认共享
+
+![](.\img\shareFolderSetting3.png)
+
+
+
+windows的设置到此为止，浏览器打开hinas的终端后台(设备IP:7681)
+
+```shell
+#执行下面安装命令
+sudo apt-get install cifs-utils
+mkdir /mnt/share
+#挂载windows共享的文件夹，将主机192.168.1.3共享的目录share挂载到/mnt/share
+sudo mount -t cifs //192.168.1.3/share /mnt/share -o username=ZX,password=ZX,vers=2.0
+```
+
+![](.\img\shareFolderSetting4.png)
+
+最后按照上面的修改下载路径的方法，将路径改为/mnt/share即可实现直接将下载的文件保存到windows
+

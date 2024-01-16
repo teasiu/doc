@@ -35,7 +35,7 @@ sidebar_position: 1
 
 终端输入以下命令进行更改：
 
-```console
+```shell
 root@hi3798mv200:~# passwd root
 New password:
 Retype new password:
