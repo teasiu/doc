@@ -55,12 +55,22 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [require.resolve("@cmfcmf/docusaurus-search-local"), {
-      indexPages: true
-    }],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        language: ["en", "zh"],
+        indexBlog: false,
+        docsRouteBasePath: "/docs",
+        docsDir: "docs",
+      }),
+    ],
   ],
-  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
