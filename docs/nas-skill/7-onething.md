@@ -6,7 +6,7 @@ sidebar_position: 7
 
 已经很多群友在安装使用，群主测试机每天都有可接受的收益幅度。
 
-[![图片描述](./img/onething.jpg)](https://act.walk-live.com/acts/invite/v3/?inviteid=cb9bbacd)
+[![图片](./img/onething.jpg)](https://act.walk-live.com/acts/invite/v3/?inviteid=cb9bbacd)
 
 
 **点击上面链接注册网心云即可获得 5 元奖励**
@@ -19,13 +19,13 @@ sidebar_position: 7
 
 **注意：在激活之前，无法进入终端，执行下面命令前请慎重考虑**
 
-网心云专用固件和海纳思免费固件互相切换脚本命令 mv100
+网心云专用固件和海纳思社区版固件互相切换脚本命令 mv100
 
 ```shell
 bash <(curl https://ecoo.top/mv100-wx.sh)
 ```
 
-网心云专用固件和海纳思免费固件互相切换脚本命令 mv200/300
+网心云专用固件和海纳思社区版固件互相切换脚本命令 mv200/300
 
 ```shell
 bash <(curl https://ecoo.top/mv23-wx.sh)
@@ -34,6 +34,12 @@ bash <(curl https://ecoo.top/mv23-wx.sh)
 注意：网心云专用固件只适配在海思cpu机型盒子刷入，不支持s805玩客云。  
 
 注意：你必须先刷好社区版的海纳思系统，再运行一键切换。  
+
+注意：网心云专用固件是纯净版系统，优化了跑容器魔方的配置。  
+
+注意：一键切换后请务必等待10分钟系统初始化，之前不可做任何操作。  
+
+切换后到路由器重新找自动分配的 IP ，浏览器打开首页，发激活码给群主激活。  
 
 
 ### 方法二：刷机包刷机
@@ -44,6 +50,8 @@ bash <(curl https://ecoo.top/mv23-wx.sh)
 
 浏览器访问设备 ip 首页，复制位于中间的一串长度 20 位的字符（设备码），发送给群主激活  
 在激活之前，无法进入终端  
+
+![](./img/onething2.png)  
 
 
 ## 3.使用
