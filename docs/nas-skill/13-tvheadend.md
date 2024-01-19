@@ -18,11 +18,11 @@ apt remove tvheadend -y
 
 填写用户名
 
-![image-20240119112539935](C:\Users\NHT\AppData\Roaming\Typora\typora-user-images\image-20240119112539935.png)
+![image-20240119112539935](.\img\tvheadend1.png)
 
 填写密码
 
-![image-20240119112626397](C:\Users\NHT\AppData\Roaming\Typora\typora-user-images\image-20240119112626397.png)
+![image-20240119112626397](.\img\tvheadend2.png)
 
 最后使用浏览器访问 http://设备 ip:9981 即可
 
@@ -38,7 +38,7 @@ apt remove tvheadend -y
 
    解决方法：使用管理终端或者文件管理器等工具，编辑文件"/var/lib/tvheadend/superuser"
 
-   ![image-20240119113412054](C:\Users\NHT\AppData\Roaming\Typora\typora-user-images\image-20240119113412054.png)
+   ![image-20240119113412054](.\img\tvheadend3.png)
 
    自行修改用户名和密码后保存（用户名和密码明文存储）
 
