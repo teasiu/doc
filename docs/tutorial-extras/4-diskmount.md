@@ -59,6 +59,17 @@ fdisk /dev/sda
 mkfs.ext4 /dev/sda1
 ```
 
+如果使用的u盘过老旧，可以将其格式为vfat
+
+```shell
+#安装格式化所需工具exfat-utils或者dosfstools
+sudo apt install exfat-utils
+#格式化
+sudo mkfs.vfat /dev/sda1
+```
+
+
+
 强烈建议：
 一个磁盘分区为一个区即可，无须多个分区，作为存储，多分区没有什么意义。  
 应该使用文件夹来区分用途，而不是使用分区来区分用途。  
