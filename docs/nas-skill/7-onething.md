@@ -6,7 +6,8 @@ sidebar_position: 7
 
 已经很多群友在安装使用，群主测试机每天都有可接受的收益幅度。
 
-<a style="margin: 0px auto;" href="https://act.walk-live.com/acts/invite/v3/?inviteid=cb9bbacd"><img src="./img/onething.jpg" width="800" height="300"></a>
+[![图片描述](./img/onething.jpg)](https://act.walk-live.com/acts/invite/v3/?inviteid=cb9bbacd)
+
 
 **点击上面链接注册网心云即可获得 5 元奖励**
 
@@ -134,4 +135,4 @@ task 502
 
 12. 更多的知识交流，请到社区去发帖求助或者互相指导。
 
-**免责声明：本固件只对海思机顶盒做了最完善地优化运行网心云容器魔方， 由于收益高低受网络，硬盘，时段，地区等多方面因素影响，本固件不对收益高低承担任何责任。**
+** 免责声明：本固件只对海思机顶盒做了最完善地优化运行网心云容器魔方， 由于收益高低受网络，硬盘，时段，地区等多方面因素影响，本固件不对收益高低承担任何责任。
