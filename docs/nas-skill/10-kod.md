@@ -46,6 +46,9 @@ insatll-kod.sh install
 
 ## 三、使用
 
+详细的使用方法，请参看：
+
+[可道云用户使用手册https://docs.kodcloud.com/user/](https://docs.kodcloud.com/user/)
 
 
 
