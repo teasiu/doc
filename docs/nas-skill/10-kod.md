@@ -50,7 +50,7 @@ insatll-kod.sh install
 
 详细的使用方法，请参看：
 
-[可道云用户使用手册https://docs.kodcloud.com/user/](https://docs.kodcloud.com/user/)
+可道云用户使用手册 [https://docs.kodcloud.com/user/](https://docs.kodcloud.com/user/)
 
 
 
