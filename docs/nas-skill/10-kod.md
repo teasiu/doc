@@ -53,5 +53,14 @@ insatll-kod.sh install
 可道云用户使用手册 [https://docs.kodcloud.com/user/](https://docs.kodcloud.com/user/)
 
 
+## 四、卸载
+
+一句命令即可卸载：  
+
+```bash
+install-kod.sh uninstall
+```
+
+注意：卸载后，php环境保留。可以借用给其他个人程序使用。
 
 
