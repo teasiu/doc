@@ -43,6 +43,8 @@ insatll-kod.sh install
 
 ![](./img/kod5.jpg)
 
+![](./img/kod6.jpg)
+
 
 ## 三、使用
 
