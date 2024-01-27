@@ -194,6 +194,18 @@ curl --socks5 127.0.0.1:10808 google.com
 ![](./img/firefoxset.png)  
 
 
+## 卸载
+
+终端输入：  
+
+```bash
+install-v2ray.sh --remove
+rm /usr/local/etc/v2ray/config.json
+```
+
+![](./img/v2ray-remove.jpg)  
+
+
 ## 注意事项
 
 - 注意配置文件的 json 格式问题。  

@@ -1,88 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>广告页面</title>
-  <style>
-    /* 让页面内容充满整个视口 */
-    html, body {
-      height: 100%;
-      margin: 10px;
-      padding: 10px;
-    }
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>海纳思系统官方通告</title>
+<style>
+body {
+    width: 40em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+.content pre{
+    position: relative;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+pre .btn-pre-copy{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0,0%,54.9%,.8);
+    transition: color .1s;
+}
+</style>
 
-    /* 居中显示内容 */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    /* 使图片适应手机屏幕 */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* 页脚样式 */
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 5px 0;
-    }
-  </style>
 </head>
 <body>
 
-  <h1>是兄弟就找我，无兄弟不传奇！</h1>
-  <a href="?hinas" onclick="trackVisit()">
-    <img id="adImage" src="ad.jpg" alt="广告图片">
-  </a>
+<header>
+	<h1>海纳思系统官方广告位招租</h1>
+</header>
 
-  <footer>
-    <p>点击链接访问次数: <span id="visitCount">加载中...</span></p>
-  </footer>
+<h2>22000+装机数</h2>
+<h2>日活6000+</h2>
+<h2>日增约100台</h2>
+<h2>要求：符合海纳思服务器的环境需求</h2>
+<h2>捐助并投放，与作者共赢！请联系本站</h2>
+<br/>
+<br/>邮箱 admin@ecoo.top
+<br/>
+<br/>
+<br/>
+<footer>
+	版权 © <span class="year">2023</span> <a href="http://www.ecoo.top/">www.ecoo.top</a>
+</footer>
+<br/><br/>
 
-  <script>
-    // 获取并显示访问次数
-    function getVisitCount() {
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-          if (xhr.status === 200) {
-            document.getElementById('visitCount').innerText = xhr.responseText;
-          } else {
-            console.error('获取访问次数失败');
-          }
-        }
-      };
-      xhr.open('GET', 'ad_get_visit_count.php', true);
-      xhr.send();
-    }
 
-    // 点击图片时触发的函数，用于向后端发送访问计数请求
-    function trackVisit() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'ad_visit.php', true);
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-          getVisitCount(); // 更新访问次数显示
-        }
-      };
-      xhr.send();
-      
-      // 更新图片的点击链接，可以将其指向实际的广告目标链接
-      document.getElementById('adImage').parentNode.href = "https://www.521f.com";
-    }
-
-    // 页面加载完成后获取并显示访问次数
-    window.onload = function() {
-      getVisitCount();
-    };
-  </script>
 </body>
 </html>
