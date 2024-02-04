@@ -145,6 +145,8 @@ install-teslamate1.sh #特斯拉远控系统
 
 1、安装 docker-compose 安装失败
 
+![](./img/docker1.png)
+
 原因网络问题，修改 dns 服务器地址
 
 ```shell
