@@ -82,12 +82,15 @@ Tvheadend 软件现在将开始扫描多路复用器的所有可用服务。
 ![](img/tvheadend8.png)
 
 现在需要做的就是点击 “完成 “按钮。
+
 接着配置方式如下：
+
 m3u 源管理：「设定 (Configuration)」 -> 「DVB 输入 (DVB Input)」 -> 「网络 (Network)」
 
 在这里可以新增删除编辑 m3u，编辑完要点击“Force Scan ”扫描。
 
 管理导入的频道：「设定 (Configuration)」 -> 「DVB 输入 (DVB Input)」 -> 「服务 (Services)」
+
 还要 Map services to channels（映射服务到频道），点击 Map services 里面的 Map all services（映射所有全部服务），播放客户端才能显示频道栏目。
 
 测试播放：
