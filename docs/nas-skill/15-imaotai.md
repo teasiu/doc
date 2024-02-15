@@ -42,6 +42,10 @@ apt remove imaotai-histb
  
 ### 2.登录预约程序
 
+打开海纳思系统i茅台预约程序图标链接地址：  
+
+![](./img/imaotai23.jpg)
+
 默认管理员(登录后自行修改)
 
 账号: `admin` 密码: `admin123`  
