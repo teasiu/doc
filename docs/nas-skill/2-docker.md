@@ -145,7 +145,7 @@ install-teslamate1.sh #特斯拉远控系统
 
 1、安装 docker-compose 安装失败
 
-![](./img/docker1.png)
+![](./img/docker1.jpg)
 
 原因网络问题，修改 dns 服务器地址
 
@@ -161,7 +161,7 @@ install-docker.sh
 ```
 
 
-## docker常用命令
+## 附1-docker常用命令
 
 ```
 #info|version
@@ -199,7 +199,7 @@ docker attach 		# 进入容器正在执行的终端
 docker cp 容器id:容器内路径  主机目的路径	#从容器内拷贝到主机上
 ```
 
-## docker命令大全
+## 附2-docker命令大全
 
 ```
 docker attach	#连接到正在运行中的容器
