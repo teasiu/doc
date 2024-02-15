@@ -2,24 +2,26 @@
 sidebar_position: 15
 ---
 
-# imaotai 使用教程
+# i茅台 使用教程
 
-注意：只有专业版才可安装！
+
+注意：仅提供专业版系统才可安装！非专业版请勿安装，否则安装过程失败，将需要执行purge软件包的操作。  
+
 
 ## 安装与卸载
 
+- 安装
+
 ```shell
-
-# 安装
-
 apt install imaotai-histb -y
+```
+- 卸载
 
-#卸载
-
+```shell
 apt remove imaotai-histb
 ```
 
-安装完成后访问 http://设备 IP:9999 即可
+安装完成后访问 `http://IP:9999` 即可
 
 默认管理员(登录后自行修改)
 
