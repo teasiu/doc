@@ -2,9 +2,9 @@
 sidebar_position: 15
 ---
 
-# i茅台 使用教程
+# i茅台预约程序使用教程
 
-i 茅台 程序是github上的开源项目，  
+i茅台预约程序是github上的开源项目，  
 本站将项目的安装包定制适配到海纳思系统。  
 采用的程序包含 `mysql redis java` 3项，运行后约占用 200M + 运存。  
 建议自行斟酌使用。  
@@ -17,6 +17,8 @@ i 茅台 程序是github上的开源项目，
 - 安装
 
 ```shell
+histb-deb
+
 apt install imaotai-histb -y
 ```
 - 卸载
@@ -26,6 +28,8 @@ apt remove imaotai-histb
 ```
 
 安装完成后访问 `http://IP:9999` 即可
+
+## 使用方法
 
 默认管理员(登录后自行修改)
 
