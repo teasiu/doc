@@ -31,16 +31,16 @@ apt remove imaotai-histb
 
 ## 二、使用方法
 
-### 手机下载安装 i茅台 app
+### 1.手机下载安装 i茅台 app
 
 在手机应用商店搜索并下载安装 `i茅台` app  
 
-注册和登录贵州茅台集团的官方 i茅台 程序。
+注册和登录贵州茅台集团的官方 i茅台 程序，领取数字身份证。  
 
-![](./img/imaotai.png)
-
+![](./img/imaotai.png)  
+![](./img/imaotai22.png)  
  
-### 登录预约程序
+### 2.登录预约程序
 
 默认管理员(登录后自行修改)
 
@@ -48,11 +48,11 @@ apt remove imaotai-histb
 
 ![](./img/imaotai1.jpg)
 
-### 选择 i 茅台模块
+### 3.选择 i 茅台模块
 
 ![](./img/imaotai2.jpg)
 
-### 选择用户管理添加账号
+### 4.选择用户管理添加账号
 
 ![](./img/imaotai3.jpg)
 
