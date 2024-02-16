@@ -9,8 +9,9 @@ i茅台预约程序是github上的开源项目，
 采用的程序包含 `mysql redis java` 3项，运行后约占用 200M + 运存。  
 建议自行斟酌使用。  
 
+:::caution
 注意：仅提供专业版系统才可安装！非专业版请勿安装，否则安装过程失败，将需要执行purge软件包的操作。  
-
+:::
 
 ## 一、安装与卸载
 
@@ -40,34 +41,39 @@ apt remove imaotai-histb
 ![](./img/imaotai.png)  
 ![](./img/imaotai22.png)  
  
-### 2.登录预约程序
+### 2.登录预约程序  
 
 打开海纳思系统i茅台预约程序图标链接地址：  
 
-![](./img/imaotai23.jpg)
+![](./img/imaotai23.jpg)  
 
-默认管理员(登录后自行修改)
+默认管理员(登录后自行修改)  
 
 账号: `admin` 密码: `admin123`  
 
-![](./img/imaotai1.jpg)
+![](./img/imaotai1.jpg)  
 
 ### 3.选择 i 茅台模块
 
-![](./img/imaotai2.jpg)
+![](./img/imaotai2.jpg)  
 
 ### 4.选择用户管理添加账号
 
-![](./img/imaotai3.jpg)
-
-先使用 i 茅台 app 注册登录，将注册好的手机号填写到下方登录
-
+![](./img/imaotai3.jpg)  
 ![](./img/imaotai4.jpg)
 
-登录后点击账号右侧的修改
+### 5.查询你所在城市的门店的 ID 
 
-![](./img/imaotai5.jpg)
+![](./img/imaotai5.png)  
 
-根据自己需要进行设置,需自行到门店列表中查询要预定的商品 ID
+### 6.填写你的信息并开始预约
 
-![](./img/imaotai6.jpg)
+![](./img/imaotai7.png)  
+![](./img/imaotai6.png)  
+
+### 7.在日志查看
+
+点击预约按钮，会即时上报一次预约，并返回信息。
+点击旅行按钮，会即时做一次旅行，并返回信息。
+
+
