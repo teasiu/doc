@@ -9,15 +9,15 @@ sidebar_position: 10
 
 ## 一、获取
 
-如果你的海纳思系统发行版本是20231201以后的，直接以下命令安装：  
+如果你的海纳思系统发行版本是 20231201 以后的，直接以下命令安装：
 
 ```bash
-apt update && apt upgrade -y
+histb-deb && apt upgrade -y
 install-kod.sh install
 ```
 
-如果是更早的版本，或者非NAS版本，  
-则先添加海纳思的专用 apt 仓库源：  
+如果是更早的版本，或者非 NAS 版本，  
+则先添加海纳思的专用 apt 仓库源：
 
 ```bash
 bash <(curl https://www.ecoo.top/ota.sh)
@@ -27,13 +27,13 @@ insatll-kod.sh install
 ```
 
 然后刷新首页，即可看到以下图标和链接：  
-![](./img/kod1.jpg)  
+![](./img/kod1.jpg)
 
-或者你的web服务器地址+ `/kod/` 访问。  
+或者你的 web 服务器地址+ `/kod/` 访问。
 
 ## 二、安装
 
-安装流程很简单几步：  
+安装流程很简单几步：
 
 ![](./img/kod2.jpg)
 
@@ -45,22 +45,18 @@ insatll-kod.sh install
 
 ![](./img/kod6.jpg)
 
-
 ## 三、使用
 
 详细的使用方法，请参看：
 
 可道云用户使用手册 [https://docs.kodcloud.com/user/](https://docs.kodcloud.com/user/)
 
-
 ## 四、卸载
 
-一句命令即可卸载：  
+一句命令即可卸载：
 
 ```bash
 install-kod.sh uninstall
 ```
 
-注意：卸载后，php环境保留。可以借用给其他个人程序使用。
-
-
+注意：卸载后，php 环境保留。可以借用给其他个人程序使用。
