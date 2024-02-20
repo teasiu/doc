@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 海纳思视频教学
+# 视频教学辅导
 
 ## 1、vi/vim 的使用
 
