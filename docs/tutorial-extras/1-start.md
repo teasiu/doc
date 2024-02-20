@@ -64,7 +64,9 @@ root@hi3798mv200:~#
 
 ## 5.加入作者微信群
 
-作者微信号“ teasiu ” ,定期拉入群。
+作者微信号“ teasiu ” ,定期拉入群。  
+
+telegram群号： t.me/histb_nas
 
 ## 6.逛逛用户社区
 
