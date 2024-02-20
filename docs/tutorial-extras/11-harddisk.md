@@ -50,6 +50,8 @@ format-disk.sh
 install-harddisk
 ```
 
+![](./img/harddisk1.png)   
+![](./img/harddisk2.png)   
 
 
 ## 4.使用注意事项
