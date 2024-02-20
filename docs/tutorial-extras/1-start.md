@@ -28,7 +28,11 @@ sidebar_position: 1
 
   浏览器 `<IP>:7681` 进入
 
-![](./img/login.png)
+![](./img/login.png)  
+
+- 或者使用 mobaxterm 进入后台终端  
+
+![](./img/login3.jpg)  
 
 
 ## 2.修改密码：
