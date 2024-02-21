@@ -11,8 +11,9 @@ sidebar_position: 16
 
 ### 1.手机下载安装阿里云盘 APP
 
-![](./img/xiaoya1.jpg)   
-	[参加阿里云盘达人招募计划，有机会获得50T容量，立即报名参加！](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)
+![](./img/xiaoya1.jpg)  
+ 
+	[参加阿里云盘达人招募计划，有机会获得50T容量，点击我立即报名参加！](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)
 
 ### 2、注册登录阿里云盘
 
@@ -26,13 +27,17 @@ sidebar_position: 16
 
 ![](./img/xiaoya3.png)
 
-### 5、创建小雅缓存的文件夹 xiaoya（文件名可以自行定义），注意不能使用备份盘
+### 5、创建小雅缓存的文件夹
+
+文件名可以自行定义，注意不能使用 `备份盘`  ，必须使用 `资源库`   
 
 ![](./img/xiaoya4.png)
 
-### 6、获取所需的第一个参数 folderId,将这串数字复制保存
+### 6、获取所需的 folderId
 
-![](./img/xiaoya5.png)
+获得转存文件夹参数 folderId，将这串数字复制保存。  
+
+![](./img/xiaoya5.jpg)
 
 ### 7、获取 refreshToken（32 位长）
 
