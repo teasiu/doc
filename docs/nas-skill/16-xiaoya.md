@@ -4,31 +4,31 @@ sidebar_position: 16
 
 # 小雅安装教程
 
-1、手机下载安装阿里云盘
+## 1、手机下载安装阿里云盘
 
 ![](./img/xiaoya1.jpg)
 
-2、注册登录
+## 2、注册登录
 
 ![](./img/xiaoya2.jpg)
 
-3、电脑浏览器打开阿里云盘官网
+## 3、电脑浏览器打开阿里云盘官网
 
 [点击此处前往登录](https://www.alipan.com/)
 
-4、使用手机上的阿里云盘 App 扫码登录
+## 4、使用手机上的阿里云盘 App 扫码登录
 
 ![](./img/xiaoya3.png)
 
-5、创建小雅缓存的文件夹 xiaoya（文件名可以自行定义），注意不能使用备份盘
+## 5、创建小雅缓存的文件夹 xiaoya（文件名可以自行定义），注意不能使用备份盘
 
 ![](./img/xiaoya4.png)
 
-6、获取所需的第一个参数 folderId,将这串数字复制保存
+## 6、获取所需的第一个参数 folderId,将这串数字复制保存
 
 ![](./img/xiaoya5.png)
 
-7、获取 refreshToken（32 位长）
+## 7、获取 refreshToken（32 位长）
 
 访问链接扫码登录即可获取
 
@@ -38,7 +38,7 @@ sidebar_position: 16
 
 ![](./img/xiaoya6.png)
 
-8、获取 token（280 位长）
+## 8、获取 token（280 位长）
 
 [点击此处前往获取 token](https://alist.nn.ci/tool/aliyundrive/request.html)
 
@@ -58,7 +58,7 @@ sidebar_position: 16
 
 ![](./img/xiaoya10.png)
 
-9、准备好了 3 个参数，开始正式安装
+## 9、准备好了 3 个参数，开始正式安装
 
 ```shell
 #执行下面的命令
