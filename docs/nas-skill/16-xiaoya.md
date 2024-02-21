@@ -11,9 +11,9 @@ sidebar_position: 16
 
 ### 1.手机下载安装阿里云盘 APP
 
-![](./img/xiaoya1.jpg)  
+![](./img/xiaoya1.jpg)   
  
-	[参加阿里云盘达人招募计划，有机会获得50T容量，点击我立即报名参加！](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)
+[参加阿里云盘达人招募计划，有机会获得50T容量，点击我立即报名参加！](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)
 
 ### 2、注册登录阿里云盘
 
@@ -21,7 +21,9 @@ sidebar_position: 16
 
 ### 3、电脑浏览器打开阿里云盘官网
 
-[点击此处前往登录](https://www.alipan.com/)
+
+[点击此处前往登录](https://www.alipan.com/)  
+
 
 ### 4、使用手机上的阿里云盘 App 扫码登录
 
