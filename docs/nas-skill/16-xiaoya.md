@@ -52,11 +52,11 @@ sidebar_position: 16
 
 授权完成后点击按钮生成 280 位 token
 
-![](./img/xiaoya9.jpg)
+![](./img/xiaoya9.png)
 
 复制保存 token（280 位）
 
-![](./img/xiaoya10.jpg)
+![](./img/xiaoya10.png)
 
 9、准备好了 3 个参数，开始正式安装
 
