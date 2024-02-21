@@ -44,9 +44,9 @@ sidebar_position: 16
 
 ## 二、获取 refreshToken（32 位长）
 
-访问链接扫码登录即可获取
+访问链接扫码登录即可获取，这是本站建立的代理地址：
 
-[点击此处前往获取 refreshToken](https://csb.histb.com/)  
+[点击 csb.histb.com 此处前往获取 refreshToken](https://csb.histb.com/)  
 
 将这串字符复制保存  
 
@@ -74,29 +74,37 @@ sidebar_position: 16
 
 ## 四、开始正式安装
 
+进入海纳思系统ssh终端，执行下面的命令：    
+
 ```shell
-#执行下面的命令
-bash <(curl https://ecoo.top/update/soft_init/tmp/xiaoya.sh)
+bash <(curl https://www.ecoo.top/xiaoya.sh)
 ```
 
-点击回车按钮确认执行
+点击回车按钮确认执行  
 
-![](./img/xiaoya11.png)
+![](./img/xiaoya11.png)  
 
-将上面 6、7、8 三个步骤获取到的参数复制粘贴，按回车确认即可完成安装
+将上面三个步骤获取到的参数复制粘贴，按回车确认即可完成安装  
 
-![](./img/xiaoya12.png)
+![](./img/xiaoya12.png)  
 
-10、等待 5-10 分钟后访问 http://盒子 ip:5678,比如盒子的 ip 是 192.168.1.16 那么就访问http://192.168.1.16:5678
+## 五、使用
 
-出现下面的情况只需静静等待几分钟后刷新页面即可
+等待 5-10 分钟后访问 `http://盒子 ip:5678` ,   
 
-![](./img/xiaoya13.png)
+比如盒子的 ip 是 `192.168.1.16` 那么就访问 `http://192.168.1.16:5678`  
 
-刷新后出现下面的画面即安装成功
+出现下面的情况只需静静等待几分钟后刷新页面即可  
 
-![](./img/xiaoya14.png)
+![](./img/xiaoya13.png)  
 
-现在可以开始你的观看之旅了
+刷新后出现下面的画面即安装成功  
 
-![](./img/xiaoya15.png)
+![](./img/xiaoya14.png)  
+
+现在可以开始你的观看之旅了  
+
+![](./img/xiaoya15.png)  
+
+
+
