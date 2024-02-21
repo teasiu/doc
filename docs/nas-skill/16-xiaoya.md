@@ -7,7 +7,7 @@ sidebar_position: 16
 制作一键安装小雅到系统的脚本，海纳思系统用户轻松上手。
 
 
-## 一、准备工作
+## 一、准备转存阿里云盘文件夹
 
 ### 1.手机下载安装阿里云盘 APP
 
@@ -41,37 +41,38 @@ sidebar_position: 16
 
 ![](./img/xiaoya5.jpg)
 
-### 7、获取 refreshToken（32 位长）
+
+## 二、获取 refreshToken（32 位长）
 
 访问链接扫码登录即可获取
 
-[点击此处前往获取 refreshToken](https://csb.histb.com/)
+[点击此处前往获取 refreshToken](https://csb.histb.com/)  
 
-将这串字符复制保存
+将这串字符复制保存  
 
-![](./img/xiaoya6.png)
+![](./img/xiaoya6.png)  
 
-### 8、获取 token（280 位长）
+## 三、获取 token（280 位长）  
 
-[点击此处前往获取 token](https://alist.nn.ci/tool/aliyundrive/request.html)
+[点击此处前往获取 token](https://alist.nn.ci/tool/aliyundrive/request.html)  
 
-点击按钮,生成登录二维码
+点击按钮,生成登录二维码  
 
-![](./img/xiaoya7.png)
+![](./img/xiaoya7.png)  
 
-手机扫码授权
+手机扫码授权  
 
-![](./img/xiaoya8.jpg)
+![](./img/xiaoya8.jpg)  
 
-授权完成后点击按钮生成 280 位 token
+授权完成后点击按钮生成 280 位 token  
 
-![](./img/xiaoya9.png)
+![](./img/xiaoya9.png)  
 
-复制保存 token（280 位）
+复制保存 token（280 位）  
 
-![](./img/xiaoya10.png)
+![](./img/xiaoya10.png)  
 
-### 9、准备好了 3 个参数，开始正式安装
+## 四、开始正式安装
 
 ```shell
 #执行下面的命令
