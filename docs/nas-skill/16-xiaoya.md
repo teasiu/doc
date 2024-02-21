@@ -11,7 +11,7 @@ sidebar_position: 16
 
 ### 1.手机下载安装阿里云盘 APP
 
-![](./img/xiaoya1.jpg)   
+[![图片](./img/xiaoya1.jpg)](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)   
  
 [参加阿里云盘达人招募计划，有机会获得50T容量，点击我立即报名参加！](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=c5dd55f)
 
