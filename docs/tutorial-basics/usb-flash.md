@@ -38,17 +38,13 @@ sidebar_position: 2
 
 | CPU 型号            | fastboot简称        | 下载地址 | 备注 |
 | ------------------ | --------------------- | ----------------- | ---------| 
-| hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1a-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1b | [mv100-mdmo1b-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1b-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1c | [mv100-mdmo1c-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1c-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1d | [mv100-mdmo1d-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1d-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1f | [mv100-mdmo1f-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1f-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1g | [mv100-mdmo1g-usb-flash.zip](https://node2.histb.com/update/system/mv100-mdmo1g-usb-flash.zip)|  |  
-| hi3798mv200 | mv2dma | [mv200-mv2dma-usb-flash.zip](https://node2.histb.com/update/system/mv200-mv2dma-usb-flash.zip)| 待发布 |  
-| hi3798mv200 | mv2dmb | [mv200-mv2dmb-usb-flash.zip](https://node2.histb.com/update/system/mv200-mv2dmb-usb-flash.zip)| 待发布 |  
-| hi3798mv200 | mv2dmc | [mv200-mv2dmc-usb-flash.zip](https://node2.histb.com/update/system/mv200-mv2dmc-usb-flash.zip)| 待发布 |  
-| hi3798mv300 | mv3dmw | [mv300-mv3dmw-usb-flash.zip](https://node2.histb.com/update/system/mv300-mv3dmw-usb-flash.zip)| 待发布 |  
-| hi3798mv300 | mv3dmm | [mv300-mv3dmm-usb-flash.zip](https://node2.histb.com/update/system/mv300-mv3dmm-usb-flash.zip)| 待发布 |  
+| hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1a-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1b | [mv100-mdmo1b-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1b-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1c | [mv100-mdmo1c-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1c-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1d | [mv100-mdmo1d-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1d-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1f | [mv100-mdmo1f-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1f-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1g | [mv100-mdmo1g-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1g-usb-flash.zip)|  |  
+
 
 ### 解压到 U 盘
 
@@ -93,6 +89,12 @@ hi3798mv300的盒子目前没有发现通用的短接办法，
 :::
 ![pic](pic/301h.jpg)  
 ![pic](pic/301h2.png)  
+
+
+补充：最近又有群友找到另一个途径短接301H的盒子：  
+![pic](pic/301h3.jpg)  
+
+
 
 ### 开始刷机
 
