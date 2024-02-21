@@ -10,7 +10,7 @@ sidebar_position: 16
 
 ## 2、注册登录
 
-![](./img/xiaoya2.jpg)
+![](./img/xiaoya2.png)
 
 ## 3、电脑浏览器打开阿里云盘官网
 
