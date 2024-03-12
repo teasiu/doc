@@ -8,10 +8,15 @@ sidebar_position: 17
 
 内网 DNS 与 DHCP 服务，监控网络情况，拦截不良网站
 
-## 1、安装
+## 1、安装与卸载
 
 ```shell
+#安装
 apt update && apt install adguard-histb
+#卸载
+systemctl stop AdGuardHome
+apt remove adguard-histb -y
+rm -rf /opt/adguard
 ```
 
 等待安装完成后，浏览器访问 http://盒子 IP:3000 打开 AdGuard Home 管理界面
