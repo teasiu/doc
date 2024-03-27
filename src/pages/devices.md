@@ -40,6 +40,7 @@ hi3798mv300H，hi3798mv310尚在开发中，暂不适配。
 | 移动新魔百和M301H(CW,SM代工的盒子可以)   | hi3798mv300 | 1G   | emmc     | 8G       | mv3dmw mv3dms1        | 2018之前的是mv300注意盲盒    |
 | 魔百盒CM201-2                            | hi3798mv300 | 1G   | emmc     | 8G       | mv3dms1 mv3dmm mv3dmf | 大量盲盒，不推荐NAND版不能刷 |
 | 九联-UNT400B                             | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1c                |                              |
+| 魔百盒-UNT400C                           | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1a                |  群友反馈                     |
 | 临沂创维E900S                            | hi3798mv100 | 768M | emmc     | 8G       | mdmo1d                |                              |
 | 魔百盒CM301                            | hi3798mv300 | 2G | emmc     | 8G       | mv3dmf                |                              |
 
