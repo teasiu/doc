@@ -17,8 +17,8 @@ sidebar_position: 1
 
 | 使用平台            | 国内高速下载地址        | 备用海外下载地址 | 
 | ------------------ | --------------------- | ----------------- | 
-| Windows    | [海兔工具Windows版](https://node.histb.com:9088/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
-| Linux      | [海兔工具Linux版](https://node.histb.com:9088/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
+| Windows    | [海兔工具Windows版](https://node4.histb.com:9088/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
+| Linux      | [海兔工具Linux版](https://node4.histb.com:9088/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
 
 ![usb2ttl](/img/ch340.png) ![杜邦线](/img/hitool-ttl-line.png)
 

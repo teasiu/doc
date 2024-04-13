@@ -38,12 +38,12 @@ sidebar_position: 2
 
 | CPU 型号            | fastboot简称        | 下载地址 | 备注 |
 | ------------------ | --------------------- | ----------------- | ---------| 
-| hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1a-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1b | [mv100-mdmo1b-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1b-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1c | [mv100-mdmo1c-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1c-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1d | [mv100-mdmo1d-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1d-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1f | [mv100-mdmo1f-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1f-usb-flash.zip)|  |  
-| hi3798mv100 | mdmo1g | [mv100-mdmo1g-usb-flash.zip](https://node.histb.com:9088/update/system/mv100-mdmo1g-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1a | [mv100-mdmo1a-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1a-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1b | [mv100-mdmo1b-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1b-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1c | [mv100-mdmo1c-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1c-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1d | [mv100-mdmo1d-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1d-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1f | [mv100-mdmo1f-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1f-usb-flash.zip)|  |  
+| hi3798mv100 | mdmo1g | [mv100-mdmo1g-usb-flash.zip](https://node4.histb.com:9088/update/system/mv100-mdmo1g-usb-flash.zip)|  |  
 
 
 ### 解压到 U 盘
