@@ -48,6 +48,18 @@ systemctl start filebrowser
 
 
 
+## 重置密码
+
+```shell
+systemctl stop filebrowser
+cd /opt/filebrowser
+#修改admin的密码为admin，命令：/opt/filebrowser/filebrowser users update [用户名] -p [新的密码]
+/opt/filebrowser/filebrowser users update admin -p admin
+systemctl start filebrowser
+```
+
+
+
 另外，建议这个文件管理器搭配 h5ai 做分享网盘系统，分享给家人的，和自己私密的文件进行分类，简直完美。
 
 更多配置请自行前往 [filebrowser 官网](https://filebrowser.org/)查询
