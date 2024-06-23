@@ -20,6 +20,7 @@ hi3798mv300H，hi3798mv310尚在开发中，暂不适配。
 | 江苏银河电子G2 40                        | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1a                |                              |
 | 华为荣耀M321                             | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1a                |                              |
 | 魔百盒(银河 G2 100B)                     | hi3798mv100 | 1G   | emmc     | 4G       | mdmo1f                |                              |
+| 河北联通UT斯达康MC8638                   | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1g                |                              |
 | 长虹IHO-3000                             | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1g                |                              |
 | 海信YMB0310-HX                           | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1g                |                              |
 | 烽火hg680-j                              | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1f                |                              |
