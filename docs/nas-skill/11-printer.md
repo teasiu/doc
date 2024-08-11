@@ -10,7 +10,7 @@ sidebar_position: 11
 升级专业版可以获得。
 
 :::tip
-[社区版和专业版有什么区别？](/professional)
+[社区版和专业版有什么区别？](/vippro)
 :::
 
 ## CUPS 添加打印机教程
