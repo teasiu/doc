@@ -6,7 +6,10 @@ sidebar_position: 19
 
 ## 1、安装
 
+**声明：此教程仅适合专业版使用，非专业版请勿进行操作，否则后果自负**
+
 ```shell
+
 histb-deb
 apt install logitechmediaserver-histb -y
 ```
