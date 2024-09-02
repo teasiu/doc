@@ -170,12 +170,12 @@ if [ ! -s /etc/xiaoya/docker_address.txt ]; then
 fi
 docker stop xiaoya
 docker rm xiaoya
-docker rmi xiaoyaliu/alist:latest 
-docker pull xiaoyaliu/alist:latest
+docker rmi registry.cn-hangzhou.aliyuncs.com/histb/xiaoya:latest 
+docker pull registry.cn-hangzhou.aliyuncs.com/histb/xiaoya:latest
 if [[ -f /etc/xiaoya/proxy.txt ]] && [[ -s /etc/xiaoya/proxy.txt ]]; then
 	proxy_url=$(head -n1 /etc/xiaoya/proxy.txt)
-       	docker run -d -p 5678:80 -p 2345:2345 -p 2346:2346 --env HTTP_PROXY="$proxy_url" --env HTTPS_PROXY="$proxy_url" --env no_proxy="*.aliyundrive.com" -v /etc/xiaoya:/data --restart=always --name=xiaoya xiaoyaliu/alist:latest
+       	docker run -d -p 5678:80 -p 2345:2345 -p 2346:2346 --env HTTP_PROXY="$proxy_url" --env HTTPS_PROXY="$proxy_url" --env no_proxy="*.aliyundrive.com" -v /etc/xiaoya:/data --restart=always --name=xiaoya registry.cn-hangzhou.aliyuncs.com/histb/xiaoya:latest
 else
-	docker run -d -p 5678:80 -p 2345:2345 -p 2346:2346 -v /etc/xiaoya:/data --restart=always --name=xiaoya xiaoyaliu/alist:latest
+	docker run -d -p 5678:80 -p 2345:2345 -p 2346:2346 -v /etc/xiaoya:/data --restart=always --name=xiaoya registry.cn-hangzhou.aliyuncs.com/histb/xiaoya:latest
 fi	
 
