@@ -23,7 +23,7 @@ install-kod.sh install
 bash <(curl https://www.ecoo.top/ota.sh)
 histb-deb
 apt install install-kod -y
-insatll-kod.sh install
+install-kod.sh install
 ```
 
 然后刷新首页，即可看到以下图标和链接：  

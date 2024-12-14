@@ -38,7 +38,7 @@ hi3798mv300H，hi3798mv310尚在开发中，暂不适配。
 | 内蒙广电创维hc2910                       | hi3798mv200 | 2G   | emmc     | 8G       | mv2dmc                |                              |
 | 河北广电HC2910 E家亲  湖北广电HC2910 E家亲 | hi3798mv200 | 2G   | emmc     | 8G       | mv2dmg  mv2dmf        | 注意部分可能需要硬改网口     |
 | 广电云盒极速版DVC-8178 CW                | hi3798mv200 | 1G   | emmc     | 8G       | mv2dmd                |                              |
-| 移动新魔百和M301H(CW,SM代工的盒子可以)   | hi3798mv300 | 1G   | emmc     | 8G       | mv3dmw mv3dms1        | 2018之前的是mv300注意盲盒    |
+| 移动新魔百和M301H(CW,SM代工的盒子可以)   | hi3798mv300 | 1G   | emmc     | 8G       | mv3dmw mv3dms1 mv3dma   | 2018之前的是mv300注意盲盒    |
 | 魔百盒CM201-2                            | hi3798mv300 | 1G   | emmc     | 8G       | mv3dms1 mv3dmm mv3dmf | 大量盲盒，不推荐NAND版不能刷 |
 | 九联-UNT400B                             | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1c                |                              |
 | 魔百盒-UNT400C                           | hi3798mv100 | 1G   | emmc     | 8G       | mdmo1a                |  群友反馈                     |
