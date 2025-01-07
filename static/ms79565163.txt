@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Microsoft 365 的域所有权验证文件 - 放置在网站根目录中",
+  "Domain": "ecoo.top",
+  "Id": "23d5e5c4-937c-4a7c-8175-5f5b9ad9c12a"
+}

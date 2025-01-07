@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="如何获得海思设备reg名称">
+    <meta name="keywords" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统">
+    <meta property="og:title" content="www.ecoo.top" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <meta property="og:description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="https://www.ecoo.top/" />
+    <meta property="og:site_name" content="www.ecoo.top" />
+    <meta name="baidu-site-verification" content="code-8FArC3guPw" />
+    <meta name="360-site-verification" content="***************" />
+
+        <!--========== BOX ICONS ==========-->
+        <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>如何获得海思设备reg名称</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="https://www.ecoo.top" class="nav__logo">e 酷网</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="https://www.ecoo.top/#home" class="nav__link active-link">首页</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#about" class="nav__link">介绍</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#services" class="nav__link">固件下载</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#menu" class="nav__link">教程</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#contact" class="nav__link">协助</a></li>
+                 <!--       <li class="nav__item"><a href="https://bbs.histb.com" class="nav__link">社区</a></li>  -->
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">保姆级小白教程</span>
+                <h2 class="section-title">如何获得海思机顶盒设备 reg 名称</h2>
+                <p class="footer__logo">一、什么叫做 reg 名称</p>
+                reg 是海思 SDK 里对 fastboot 代码的表格配置文件名称，也叫做“管脚配置表”。
+                <br>表格中的内容全是寄存器的配置，主要涉及单板硬件关键参数说明、PLL、DDR、外设时钟、管脚复用、网口配置等。
+                <br>我们来看两个例子：
+                <br>比如 Hi3798Mv100 (华为悦盒 ec6108v9c 型号)的 reg 名称是：
+                <br>
+                <br>hi3798mdmo1g_hi3798mv100_ddr3_1gbyte_16bitx2_4layers_emmc.reg
+                <br>
+                <br>比如 Hi3798Mv200 (恩兔 n2ns1、n2c)的 reg 名称是：
+                <br>
+                <br>hi3798mv2dmc_hi3798mv200_DDR4-2133_2GB_16bitx2_4layers_emmc.reg
+                <br>
+                <br>我们从上面的名称可以判断这个板子的 CPU、DDR、闪存类型、pbc板层数等信息。
+                <br>这样，我们就可以轻易的对照自己的机顶盒判断选择适合刷入对应的神雕开发固件了。
+                <br>
+                <br>
+                <p class="footer__logo">二、获取 reg 名称的四种常用方法</p>
+                1、利用串口读写器 TTL 读取。或详细参考<a href="hitool.html" target="_blank">TTL线刷教程</a>
+                <br>把 usb转ttl小板插入电脑，用杜邦线和针脚连接到板子的 GDN、TX、RX，
+                <br>使用串口终端跑码读取 fastboot 的参数，如下图：
+                <br><img src="assets/img/hitool-run-reg.png" >
+                <br>
+                <br>2、破解你的盒子安卓系统，adb进去后台，在adb shell终端输入。或详细参考<a href="adbflash/adbflash.html" target="_blank"> ADB 线刷教程</a>
+                <br>
+                <br>cat /dev/block/mmcblk0p1 | grep -a hi3798
+                <br>
+                <br>获得的返回信息包含了你的盒子reg名称
+                <br><img src="adbflash/grepreg.png" >
+                <br>
+                <br>3、找到你曾经可以成功刷入这个机顶盒的安卓包，解压这个包，在里面得到一个fastboot.bin
+                <br>在linux的终端下 cat ./fastboot.bin | grep -a hi3798
+                <br>获得的返回信息包含了你的盒子reg名称。
+                <br>
+                <br>4、参考本站首页的<a href="histb.html" target="_blank"> 设备适配表 </a>。
+                <br>
+                <br>5、在<a href="https://bbs.histb.com" target="_blank"> 交流社区 </a>或群里拍照你的盒子背后的照片，得到其他人的协助。
+                <br>
+                <br>
+             </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">海思机顶盒NAS系统</a>
+                    <span class="footer__description">一个极低功耗的服务器</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">服务</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">盒子硬件购买</a></li>
+                        <li><a href="#" class="footer__link">远程刷机</a></li>
+                        <li><a href="#" class="footer__link">系统定制</a></li>
+                        <li><a href="#" class="footer__link">疑难解决</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">链接站点</h3>
+                    <ul>
+                        <li><a href="https://bbs.histb.com" class="footer__link">交流社区</a></li>
+                        <li><a href="https://dl.ecoo.top" class="footer__link">固件下载</a></li>
+                        <li><a href="https://demo.ecoo.top" class="footer__link">使用指南</a></li>
+                        <li><a href="#" class="footer__link">团队合作</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">宗旨</h3>
+                    <ul>
+                        <li>自由，免费的软件</li>
+                        <li>简单，易用的UI界面</li>
+                        <li>成本低廉的硬件</li>
+                        <li>适配更多芯片和机型</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; <a href="http://beian.miit.gov.cn">粤ICP备2022054080号</a></p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+	<script src="assets/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

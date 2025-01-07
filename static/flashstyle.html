@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="选择哪种方式刷入海思设备">
+    <meta name="keywords" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统">
+    <meta property="og:title" content="www.ecoo.top" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <meta property="og:description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="https://www.ecoo.top/" />
+    <meta property="og:site_name" content="www.ecoo.top" />
+    <meta name="baidu-site-verification" content="code-8FArC3guPw" />
+    <meta name="360-site-verification" content="***************" />
+
+        <!--========== BOX ICONS ==========-->
+        <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>选择哪种方式刷入海思设备</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="https://www.ecoo.top" class="nav__logo">e 酷网</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="https://www.ecoo.top/#home" class="nav__link active-link">首页</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#about" class="nav__link">介绍</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#services" class="nav__link">固件下载</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#menu" class="nav__link">教程</a></li>
+                        <li class="nav__item"><a href="https://www.ecoo.top/#contact" class="nav__link">协助</a></li>
+                 <!--       <li class="nav__item"><a href="https://bbs.histb.com" class="nav__link">社区</a></li>  -->
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">保姆级小白教程</span>
+                <h2 class="section-title">我应该选择哪种刷机方式？各有什么不同 ？</h2>
+                <p class="footer__logo">一、使用TTL转USB小板连接设备，Hitool工具烧写固件</p>
+                <br>通过 Hitool 工具，连接板子的 GND,TX,RX 和电脑的串口进行固件烧写。
+                <br>这种烧写方法最安全和最方便检测板子和系统固件的状态，
+                <br>通过Hitool工具既能烧写新固件，又能备份原来的安卓系统，既能检测板子的状态，又能掌握烧写过程中的错误；
+                <br>既能擦除emmc存储芯片，还能制作烧片器进行全盘的烧写工作。
+                <br>当你进行固件的修改和开发时，这是必不可少的工具和烧写方法。
+                <br>但是需要一定的动手能力，需要拆机和焊接 TTL 串口。有些时候甚至需要对厂家设置的障碍做飞线和增加贴片等处理。
+                <br>详情请参考<a href="hitool.html" target="_blank">TTL线刷教程</a>。
+                <br>
+                <br>
+                <br>
+                <p class="footer__logo">二、短接板子的专用短接电路，或Hi3798MV100短接CPU右上角的1，2脚</p>
+                
+                <br>利用短接板子关键位置电路，进入读取 usb 磁盘文件fastboot.bin启动状态进行固件刷入。
+                <br>这种方法比较适合小白，但前提是必须清楚的获得板子的<a href="getreg.html" target="_blank"> reg 管脚配置表名称</a>，并对应下载该固件，配合 usb 磁盘刷入 NAS 系统。
+                <br>原理：
+                <br>短接后，板子的电路启动后，从原来的寻址emmc存储启动，变为寻址usb存储设备启动。
+                <br>usb存储设备必须是fat16或者fat32的文件格式；usb存储设备中必须有启动文件fastboot.bin
+                <br>当然，利用hitool工具擦除emmc第一分区头部的扇区也能达到相同的短接电路的效果。
+                <br>详情请看<a href="usbflash/usbflash.html" target="_blank">U盘短接卡刷教程</a>。
+                <br>
+                <br>
+                <br>
+                <p class="footer__logo">三、利用安卓系统的后台终端命令烧写</p>
+                <br>机智的利用前面两种方法的原理，免拆盖子，免短接，免TTL线，
+                <br>利用安卓系统的后台linux终端的命令，将制作的烧片器文件dd克隆进去覆盖整片emmc。
+                <br>前提：
+                <br>你必须破解这个盒子原来的安卓系统，或者按照网上的教程，刷入一个破解的安卓系统，
+                <br>使用adb shell或者telnet能够登录安卓后台终端。
+                <br>这些安卓的破解教程或者adb工具网上有很多，应该还是大部分能找到的。
+                <br>就是稍微有点折腾，没有前面两种方法来的干脆。
+                <br>如果前面两种办法尝试无果的话，这个办法也很香。
+                <br>详情请看<a href="adbflash/adbflash.html" target="_blank"> ADB 刷机教程</a>。
+                <br>
+                <br>
+                
+             </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">海思机顶盒NAS系统</a>
+                    <span class="footer__description">一个极低功耗的服务器</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">服务</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">盒子硬件购买</a></li>
+                        <li><a href="#" class="footer__link">远程刷机</a></li>
+                        <li><a href="#" class="footer__link">系统定制</a></li>
+                        <li><a href="#" class="footer__link">疑难解决</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">链接站点</h3>
+                    <ul>
+                        <li><a href="https://bbs.histb.com" class="footer__link">交流社区</a></li>
+                        <li><a href="https://dl.ecoo.top" class="footer__link">固件下载</a></li>
+                        <li><a href="https://demo.ecoo.top" class="footer__link">使用指南</a></li>
+                        <li><a href="#" class="footer__link">团队合作</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">宗旨</h3>
+                    <ul>
+                        <li>自由，免费的软件</li>
+                        <li>简单，易用的UI界面</li>
+                        <li>成本低廉的硬件</li>
+                        <li>适配更多芯片和机型</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; <a href="http://beian.miit.gov.cn">粤ICP备2022054080号</a></p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+	<script src="assets/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

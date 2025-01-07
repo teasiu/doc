@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="海思机顶盒TTL刷机教程">
+    <meta name="keywords" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统">
+    <meta property="og:title" content="www.ecoo.top" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <meta property="og:description" content="海思机顶盒,hi3798m,nas系统,嵌入式系统,ubuntu移植,arm系统" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="https://www.ecoo.top/" />
+    <meta property="og:site_name" content="www.ecoo.top" />
+    <meta name="baidu-site-verification" content="code-8FArC3guPw" />
+<title>华为海思刷机工具Hitool使用指南</title>
+<style>
+    body {
+        width: 80em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+  <h2 id="华为海思刷机工具ttl刷机教程">华为海思刷机工具TTL刷机教程</h2>
+<p>它有另外一个昵称叫“海兔”。
+本站提供windows和linux版本的下载：</p>
+<table width="690" border="1">
+  <tr>
+    <td width="62">平台</td>
+    <td width="291">国内高速下载地址</td>
+    <td width="315">备用海外下载地址</td>
+  </tr>
+  <tr>
+    <td height="46">windows</td>
+    <td><a href="https://dl.ecoo.top/HiTool-soft/HiTool-windows.7z">海兔工具windows版</a></td>
+    <td><a href="https://oss.histb.com/HiTool-windows.7z">https://oss.histb.com/HiTool-windows.7z</a></td>
+  </tr>
+  <tr>
+    <td height="48">linux</td>
+    <td><a href="https://dl.ecoo.top/HiTool-soft/hitool_linux.tar.gz">海兔工具linux版</a></td>
+    <td><a href="https://oss.histb.com/hitool_linux.tar.gz">https://oss.histb.com/hitool_linux.tar.gz</a></td>
+  </tr>
+</table>
+<p>使用教程：</p>
+<p>一.参阅华为官方的pdf文档：<a href="https://oss.histb.com/HiBurn.pdf" title="HiBurn.pdf">HiBurn.pdf</a> 和 <a href="https://oss.histb.com/HiTool.pdf" title="HiTool.pdf">HiTool.pdf</a></p>
+<p>二.windows版无需安装，解压后打开hitool.exe即可使用。  </p>
+<p>三.刷入海思机顶盒NAS系统注意事项：</p>
+<p> (a.)请首先关闭防火墙，杀软等阻拦69端口通讯的设置。</p>
+<p> (b.)其次严格按照TTL刷机图的几个要点进行配置。</p>
+<p> (c.)USB-TTL转接板最好用免驱的CH340，淘宝价大约8元左右包邮，含杜邦线和排针。</p>
+<p><img src="assets/img/ch340.png" alt="">
+<img src="assets/img/hittol-ttl-line.png" alt=""></p>
+<p>(d.)只接上GDN，TX，RX三个点即可，瞎接VCC可能会导致烧坏板子。</p>
+<p> (e.)请使用3.3V的转接器跳线连接。  </p>
+<p>第1步.TTL跑码以获得机顶盒的芯片(CPU)和元件管脚参数(reg name)：或参考<a href="https://www.ecoo.top/getreg.html" title="其它方法获得reg名称">其它方法获得reg名称</a></p>
+<p><img src="assets/img/hitool-run-reg.png" alt=""></p>
+<p>第2步.参考神雕开发的设备适配表，查看你的设备需要下载的固件：</p>
+<p>适配表：<a href="https://www.ecoo.top/histb.html">https://www.ecoo.top/histb.html</a></p>
+<p>固件下载：<a href="https://dl.ecoo.top">https://dl.ecoo.top</a></p>
+<p>第3步.根据自己盒子的芯片型号来操作Hitool进行固件烧写：</p>
+<p><img src="assets/img/hitool-chip.png" alt=""></p>
+<p><img src="assets/img/hitool-flash.png" alt=""></p>
+<p>最后：在路由器管理页面，查找路由器自动分配给盒子的IP，浏览器输入IP地址进入盒子首页。</p>
+<p> 注意：  </p>
+<p>hi3798m默认型号的mac是00:11:22:33:44:55  </p>
+
+<p>四.常见问题解答</p>
+<p>1.无法下载fastboot，多数是因为TTL线跟电脑hitool工具之间通讯不良造成的。  </p>
+<p>检查排针是否牢牢的稳固的插好在板子上，  </p>
+<p>检查杜邦线是否有问题，
+  检查板子的GDN，TX，RX是否正确排序。（TX，RX需要对调） </p>
+<p>2.端口被占用，请关闭其它使用串口的连接。  </p>
+<p>3.刷完fastboot，一直停留在TTTT符号，没有接好网线，或者网络不通，或者防火墙没有关闭。  </p>
+<p>4.fastboot选对了，但是刷不进去，或者刷入失败，检查是否高安板，高安请放弃。
+  检查是否NAND内存，NAND板请放弃。  </p>
+<p>5.部分盒子由于厂家设置了TTL阻断，需要飞线或者重新加电阻接通才会正常使用。  </p>
+<p>6.更多疑难问题，请到社区<a href="https://bbs.histb.com" title="bbs.histb.com">bbs.histb.com</a>求助。</p>
+<p>本文ecoo.top版权所有。</p>
+
+
+  
+</body>
+</html>

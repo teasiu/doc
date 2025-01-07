@@ -20,10 +20,10 @@ jQuery(function($){
         // 组件
         slide_links        : 'blank',    // 个别环节为每张幻灯片（选项：假的，'民'，'名'，'空'）
         slides             : [    // 幻灯片影像
-                                 {image : 'https://ecoo.top/alist-histb-com/1.jpg'},
-                                 {image : 'https://ecoo.top/alist-histb-com/2.jpg'},
-                                 {image : 'https://ecoo.top/alist-histb-com/3.jpg'},
-                                 {image : 'https://ecoo.top/alist-histb-com/4.jpg'}
+                                 {image : 'https://www.ecoo.top/alist-histb-com/1.jpg'},
+                                 {image : 'https://www.ecoo.top/alist-histb-com/2.jpg'},
+                                 {image : 'https://www.ecoo.top/alist-histb-com/3.jpg'},
+                                 {image : 'https://www.ecoo.top/alist-histb-com/4.jpg'}
                        ]
 
     });
