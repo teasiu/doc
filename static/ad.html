@@ -1,111 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>海纳思系统官方通告</title>
-<style>
-body {
-    width: 40em;
-    margin: 0 auto;
-    font-family: Tahoma, Verdana, Arial, sans-serif;
-}
-.content pre{
-    position: relative;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-}
-pre .btn-pre-copy{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    color: hsla(0,0%,54.9%,.8);
-    transition: color .1s;
-}
-</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海纳思系统官方通告</title>
+    <meta name="description" content="海纳思系统官方通告页面，提供广告位招租信息及系统使用统计。">
+    <style>
+        body {
+            max-width: 40em;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+        #cookieConsent {
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>海纳思系统官方广告位招租</h1>
+    </header>
 
-<header>
-	<h1>海纳思系统官方广告位招租</h1>
-</header>
+    <h2>42000+装机数</h2>
+    <h2>日活8000+</h2>
+    <h2>日增约100台</h2>
+    <h2>要求：符合海纳思服务器的环境需求</h2>
+    <h2>捐助并投放，与作者共赢！请联系：<a href="mailto:teasiu@163.com">teasiu@163.com</a></h2>
 
-<h2>22000+装机数</h2>
-<h2>日活6000+</h2>
-<h2>日增约100台</h2>
-<h2>要求：符合海纳思服务器的环境需求</h2>
-<h2>捐助并投放，与作者共赢！请联系本站</h2>
-<br/>
-<br/>
+    <div id="visitCounter"></div>
 
-<script language="JavaScript">
-<!-- 
-var caution = false
-function setCookie(name, value, expires, path, domain, secure) {
-        var curCookie = name + "=" + escape(value) +
-                ((expires) ? "; expires=" + expires.toGMTString() : "") +
-                ((path) ? "; path=" + path : "") +
-                ((domain) ? "; domain=" + domain : "") +
-                ((secure) ? "; secure" : "")
-        if (!caution || (name + "=" + escape(value)).length <= 4000)
-                document.cookie = curCookie
-        else
-                if (confirm("Cookie exceeds 4KB and will be cut!"))
-                        document.cookie = curCookie
-}
-function getCookie(name) {
-        var prefix = name + "="
-        var cookieStartIndex = document.cookie.indexOf(prefix)
-        if (cookieStartIndex == -1)
-                return null
-        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-        if (cookieEndIndex == -1)
-                cookieEndIndex = document.cookie.length
-        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
-}
-function deleteCookie(name, path, domain) {
-        if (getCookie(name)) {
-                document.cookie = name + "=" + 
-                ((path) ? "; path=" + path : "") +
-                ((domain) ? "; domain=" + domain : "") +
-                "; expires=Thu, 01-Jan-70 00:00:01 GMT"
-        }
-}
-function fixDate(date) {
-        var base = new Date(0)
-        var skew = base.getTime()
-        if (skew > 0)
-                date.setTime(date.getTime() - skew)
-}
-var now = new Date()
-fixDate(now)
-now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-var visits = getCookie("counter")
-if (!visits)
-        visits = 1
-else
-        visits = parseInt(visits) + 1
-setCookie("counter", visits, now)
-document.write("您是到访的第" + visits + "位用户！")
-// -->
-</script>
+    <footer>
+        版权 © <span id="currentYear"></span> <a href="https://www.ecoo.top/">www.ecoo.top</a>
+    </footer>
 
 
-<footer>
-	版权 © <span class="year">2025</span> <a href="http://www.ecoo.top/">www.ecoo.top</a>
-</footer>
-<br/><br/>
+
+    <script>
+        // 动态年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 
+    </script>
 </body>
 </html>
