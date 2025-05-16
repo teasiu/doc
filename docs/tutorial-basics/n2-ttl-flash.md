@@ -58,7 +58,7 @@ sidebar_position: 7
 记住这个COM口的数字，比如这里的COM4.CH340转接模块多数是免驱的，CP2102,3202等，多数是需要安装驱动的。
 ![ttl](pic/29631852.jpg)  
 参照下图接好杜邦线：  
-![ttl](pic/ttl3.jpg)  
+![ttl](pic/ttl4.jpg)  
 ![ttl](pic/1700902183463.jpg)  
 
 - 如果你没有小锡焊机，那么就用些技巧，将排针稳稳的靠在盒子主板的GND，TX，RX的小孔上。  
