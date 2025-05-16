@@ -60,6 +60,9 @@ reg name : mv2dmc n2ns1
 淘宝店地址：[https://item.taobao.com/item.htm?id=924727501777](https://item.taobao.com/item.htm?id=924727501777)
 
 
+![](./n2-pack.jpg)  
+
+
 
 ## Hi3798mv300
 
