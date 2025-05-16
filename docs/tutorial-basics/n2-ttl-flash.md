@@ -68,7 +68,7 @@ sidebar_position: 7
 
 ### 第二步：打开hitool软件工具跑码（检查盒子芯片型号参数）
 - 请按照下图的示范，进行跑码操作：  
-![ttl](pic/hitool-run-reg.png)  
+![ttl](pic/n2-terminal.jpg)  
 
 - 如果遇到跑码是乱码，请检查TTL杜邦线是否接牢，是否有交叉对调TXRX；
 - 无论如何，只有完全这正确的保证3根串口线正常通讯，才能进行刷机操作；
