@@ -10,7 +10,7 @@ sidebar_position: 7
 ## 准备工作
 
 - 一套USB转TTL设备小板（推荐CH340G），杜邦线，排针，或需要电络铁；
-- 下载好Hitool工具（华为海思官方刷机工具）；
+- 下载好Hitool工具（华为海思官方刷机工具，简称海兔工具）；
 - 一根网线连接机顶盒到路由器的LAN口；
 - windows7含以上的操作系统；
 - 一个华为海思芯片的机顶盒；
@@ -20,7 +20,12 @@ sidebar_position: 7
 | Windows    | [海兔工具Windows版](https://node4.histb.com:9088/update/soft_init/hitool/HiTool-windows.7z)	 |	[海兔工具Windows版](https://node2.histb.com/update/soft_init/hitool/HiTool-windows.7z)   | 
 | Linux      | [海兔工具Linux版](https://node4.histb.com:9088/update/soft_init/hitool/hitool_linux.tar.gz)| [海兔工具Linux版](https://node2.histb.com/update/soft_init/hitool/hitool_linux.tar.gz)| 
 
-![usb2ttl](/img/ch340.png) ![杜邦线](/img/hitool-ttl-line.png)
+![usb2ttl](/img/ch340.png) ![杜邦线](/img/hitool-ttl-line.png)  
+
+恩兔 N2 盒子：  
+![ttl](pic/n2-2.jpg)  
+![ttl](pic/n2-3.jpg)  
+
 
 ## 下载海纳思系统的固件
 
