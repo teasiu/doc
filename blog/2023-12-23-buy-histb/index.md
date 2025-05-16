@@ -57,6 +57,8 @@ reg name : mv2dmc n2ns1
 刷机教程（售卖时已经刷好）：  
 [刷机教程支持](/docs/tutorial-basics/n2-ttl-flash/)  
 
+淘宝店地址：[https://item.taobao.com/item.htm?id=924727501777](https://item.taobao.com/item.htm?id=924727501777)
+
 
 
 ## Hi3798mv300
