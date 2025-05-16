@@ -54,6 +54,10 @@ reg name : mv2dmc n2ns1
 
 ![](./n2-1.jpg)  
 
+刷机教程（售卖时已经刷好）：  
+[刷机教程支持](/docs/tutorial-basics/n2-ttl-flash/)  
+
+
 
 ## Hi3798mv300
 
