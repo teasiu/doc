@@ -68,7 +68,7 @@ root@hi3798mv200:~#
 
 ## 5.加入作者微信群
 
-作者微信号 `teasiu`  , 定期拉入群。  
+作者微信号 `teasiu`  , 捐助5元起拉入微信群交流学习。  
 
 或者加入 TeleGram 群号： `t.me/histb_nas` 
 
