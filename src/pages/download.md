@@ -20,9 +20,6 @@ title: 系统固件下载
 ## 3.onedrive
 [https://onedrive.ecoo.top](https://onedrive.ecoo.top/zh-CN/20241001/)
 
-## 4.百度网盘永久分享
-[百度网盘+提取码 ecoo](https://pan.baidu.com/s/1jleQ-9j4rSw0cwxeYLzyPg?pwd=ecoo)  
-![baidupan](./img/baidupan.png)
 
 ## 网友捐赠下载节点服务器
 
