@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<head>
+<title>S805 玩客云 U 盘卡刷教程</title>
+<style>
+    body {
+        width: 60em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<header>
+	<h1>S805 玩客云 wky U 盘刷机教程</h1>
+</header>
+
+
+<h2>一、准备工作（工具）</h2>
+
+
+<p>准备工具
+<br/><h3> 1. 准备一个 U 盘，建议 8G-64G 之内的U盘</h3>
+<br/>下载专用格式化软件，对 U 盘进行格式化，取回 U 盘全部空间 : <a href="https://dl.ecoo.top/update/soft_init/USBFormat.exe"> USB_format.exe</a>
+<br/><img src="usb.png" />
+<br/>
+<br/><h3> 2. 准备一根双公头 USB 连接线</h3>
+<br/><img src="usb2.png" />
+<br/>
+<br/>
+<br/><h3> 3. 将盒子拆解出主板：</h3>
+<br/><img src="pcb.png" />
+<br/><img src="pcb-2.png" />
+<br/>拆解外壳技巧：
+<br/>先热用吹风机把背后的pvc贴片吹软，然后用刀具小心撬开。
+<br/>
+<br/><h3> 4. 准备两个工具软件 (下载和安装好)：</h3>
+<br/><img src="tools.png" />
+<br/>晶晨烧录工具<a href="https://dl.ecoo.top/amlogic/USB_Burning_Tool_v2.1.3.exe"> USB_Burning_Tool.exe</a>
+<br/>USB 镜像烧写工具<a href="https://dl.ecoo.top/amlogic/balenaEtcher-Portable-1.18.4.exe"> balenaEtcher.exe</a>或者<a href="https://github.com/balena-io/etcher/releases" target="_blank"> 官网地址</a>
+<br/>
+<br/><h3> 5. 下载好作者开发的海纳思固件：</h3>
+<br/>U-BOOT底包<a href="https://dl.ecoo.top/amlogic/S805-uboot-hinas.img"> S805-uboot-hinas.img</a> 2M
+<br/>U 盘镜像固件<a href="https://dl.ecoo.top/amlogic/Ubuntu_hinas_s805_armhf_5.15.79.img.zip"> Ubuntu_hinas_s805_armhf_5.15.79.img.zip</a> 726M 下载后解压
+<br/>
+</p>
+<br/>
+<br/>
+<h2>二、刷入 U-boot 底包</h2>
+<p>
+<h3> 1. 找到主板短接点：(不同板子请自行百度短接位置)</h3>
+<br/><img src="2.png" />
+<br/><img src="2-2.png" />
+<br/><img src="3.png" />
+<br/><img src="3-3.jpg" />
+<br/>
+</p>
+<p>
+<h3> 2. 双公头 usb 连接线一头接电脑，一头接板子2号口（靠近 HDMI 的一边）</h3>
+<br/><img src="1.png" />
+<br/><img src="1-2.png" />
+<br/><img src="1-3.png" />
+<br/>
+</p>
+<p>
+<h3> 3. 打开 USB_Burning_Tool 软件工具，导入 S805-uboot-hinas.img 底包 </h3>
+<br/><img src="4-1.png" />
+<br/><img src="4-2.png" />
+<br/>
+</p>
+<p>
+<h3> 4. 短接住-->打开盒子电源-->显示已连接-->放开短接-->点击 “开始” 按钮 </h3>
+<br/><img src="5-1.png" />
+<br/><img src="5-2.png" />
+<br/><img src="5-3.png" />
+<br/>
+</p>
+<p>
+<h3> 5. 最后，拔掉双公头连接线，关闭软件。至此，底包刷入完成。 </h3>
+<h3> 提示：这个动作是一次性的，之后再也不需要刷入底包了。可以装好盖子盒子了。 </h3>
+<br/>
+</p>
+
+<h2>三、烧写 U 盘 镜像</h2>
+<p>
+<h3> 1. 打开balenaEtcher工具，插入前面准备好的 U 盘到电脑 </h3>
+<br/><img src="6-1.png" />
+<br/><img src="6-2.png" />
+<br/>
+<h3> 注意：软件显示 U 盘成功写完镜像后，务必等待10秒再拔出 U 盘。（知道啥叫作缓存吧） </h3>
+<br/>
+<br/>
+</p>
+<p>
+<h3> 2. 把 U 盘插到 1 号口（靠近网口的），接上网线到路由器，重新打开电源 </h3>
+<br/><img src="7-1.png" />
+<br/><img src="7-2.png" />
+<br/>
+<br/>
+</p>
+<p>
+<h3> 3. 等待 2-3 分钟，首次启动完毕，即可到路由器查找自动分配的 IP， </h3>
+<h3> 用 ssh 客户端登录这个 IP ，即可看到终端安装界面。 </h3>
+<h3> ssh 端口 22，用户名 root 默认初始密码 ecoo1234  </h3>
+<br/><img src="8-1.png" />
+<br/><img src="8-2.png" />
+<br/><img src="8-3.png" />
+<br/><img src="8-4.png" />
+</p>
+
+<p>
+<h3> 最后，恭喜您拥有一台千兆的家用 linux 服务器系统 ！</h3>
+<h3> 我是小盒子，也是大世界！</h3>
+<h3> 海纳思系统，绝对值得拥有！  </h3>
+<br/><img src="9-1.png" />
+
+</p>
+
+
+<p>
+如有疑问，请到社区 <a href="https://bbs.histb.com">bbs.histb.com</a>发帖求助。
+</p>
+
+
+
+<h2>常见问题解答</h2>
+<p>1. U 盘不是标准的，造成盒子主板无法识别。</p>
+<p>2. 同一局域网下多台同款盒子在运行，造成 MAC 地址冲突。</p>
+
+
+
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 id="start">使用请看实例图，e酷网www.ecoo.top技术，个人自由免费使用，禁止商用！禁止售卖盈利！</h2>
+
+
+<footer>
+	版权 © <span class="year">2023</span> <a href="http://www.ecoo.top/">www.ecoo.top</a>
+</footer>
+
+</body>
+</html>
