@@ -25,8 +25,8 @@ sidebar_position: 9
 a.晶晨烧录工具: USB_Burning_Tool.exe  
 b.安卓 6 代固件： atv6.img  
 c.安卓切换卡载系统应用包：切换卡载系统V1.0.apk  
-d. U 盘启动固件包：Hinas_cumebox_USB.img  
-e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img  
+d. U 盘启动的固件包：Hinas_cumebox_USB.img  
+e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img  
 
 [下载地址：https://alist.ecoo.top/amlogic/s9xxx/cumebox](https://alist.ecoo.top/amlogic/s9xxx/cumebox)  
 
@@ -49,7 +49,13 @@ e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 晶晨烧录工具: [USB_Burning_Tool.exe](https://www.ecoo.top/update/soft_init/amlproject/USB_Burning_Tool_v2.1.3.exe)
 
 
-## 二、烧写刷入安卓 6.0 系统
+## 二、烧写刷入安卓 6.0 系统  
+
+:::tip
+这是一次性的刷安卓系统，可以看电视，安装安卓应用软件等功能，  
+如果已经刷过安卓系统，可以忽略跳过此步骤。
+:::
+
 
 ### 1. 找到主板短接点：
 下面提供作者收集到的图例：  
@@ -57,37 +63,39 @@ e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 ![pic](pic/cumebox/cumebox-6.jpg)  
 ![pic](pic/cumebox/cumebox-7.jpg)  
 
-### 2. TpyeC 数据线连接：  
+### 2. 晶晨烧写工具导入安卓包
 
-usb 连接线一头接电脑，  
+打开 USB_Burning_Tool 软件工具，导入刚才下载的 atv6.img 固件   
 
-
-### 3. 导入海纳思系统专用线刷包
-
-打开 USB_Burning_Tool 软件工具，导入刚才解压后的 hinas_s805_eMMC.burn.img 固件包
+![pic](pic/cumebox/cumebox-8.jpg)  
 
 
+### 3. 烧写安卓系统
 
-### 4. 烧写海纳思系统专用线刷包
+数据线一端插入电脑的 USB 口，
 
-短接住-->打开盒子电源-->显示已连接-->放开短接-->点击 “开始” 按钮  
+短接住两个短接点-->TypeC 口插入盒子-->显示已连接-->放开短接-->点击 “开始” 按钮  
 
-
+![pic](pic/cumebox/cumebox-9.jpg)  
 
 正常情况下，你短接到位，就一定会显示```已连接``` ;  
-如果烧写失败，请检查每个步骤；  
-或选择全部擦除的选项试试。  
-
-### 5. 拔掉双公头、关闭软件。  
-
-最后，拔掉双公头连接线，关闭软件。至此，系统烧写刷入完成。  
-:::tip
-如果你需要重新刷机，就按照上面的流程操作一遍即可。
-一般来说，下次刷机应该不需要短接，只要将双公头插入靠近HDMI的usb口，打开烧写软件，重新通电，就会显示已连接。  
-:::
+如果烧写失败，一般都是数据线接触不良，请检查每个步骤，重新操作即可。  
 
 
-## 四、启动海纳思系统
+### 5. 拔掉数据线、关闭软件。  
+
+最后，拔掉连接线，关闭软件。至此，安卓系统烧写刷入完成。  
+
+### 6. 安装切换卡载系统V1.0.apk
+
+
+## 三、制作可引导启动的 U 盘海纳思系统
+
+
+## 四、将海纳思系统刷入内置存储 EMMC
+
+ 
+## 五、启动海纳思 NAS 系统
 
 ### 1. 重新上电，等待 2-3 分钟，首次初始化启动完毕
 
@@ -99,9 +107,7 @@ usb 连接线一头接电脑，
 详细阅读[《开始使用》](/docs/tutorial-extras/start) 教程！  
 
 
-
-
-## 五、恭喜
+## 六、恭喜你拥有这台低功耗的家用 NAS 系统
 
 
 我是小盒子，也是大世界！  
