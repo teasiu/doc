@@ -155,15 +155,16 @@ e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 dd if=Hinas_cumebox_EMMC.img of=/dev/mmcblk2 status=progress
 ```
  
-注意：部分盒子可能显示的是 ```mmcblk1```
-执行前务必使用命令 ```lsblk``` 查看
+注意：部分盒子可能显示的是 ```mmcblk1```  
+执行前务必使用命令 ```lsblk``` 查看  
+
 ![pic](pic/cumebox/cumebox-13.jpg)   
 
-烧写完成后，拔下 U 盘，重新上电，即可正常启动 emmc 里的海纳思系统！
+烧写完成后，拔下 U 盘，重新上电，即可正常启动 emmc 里的海纳思系统！  
 
 :::tip
 刷入到 EMMC 后，原来的安卓系统已完全消除了，没有了；  
-制作好的U盘可引导镜像，可以利用并无限次刷机到emmc覆盖掉，达到重置系统的目的； 
+制作好的U盘可引导镜像，可以利用并无限次刷机到emmc覆盖掉，达到重置系统的目的；  
 内置的两个sata硬盘位，可以充分利用，格式化并挂载并设置文件共享给局域网；  
 2T硬盘完全没问题；  
  
