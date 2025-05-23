@@ -3,11 +3,11 @@ sidebar_position: 9
 
 ---
 
-# 私家云比特米盒（晶晨S905)刷机
+# 比特米盒（晶晨S905x)刷机
 
-轻nas盒子，名称很多，私家云二代、比特米盒、cumebox2  
-这盒子扩展接口非常丰富，有两个a口usb2.0，一个typec，一个sd卡槽，  
-一个hdmi，一个百兆网口，然后盒子里面还有两个2.5寸sata硬盘仓。  
+轻 nas 盒子，名称很多，私家云二代、比特米盒、cumebox2、cm2-b  
+这盒子扩展接口非常丰富，有两个 usb2.0，一个 typec，一个 sd 卡槽，  
+一个 hdmi ，一个百兆网口，然后盒子里面还有两个2.5寸 sata 硬盘仓。  
 作者已编译适配刷入海纳思系统固件。  
 
 ![pic](pic/cumebox/cumebox-1.jpg)   
@@ -15,10 +15,21 @@ sidebar_position: 9
 
 ## 一、准备工作  
 
+### 1.准备一个 USB-TypeC 数据连接线 
 
-### 1.准备一个双公头 USB 连接线  
+![pic](pic/cumebox/cumebox-3.jpg)  
 
-![pic](pic/s805/usb2.png)  
+### 2.下载以下全部软件
+
+a.晶晨烧录工具: USB_Burning_Tool.exe  
+b.安卓 6 代固件： atv6.img
+c.安卓切换卡载系统应用包：切换卡载系统V1.0.apk  
+d. U 盘启动固件包：Hinas_cumebox_USB.img  
+e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img  
+
+[下载地址：https://alist.ecoo.top/amlogic/s9xxx/cumebox](https://alist.ecoo.top/amlogic/s9xxx/cumebox)  
+
+![pic](pic/cumebox/cumebox-4.jpg)  
   
 ### 2.拆开盒子，取出主板  
 
@@ -34,49 +45,30 @@ sidebar_position: 9
 ![pic](pic/s805/tools.png)  
 晶晨烧录工具: [USB_Burning_Tool.exe](https://www.ecoo.top/update/soft_init/amlproject/USB_Burning_Tool_v2.1.3.exe)
 
-### 4. 下载好作者最新开发的线刷包
-
-下载后请解压。  
-
-| 系统            | 下载地址        | 下载地址 | 备注 |
-| ------------------ | -------------- | ------------ | ---------| 
-| 海纳思社区版 | 地址1 | [hinas_s805_eMMC.burn.img.zip](https://node4.histb.com:9088/update/system/s805/hinas_s805_eMMC.burn.img.zip)|  |  
-|  | 地址2 | [hinas_s805_eMMC.burn.img.zip](https://node2.histb.com/update/system/s805/hinas_s805_eMMC.burn.img.zip)|  |  
-|  | 地址3 | [hinas_s805_eMMC.burn.img.zip](https://node3.histb.com:9088/update/system/s805/hinas_s805_eMMC.burn.img.zip)|  |  
-| 宝塔版7.7 | 地址1 | [hinas_s805_baota_eMMC.burn.img.zip](https://node4.histb.com:9088/update/system/s805/hinas_s805_baota_eMMC.burn.img.zip)| [付费激活及安装说明](https://ecoo.top/baota.html) |  
-|  | 地址2 | [hinas_s805_baota_eMMC.burn.img.zip](https://node2.histb.com/update/system/s805/hinas_s805_baota_eMMC.burn.img.zip)|  |  
-|  | 地址3 | [hinas_s805_baota_eMMC.burn.img.zip](https://node3.histb.com:9088/update/system/s805/hinas_s805_baota_eMMC.burn.img.zip)|  |  
 
 ## 二、采用线刷烧写刷入海纳思系统
 
 ### 1. 找到主板短接点：
 不同板子请自行百度短接位置，下面提供作者收集到的图例：  
 
-![pic](pic/s805/2.png)   
-![pic](pic/s805/2-2.png)   
-![pic](pic/s805/3.png)   
-![pic](pic/s805/3-3.jpg)   
+
 
 ### 2. 双公头 usb 连接：  
 
 双公头 usb 连接线一头接电脑，一头接板子2号口（靠近 HDMI 的一边）  
-![pic](pic/s805/1.png)  
-![pic](pic/s805/1-2.png)  
-![pic](pic/s805/1-3.png)  
+
 
 ### 3. 导入海纳思系统专用线刷包
 
 打开 USB_Burning_Tool 软件工具，导入刚才解压后的 hinas_s805_eMMC.burn.img 固件包
 
-![pic](pic/s805/4-1.png)  
+
 
 ### 4. 烧写海纳思系统专用线刷包
 
 短接住-->打开盒子电源-->显示已连接-->放开短接-->点击 “开始” 按钮  
 
-![pic](pic/s805/5-1.png)  
-![pic](pic/s805/5-2.png)  
-![pic](pic/s805/5-3.png)  
+
 
 正常情况下，你短接到位，就一定会显示```已连接``` ;  
 如果烧写失败，请检查每个步骤；  
@@ -90,9 +82,6 @@ sidebar_position: 9
 一般来说，下次刷机应该不需要短接，只要将双公头插入靠近HDMI的usb口，打开烧写软件，重新通电，就会显示已连接。  
 :::
 
-## 三、采用 U 盘刷入  (可选，线刷请跳过)
-
-请参考另一个 U 盘卡刷教程： <a href="/s805/s805.html" target="_blank">《S805 U 盘刷机教程》</a>
 
 ## 四、启动海纳思系统
 
@@ -106,24 +95,18 @@ sidebar_position: 9
 详细阅读[《开始使用》](/docs/tutorial-extras/start) 教程！  
 
 
-如果你刷的是宝塔的系统，请详细阅读首页的《宝塔使用》链接！  
-
 
 
 ## 五、恭喜
 
-最后，恭喜您拥有一台千兆的家用 linux 服务器系统 ！  
+
 我是小盒子，也是大世界！  
 海纳思系统，绝对值得拥有！   
-![pic](pic/s805/9-1.png)   
+
 
 ## 六、常见问题解答
 
-- 1. 同一局域网下多台同款盒子在运行，造成 MAC 地址冲突。
 
-- 2. 拜托，插好网线到路由器，这是刷机的基本要求。
-
-- 3. 你不认真地细读本教程，张口就嚷嚷着找我咨询 “我手上有一台玩客云” 作为开场白，润！
 
 
 
