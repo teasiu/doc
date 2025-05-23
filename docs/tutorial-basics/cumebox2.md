@@ -106,6 +106,37 @@ e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 
 ## 三、制作可引导启动的 U 盘海纳思系统
 
+### 1.下载 USB 镜像烧写工具 balenaEtcher.exe
+
+[balenaEtcher.exe](https://alist.ecoo.top/d/amlogic/S805%E7%8E%A9%E5%AE%A2%E4%BA%91/balenaEtcher-Portable-1.18.4.exe?sign=MHDPudLBAXTQfQArZnZIid6qcLLudZ4U0dhjWY_SHZU=:0)  
+
+
+### 2.制作 U 盘海纳思系统
+
+右键管理员身份（必须！）打开 balenaEtcher 工具，插入一个准备好的 U 盘到电脑
+
+![pic](pic/cumebox/cumebox-11.jpg)  
+
+注意：软件显示 U 盘成功写完镜像后，务必等待10秒再拔出 U 盘。（知道啥叫作缓存吧）
+
+### 3.启动 U 盘的系统
+将制作好的U盘插入盒子usb口，  
+接好HDMI，接好网线到路由器，  
+重新上电启动即可。 
+
+通过HDMI屏幕查看启动情况，启动完毕后，去路由器查找IP，
+使用ssh终端，进入后台，可参照本站的教程：
+
+[https://www.ecoo.top/docs/tutorial-extras/start](https://www.ecoo.top/docs/tutorial-extras/start)
+
+:::tip
+此时，你已经完成了双系统的操作，  
+如果你期望双系统运行，插上此U盘，即可使用NAS，  
+拔掉U盘重新启动，即可使用安卓系统看电视，  
+到此处即可完成收工。
+:::
+
+
 
 ## 四、将海纳思系统刷入内置存储 EMMC
 
