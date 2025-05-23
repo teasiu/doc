@@ -22,7 +22,7 @@ sidebar_position: 9
 ### 2.下载以下全部软件
 
 a.晶晨烧录工具: USB_Burning_Tool.exe  
-b.安卓 6 代固件： atv6.img
+b.安卓 6 代固件： atv6.img  
 c.安卓切换卡载系统应用包：切换卡载系统V1.0.apk  
 d. U 盘启动固件包：Hinas_cumebox_USB.img  
 e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img  
@@ -31,22 +31,24 @@ e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 
 ![pic](pic/cumebox/cumebox-4.jpg)  
   
-### 2.拆开盒子，取出主板  
+### 3.拆开盒子，取出主板  
 
-拆解外壳技巧：  
-先热用吹风机把背后的pvc贴片吹软，然后用刀具小心撬开。   
+-撬开4个垫胶片，拧开4枚螺丝  
 
-![pic](pic/s805/pcb.png)  
-![pic](pic/s805/pcb-2.png)  
+![pic](pic/cumebox/cumebox-5.jpg)  
 
-### 3. 准备晶晨烧录软件
+-再拧开里面1枚螺丝  
+-拇指往下按，外壳往上抽，即可取出主板  
+
+
+### 4. 准备晶晨烧录软件
 
 下载和安装好:  
 ![pic](pic/s805/tools.png)  
 晶晨烧录工具: [USB_Burning_Tool.exe](https://www.ecoo.top/update/soft_init/amlproject/USB_Burning_Tool_v2.1.3.exe)
 
 
-## 二、采用线刷烧写刷入海纳思系统
+## 二、采用线刷烧写刷入安卓 6.0 系统
 
 ### 1. 找到主板短接点：
 不同板子请自行百度短接位置，下面提供作者收集到的图例：  
