@@ -96,6 +96,8 @@ e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 
 ### 6. 安装切换卡载系统V1.0.apk
 
+![pic](pic/cumebox/cumebox-10.jpg)  
+
 - 将“切换卡载系统V1.0.apk”保存到 U盘  
 - 插入盒子，文件管理器找到 U 盘，点击安装  
 - 选择授权，选择“新司机”，安装成功后，拔掉 U 盘，重启即可
