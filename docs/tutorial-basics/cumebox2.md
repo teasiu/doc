@@ -157,7 +157,7 @@ dd if=Hinas_cumebox_EMMC.img of=/dev/mmcblk2 status=progress
  
 注意：部分盒子可能显示的是 ```mmcblk1```
 执行前务必使用命令 ```lsblk``` 查看
-
+![pic](pic/cumebox/cumebox-13.jpg)   
 
 
 ## 五、启动海纳思 NAS 系统
