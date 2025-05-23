@@ -113,7 +113,9 @@ e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 
 ### 2.制作 U 盘海纳思系统
 
-右键管理员身份（必须！）打开 balenaEtcher 工具，插入一个准备好的 U 盘到电脑
+右键管理员身份（必须！）打开 balenaEtcher 工具，插入一个准备好的 U 盘到电脑  
+选择从文件烧写，选择刚才下载好的 Hinas_cumebox_USB.img ，选择准备好的 U 盘，  
+点击烧写，然后耐心等待完成即可。
 
 ![pic](pic/cumebox/cumebox-11.jpg)  
 
@@ -134,19 +136,36 @@ e. 刷入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 如果你期望双系统运行，插上此U盘，即可使用NAS，  
 拔掉U盘重新启动，即可使用安卓系统看电视，  
 到此处即可完成收工。
+（缺点：U 盘启动的系统，oled 和风扇是失灵的）
 :::
 
 
 
 ## 四、将海纳思系统刷入内置存储 EMMC
 
+正常人都会将 NAS 系统烧写到内置的 EMMC 存储。  
+
+如果你使用的是 mobaxterm 的 ssh 终端管理器软件，  
+
+![pic](pic/cumebox/cumebox-12.jpg)   
+
+直接将下载的```Hinas_cumebox_EMMC.img``` 拖曳到当前目录下，  
+使用以下命令，将镜像完全写入 emmc：  
+```
+dd if=Hinas_cumebox_EMMC.img of=/dev/mmcblk2 status=progress
+```
  
+注意：部分盒子可能显示的是 ```mmcblk1```
+执行前务必使用命令 ```lsblk``` 查看
+
+
+
 ## 五、启动海纳思 NAS 系统
 
 ### 1. 重新上电，等待 2-3 分钟，首次初始化启动完毕
 
  等待 2-3 分钟，首次启动完毕，即可到路由器查找自动分配的 IP；  
- 这个 IP 在你的路由器客户端列表中，显示的 mac 地址是 `00:11:22:33:44:66`  
+ 这个 IP 在你的路由器客户端列表中，找到hinas系统对应的IP；   
 
 ### 2. 浏览器打开该 IP 地址，进入 web 管理页面  
 
