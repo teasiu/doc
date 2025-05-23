@@ -9,6 +9,7 @@ sidebar_position: 9
 这盒子扩展接口非常丰富，有两个 usb2.0，一个 typec，一个 sd 卡槽，  
 一个 hdmi ，一个百兆网口，然后盒子里面还有两个2.5寸 sata 硬盘仓。  
 作者已编译适配刷入海纳思系统固件。  
+已修复led屏显，wifi，自动风扇等。  
 
 ![pic](pic/cumebox/cumebox-1.jpg)   
 ![pic](pic/cumebox/cumebox-2.jpg)  
@@ -48,16 +49,17 @@ e. 输入 emmc 的海纳思固件包：Hinas_cumebox_EMMC.img
 晶晨烧录工具: [USB_Burning_Tool.exe](https://www.ecoo.top/update/soft_init/amlproject/USB_Burning_Tool_v2.1.3.exe)
 
 
-## 二、采用线刷烧写刷入安卓 6.0 系统
+## 二、烧写刷入安卓 6.0 系统
 
 ### 1. 找到主板短接点：
-不同板子请自行百度短接位置，下面提供作者收集到的图例：  
+下面提供作者收集到的图例：  
 
+![pic](pic/cumebox/cumebox-6.jpg)  
+![pic](pic/cumebox/cumebox-7.jpg)  
 
+### 2. TpyeC 数据线连接：  
 
-### 2. 双公头 usb 连接：  
-
-双公头 usb 连接线一头接电脑，一头接板子2号口（靠近 HDMI 的一边）  
+usb 连接线一头接电脑，  
 
 
 ### 3. 导入海纳思系统专用线刷包
