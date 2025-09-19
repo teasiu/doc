@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '海纳思系统',
   tagline: '一个极低功耗的 Linux 服务器',
-  url: 'https://doc.ecoo.top',
+  url: 'https://www.ecoo.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -79,7 +79,7 @@ const config = {
         title: 'HiNas',
         logo: {
           alt: 'histb Logo',
-          src: './img/hinaslogo01.png',
+          src: 'https://doc.ecoo.top/img/hinaslogo01.png',
         },
         items: [
           {
