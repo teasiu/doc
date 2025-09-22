@@ -66,6 +66,7 @@ printf $GREEN_LINE
 
 up_histb() {
 printStr yellow "update: update histb"
+rm -f /usr/sbin/histb /usr/bin/histb
 dl_get "update/soft_init/histb-$(getconf LONG_BIT)" /tmp
 cp /tmp/histb-$(getconf LONG_BIT) /usr/sbin/histb
 chmod +x /usr/sbin/histb
@@ -117,7 +118,7 @@ up_od4b() {
 }
 
 up_nasupgrade() {
-    if [ -f /usr/sbin/nasupgrade ]; then
+	if [ -f /usr/sbin/nasupgrade ]; then
 		rm /usr/sbin/nasupgrade
 	fi
 	if [ -f /usr/bin/nasupgrade ]; then
@@ -125,13 +126,13 @@ up_nasupgrade() {
 	fi
 	exhostname=$(cat /etc/hostname)
 	if [ "$exhostname" != "hinas" ]; then
-      printStr yellow "update: update nasupgrade"
-      dl_get "${filemodel}_upgrade.sh" /tmp
-      cp /tmp/${filemodel}_upgrade.sh /usr/bin/nasupgrade
-      chmod +x /usr/bin/nasupgrade
-      printStr yellow "scripts updated"
-      printf $GREEN_LINE
-    fi
+	      printStr yellow "update: update nasupgrade"
+	      dl_get "${filemodel}_upgrade.sh" /tmp
+	      cp /tmp/${filemodel}_upgrade.sh /usr/bin/nasupgrade
+	      chmod +x /usr/bin/nasupgrade
+	      printStr yellow "scripts updated"
+	      printf $GREEN_LINE
+	fi
 }
 
 up_chatgpt() {
@@ -226,7 +227,8 @@ up_pulldocker() {
 }
 get_cpuid
 #ota_script
-#up_histb
+up_histb
+up_deb
 up_vipupgrade
 up_kaitongfrp
 up_nasupgrade
@@ -236,7 +238,6 @@ up_nasupgrade
 #up_TestNAT
 #up_ksrun
 up_pulldocker
-up_deb
 up_installdisk
 
 _exit 0 "all upgraded successed"
