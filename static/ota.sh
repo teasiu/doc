@@ -91,13 +91,9 @@ up_kaitongfrp() {
 		rm /usr/bin/kaitong-frp
 	fi
 	printStr yellow "update: update script"
-	if [ -f /usr/bin/setup-bt ]; then
-		dl_get "update/soft_init/kaitong-frp-bt-$(getconf LONG_BIT)" /tmp
-		mv /tmp/kaitong-frp-bt-$(getconf LONG_BIT) /usr/bin/kaitong-frp
-	else
-		dl_get "update/soft_init/kaitong-frp-$(getconf LONG_BIT)" /tmp
-		mv /tmp/kaitong-frp-$(getconf LONG_BIT) /usr/bin/kaitong-frp
-	fi
+	dl_get "update/soft_init/kaitong-frp-$(getconf LONG_BIT)" /tmp
+	mv /tmp/kaitong-frp-$(getconf LONG_BIT) /usr/bin/kaitong-frp
+
 	chmod +x /usr/bin/kaitong-frp
 	printStr yellow "scripts updated"
 	printf $GREEN_LINE
