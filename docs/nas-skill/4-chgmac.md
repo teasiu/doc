@@ -8,6 +8,11 @@ sidebar_position: 4
 
 ## 原理
 
+:::caution
+注意：本章节仅仅适合海思芯片CPU的机顶盒设备。  
+如果你不清楚，请勿试用！直到你完全理解什么叫做芯片为止！  
+:::
+
 机顶盒的mac地址由启动阶段的 ```bootargs.bin``` 进行传递。
 
 作者为了便利用户更改，制作了```mkbootargs```的程序提供在线制作```bootargs.bin```文件。
@@ -74,14 +79,32 @@ http://192.168.xx.xx/macedit.php
 ```
 
 
-
+:::caution
+以下内容适合几乎所有机型！  
+:::
 ## 软改mac
 
 上面的方法是硬改mac，这里也阐述一下软改的办法：
 
 ```bash
-vi /etc/network/interfaces.d/eth0       # 编辑配置文件
-# 增加下面的内容 (实际内容可按需修改)
-pre-up ifconfig eth0 hw ether 00:11:22:33:44:66
+vi /etc/netplan/10-dhcp-all-interfaces.yaml
+```
+添加你的 mac 地址  
+
+```bash
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    all-eth-interfaces:
+      match:
+    name: "e*"
+      dhcp4: yes
+      dhcp6: yes
+      ipv6-privacy: yes
+      # 添加固定MAC地址配置
+      macaddress: "00:11:22:33:44:66"  
 ```
 
+      
+      

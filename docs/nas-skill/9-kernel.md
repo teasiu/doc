@@ -19,8 +19,8 @@ sidebar_position: 9
 在终端中输入如下命令即可更新：  
 
 ```bash
-sudo apt-get update
-sudo apt-get search histb kernel
+sudo apt update
+sudo apt search histb kernel
 ```
 
 你会得到一个类似下图的匹配你的机顶盒的海思新内核。
@@ -29,9 +29,9 @@ sudo apt-get search histb kernel
 
 接着执行你机顶盒对应的机型安装新内核，最后重启系统即可。  
 ```
-sudo apt install kernel-hi3798mv200-82120168
+sudo apt install kernel-hi3798mv200-82082668
 或者例如：
-sudo apt install kernel-hi3798mv100-82120168
+sudo apt install kernel-hi3798mv100-81082668
 ```
 
 
@@ -106,10 +106,10 @@ dd if=hi_kernel-hi3798mv200-n2ns1.bin of=/dev/mmcblk0p6 bs=1024 count=40960
 社区版内核编号规则如下：  
 
 ```
-系统版本 : Ubuntu 20.04.6 LTS | V20231201-4.4.35_ecoo_82111968-64
+系统版本 : Ubuntu 20.04.6 LTS | V20251001-4.4.35_ecoo_82082668-64
 ```
 
-其中：```82111968``` 第二个数字 2 代表mv200系列， 1119 代表 2023版本的11月19日
+其中：```82082668``` 第二个数字 2 代表mv200系列， 0826 代表 2025版本的08月26日
 
 其它自行推算。
 

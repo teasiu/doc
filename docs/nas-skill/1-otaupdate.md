@@ -113,13 +113,6 @@ bash <(curl https://ecoo.top/n2_upgrade.sh)
 bash <(curl https://ecoo.top/mv300_upgrade.sh)
 ```
 
-### 玩客云 S805 机型
-
-```bash
-bash <(curl https://ecoo.top/s805_upgrade.sh)
-```
-
-
 ## 常用脚本ota更新
 
 - ota常用的脚本更新命令：  
