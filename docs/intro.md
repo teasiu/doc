@@ -7,6 +7,18 @@ sidebar_position: 1
 
 本手册由作者神雕热心撰写。由于工作量大，未详尽之处，敬请理解。
 
+import Button from '@theme/Button';
+
+<div style={{ margin: '20px 0' }}>
+  <Button
+    href="/docs/tutorial-extras/start"
+    variant="primary"
+    size="lg"
+  >
+    前往快速开始
+  </Button>
+</div>
+
 ## 海纳思系统介绍：
 
 英文名称 Hi-NAS ，中文名称：海纳思 

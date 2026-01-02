@@ -20,7 +20,7 @@ sidebar_position: 1
 
 - 建议使用 SSH 终端管理器登录后台
 
-  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://node.histb.com:9088/update/soft_init/MobaXterm.zip) 工具，
+  Windows 操作系统可以使用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 工具或者 [MobaXterm](https://node4.histb.com:9088/update/soft_init/MobaXterm.zip) 工具，
 
   Linux 操作系统直接 `ssh root@<IP>`
 
@@ -55,11 +55,12 @@ root@hi3798mv200:~#
 
 **注意**：密码是不会显示的，盲敲输入后按回车即可。
 
-## 3.注册和登录管理页面
+## 3.首次使用需要设置密码
 
-![](./img/login1.jpg)  
+![](./img/login1.png)  
 
-![](./img/login2.jpg)  
+为了您的系统安全，首次设置密码时，需要证明设备在您身边，所以限制必须局域网 IP 才能打开首页；  
+如果您的局域网 IP 不在白名单内，可以去 SSH 后台自行修改文档：```/var/www/html/ip_whitelist_check.php```
 
  
 ## 4.阅读手册
