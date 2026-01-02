@@ -7,7 +7,7 @@ sidebar_position: 1
 
 本手册由作者神雕热心撰写。由于工作量大，未详尽之处，敬请理解。
 
-
+<a href="/docs/tutorial-extras/start" class="hinas-button">前往快速开始</a>
 
 ## 海纳思系统介绍：
 

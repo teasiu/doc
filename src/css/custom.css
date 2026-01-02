@@ -28,3 +28,23 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* 自定义按钮样式 - 适配Docusaurus Classic主题 */
+.hinas-button {
+  display: inline-block;
+  background-color: #165DFF;
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+.hinas-button:hover {
+  background-color: #0F4BD8;
+  color: #fff !important;
+}
