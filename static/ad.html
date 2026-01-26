@@ -3,47 +3,50 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>海纳思系统官方通告</title>
-    <meta name="description" content="海纳思系统官方通告页面，提供广告位招租信息及系统使用统计。">
+    <title>每晚8点直播使用教程</title>
+    <meta name="description" content="每晚8点直播使用教程，详细讲解各类使用方法">
     <style>
         body {
-            max-width: 40em;
+            max-width: 800px; /* 扩大页面最大宽度，适配图片显示 */
             margin: 0 auto;
             padding: 20px;
             font-family: Tahoma, Verdana, Arial, sans-serif;
+            text-align: center; /* 全局文本居中，方便主题文字和图片对齐 */
         }
-        #cookieConsent {
-            background: #f1f1f1;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 4px;
+        /* 图片样式：居中、自适应宽度、不超出容器 */
+        .ad-image {
+            display: block;
+            margin: 20px auto; /* 上下间距，左右自动居中 */
+            max-width: 100%; /* 响应式，不超出容器宽度 */
+            height: auto; /* 保持图片宽高比 */
+            border: none; /* 去除默认边框 */
+        }
+        h1 {
+            color: #333; /* 标题颜色更舒适 */
+            margin-bottom: 30px;
+        }
+        footer {
+            margin-top: 30px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>海纳思系统官方广告位招租</h1>
+        <h1>每晚8点直播使用教程</h1>
     </header>
 
-    <h2>42000+装机数</h2>
-    <h2>日活8000+</h2>
-    <h2>日增约100台</h2>
-    <h2>要求：符合海纳思服务器的环境需求</h2>
-    <h2>捐助并投放，与作者共赢！请联系：<a href="mailto:teasiu@163.com">teasiu@163.com</a></h2>
-
-    <div id="visitCounter"></div>
+    <!-- 居中显示ad.jpg图片 -->
+    <img src="ad.jpg" alt="直播使用教程相关图片" class="ad-image">
 
     <footer>
         版权 © <span id="currentYear"></span> <a href="https://www.ecoo.top/">www.ecoo.top</a>
     </footer>
 
-
-
     <script>
         // 动态年份
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-
     </script>
 </body>
 </html>
+
