@@ -1,12 +1,15 @@
 # Histb Doc
 
 ```bash
-bash node-16-devsource.sh
-apt-get install -y nodejs git
+# 移除旧版
+apt-get remove -y nodejs
 
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | tee /etc/apt/sources.list.d/yarn.list
-apt-get update && apt-get install -y yarn
+# 添加 Node 20 源并安装
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+apt-get install -y nodejs
+
+# 验证
+node -v   # 应显示 v20.x.x
 
 npm install
 npm run build
