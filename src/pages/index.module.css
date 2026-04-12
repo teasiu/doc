@@ -1,40 +1,323 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* ===== Hero ===== */
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 5rem 0 4rem;
+  text-align: center;
+  background: linear-gradient(160deg, #071525 0%, #0d2137 45%, #071525 100%);
+  color: #fff;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.heroGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(6, 182, 212, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+.heroGlow {
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.14) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+}
+
+.heroLogo {
+  height: 120px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 28px rgba(6, 182, 212, 0.45));
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(90deg, #38bdf8, #06b6d4, #67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Stats ===== */
+.statsRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(6, 182, 212, 0.22);
+  border-radius: 12px;
+  background: rgba(6, 182, 212, 0.06);
+  min-width: 90px;
+  transition: border-color 0.2s;
+}
+
+.statItem:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.25rem;
+}
+
+/* ===== Buttons ===== */
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: #0891b2;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+.btnPrimary:hover {
+  background: #0e7490;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.35);
+  color: #fff !important;
+}
+
+.btnSecondary {
+  background: transparent;
+  color: #7dd3fc !important;
+  border: 1px solid rgba(6, 182, 212, 0.35);
+}
+
+.btnSecondary:hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: #06b6d4;
+  color: #bae6fd !important;
+}
+
+/* ===== Content Sections ===== */
+.section {
+  padding: 5rem 0;
+}
+
+.sectionAlt {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.sectionInner {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.sectionReverse {
+  flex-direction: row-reverse;
+}
+
+.sectionText {
+  flex: 1;
+}
+
+.sectionImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionImage img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.sectionBadge {
+  display: inline-block;
+  padding: 0.28rem 0.9rem;
+  background: rgba(8, 145, 178, 0.1);
+  color: #0891b2;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+:global([data-theme='dark']) .sectionBadge {
+  background: rgba(6, 182, 212, 0.12);
+  color: #38bdf8;
+  border-color: rgba(6, 182, 212, 0.28);
+}
+
+.sectionTitle {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.sectionDesc {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.85;
+  font-size: 1rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.25rem;
+}
+
+.featureList li {
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  position: relative;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+}
+
+.featureList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #06b6d4;
+  font-weight: 600;
+}
+
+/* ===== Donate / Sponsors ===== */
+.donateSection {
+  padding: 4rem 0;
+}
+
+.donateTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.donateRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.donateCard {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.donateCard:hover {
+  transform: translateY(-8px);
+}
+
+.donateCard img {
+  width: 80%;
+  height: auto;
+}
+
+.donateCaption {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  padding: 0.5rem;
+  line-height: 1.7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 996px) {
+  .sectionInner,
+  .sectionReverse {
+    flex-direction: column !important;
+    gap: 2rem;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 5px;
-}
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 3.5rem 0 3rem;
+  }
 
-.policypersistence {
-  padding: 60px 0;
-  font-size: 1.3rem;
-  justify-content: center;
-  line-height: 40px;
-  background-color: var(--ifm-color-emphasis-100);
-}
+  .heroTitle {
+    font-size: 2.2rem;
+  }
 
-.policyenforcement {
-  padding: 60px 0;
-  font-size: 1.3rem;
-  justify-content: center;
-  line-height: 40px;
+  .heroLogo {
+    height: 90px;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .statsRow {
+    gap: 0.75rem;
+  }
+
+  .statItem {
+    padding: 0.6rem 1.1rem;
+    min-width: 78px;
+  }
+
+  .statValue {
+    font-size: 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
 }

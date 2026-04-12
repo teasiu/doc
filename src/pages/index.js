@@ -6,95 +6,143 @@ import Layout from '@theme/Layout';
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Amlogic from '@site/src/components/Amlogic';
-
 import styles from './index.module.css';
 
+const stats = [
+  { value: '~3W', label: '满载功耗' },
+  { value: '4核', label: 'ARM CPU' },
+  { value: '1.6GHz', label: '最高主频' },
+  { value: '¥18/年', label: '全年电费' },
+];
+
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
+      <div className={styles.heroGrid} />
+      <div className={styles.heroGlow} />
       <div className="container">
-		<img src="https://doc.ecoo.top/img/hinas01.svg" alt="Logo" />
-		<h1 className="hero__title">{siteConfig.title}</h1>
-		<p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to={useBaseUrl("docs/category/机顶盒刷机教程")}>保姆级刷机教程</Link>
-          <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to="download">最新固件下载</Link>
-          <Link className="button button--secondary button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} to={useBaseUrl("devices")}>设备支持适配表</Link>
-        </div>
-        <br></br>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--success button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} 
-            to={useBaseUrl("news")}>
-            系统最新升级公告
-          </Link>
-          <Link
-            className="button button--success button--lg" style={{marginTop: "1rem", marginRight: ".5rem", marginLeft: ".5rem", display: "flex"}} 
-            to={useBaseUrl("docs/intro")}>
-            海纳思系统使用手册
-          </Link>
+        <div className={styles.heroContent}>
+          <img
+            src="https://doc.ecoo.top/img/hinas01.svg"
+            alt="HiNas Logo"
+            className={styles.heroLogo}
+          />
+          <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+          <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
+
+          <div className={styles.statsRow}>
+            {stats.map((s) => (
+              <div key={s.label} className={styles.statItem}>
+                <span className={styles.statValue}>{s.value}</span>
+                <span className={styles.statLabel}>{s.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.buttonGroup}>
+            <Link className={clsx(styles.btn, styles.btnPrimary)} to={useBaseUrl('docs/category/机顶盒刷机教程')}>
+              保姆级刷机教程
+            </Link>
+            <Link className={clsx(styles.btn, styles.btnPrimary)} to="download">
+              最新固件下载
+            </Link>
+            <Link className={clsx(styles.btn, styles.btnPrimary)} to={useBaseUrl('devices')}>
+              设备适配表
+            </Link>
+          </div>
+          <div className={styles.buttonGroup}>
+            <Link className={clsx(styles.btn, styles.btnSecondary)} to={useBaseUrl('news')}>
+              系统升级公告
+            </Link>
+            <Link className={clsx(styles.btn, styles.btnSecondary)} to={useBaseUrl('docs/intro')}>
+              海纳思使用手册
+            </Link>
+          </div>
         </div>
       </div>
     </header>
   );
 }
 
-function PolicyPersistence() {
-  const {siteConfig} = useDocusaurusContext();
+function SectionPersistence() {
   return (
-    <div className={styles.policypersistence}>
-      <div className="container text--center">
-        <div className="row">
-          <div className="col" style={{marginBlock: "auto"}}>
-            <h2>开源，免费，易用的家用 Linux 服务器系统</h2>
-            <p>
-			海纳思系统，一个基于开源 Linux Ubuntu 20.04 LTS 打造的 NAS 系统，<br />
-			开发者精心打造，已开发和内置丰富的程序和功能，内网穿透，网盘共享，<br />
-			远程下载，Docker安装，个人博客，网络建站，socks5服务，ftp上传下载，<br />
-			webdav接口，终端控制，一键还原，计划任务等等。<br />
+    <section className={styles.section}>
+      <div className="container">
+        <div className={styles.sectionInner}>
+          <div className={styles.sectionText}>
+            <span className={styles.sectionBadge}>开源 · 免费 · 易用</span>
+            <h2 className={styles.sectionTitle}>家用 Linux 服务器系统</h2>
+            <p className={styles.sectionDesc}>
+              海纳思系统，基于 Ubuntu 20.04 LTS 打造的 NAS 系统，开发者精心内置丰富功能：
+              内网穿透、网盘共享、远程下载、Docker 安装、个人博客、网络建站、
+              Socks5 服务、FTP 上传下载、WebDAV 接口、终端控制、一键还原、计划任务等。
             </p>
           </div>
-          <div style={{marginInline: "auto"}}>
-            <img src="img/about.png" alt="Policy Persistence" width="400" height="466" />
+          <div className={styles.sectionImage}>
+            <img src="img/about.png" alt="系统功能概览" width="400" height="466" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-function PolicyEnforcement() {
-  const {siteConfig} = useDocusaurusContext();
+function SectionEnforcement() {
   return (
-    <div className={styles.policyenforcement}>
-      <div className="container text--center">
-        <div className="row">
-          <div style={{marginInline: "auto"}}>
-            <img height="250" width="400" src="img/huawei.png" alt="homepage" />
+    <section className={clsx(styles.section, styles.sectionAlt)}>
+      <div className="container">
+        <div className={clsx(styles.sectionInner, styles.sectionReverse)}>
+          <div className={styles.sectionImage}>
+            <img src="img/huawei.png" alt="海思机顶盒" height="250" width="400" />
           </div>
-          <div className="col" style={{marginBlock: "auto"}}>
-            <h2>将千家万户的机顶盒打造成一台超低功耗的 Linux 服务器</h2>
-            <p>实测功耗约 3 瓦，全年无休≈18元/年，一杯奶茶钱，养活它一年。<br />
-			盒子4核心CPU，内核频率达1.4GHz-1.6GHz，流畅运行各项 NAS 程序。<br />
-			作为家用存储，Linux 学习，学生技术孵化，网络下载，组网跳板，均可。<br />
-			网页建站，内网穿越，公网映射，科学上网，跑脚本，定时任务等，更佳。<br />
-			我是小盒子，也是大世界！千家万户都有一个机顶盒，开启您的探索之旅！</p>
+          <div className={styles.sectionText}>
+            <span className={styles.sectionBadge}>变废为宝</span>
+            <h2 className={styles.sectionTitle}>将机顶盒变成超低功耗服务器</h2>
+            <p className={styles.sectionDesc}>
+              实测功耗约 3 瓦，全年无休电费 ≈18 元/年，一杯奶茶钱养活它一年。
+              盒子 4 核 CPU，主频达 1.4~1.6GHz，流畅运行各类 NAS 程序。
+            </p>
+            <ul className={styles.featureList}>
+              <li>家用存储 / Linux 学习 / 学生技术孵化</li>
+              <li>网页建站 / 内网穿透 / 公网映射</li>
+              <li>科学上网 / 跑脚本 / 定时任务</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function OpenCollective() {
-    return (
-      <iframe title="Sponsors" src="juanzhu.html" style={{width: "100%", height: "900px", display: "block"}}></iframe>
-    );
+  return (
+    <section className={styles.donateSection}>
+      <div className="container">
+        <h2 className={styles.donateTitle}>捐助作者，持续开发</h2>
+        <div className={styles.donateRow}>
+          <div className={styles.donateCard}>
+            <img src="img/danote.png" alt="作者赞赏码" />
+            <p className={styles.donateCaption}>
+              作者赞赏码<br /><br />
+              作者"神雕"开发的固件和提供的个人网站，为了持续维护和进步，呼吁有能力的网友支持本站持续运作和固件持续开发更新。不甚感激！您的捐助将用于本站的服务器架设和固件升级维护。
+            </p>
+          </div>
+          <div className={styles.donateCard}>
+            <img src="img/alipay.png" alt="支付宝" />
+            <p className={styles.donateCaption}>
+              支付宝<br /><br />
+              可以抽出时间为小白网友提供付费远程协助，包括刷机、运维、疑难解决等需求。已组建微信群，加微信注明入群将定期邀请加入。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`e酷网 ${siteConfig.title}`}
@@ -103,8 +151,8 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <Amlogic />
-        <PolicyPersistence />
-        <PolicyEnforcement />
+        <SectionPersistence />
+        <SectionEnforcement />
         <OpenCollective />
       </main>
     </Layout>
