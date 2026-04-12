@@ -125,7 +125,7 @@ function OpenCollective() {
             <img src="img/danote.png" alt="作者赞赏码" />
             <p className={styles.donateCaption}>
               作者赞赏码<br /><br />
-              作者"神雕"开发的固件和提供的个人网站，为了持续维护和进步，呼吁有能力的网友支持本站持续运作和固件持续开发更新。不甚感激！您的捐助将用于本站的服务器架设和固件升级维护。
+              作者"神雕"开发的固件和提供的个人网站，为了持续维护和进步，呼吁有能力的网友支持本站持续运作和固件持续开发更新。不胜感激! 您的捐助将用于本站的服务器架设和固件升级维护。
             </p>
           </div>
           <div className={styles.donateCard}>
