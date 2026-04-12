@@ -12,9 +12,13 @@ const config = {
   url: 'https://doc.ecoo.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+//  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'teasiu', // Usually your GitHub org/user name.
@@ -43,6 +47,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          onUntruncatedBlogPosts: 'ignore', 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) => {
