@@ -12,7 +12,7 @@ const stats = [
   { value: '~3W', label: '满载功耗' },
   { value: '4核', label: 'ARM CPU' },
   { value: '1.6GHz', label: '最高主频' },
-  { value: '¥18/年', label: '全年电费' },
+//  { value: '一杯奶茶', label: '全年电费' },
 ];
 
 function HomepageHeader() {
