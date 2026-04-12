@@ -16,3 +16,5 @@ npm run serve
 ```
 https://netlify.com/
 ```
+
+### 注意，2026年升级到node20，模板升级到3.9.2
