@@ -77,7 +77,7 @@ const config = {
         title: 'HiNas',
         logo: {
           alt: 'histb Logo',
-          src: 'https://doc.ecoo.top/img/hinaslogo01.png',
+          src: '/img/hinaslogo01.png',
         },
         items: [
           {

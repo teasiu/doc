@@ -25,7 +25,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <img
-            src="https://doc.ecoo.top/img/hinas01.svg"
+            src="/img/hinas01.svg"
             alt="HiNas Logo"
             className={styles.heroLogo}
           />
