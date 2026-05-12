@@ -2,7 +2,7 @@
 sidebar_position: 14
 ---
 
-# YT-DLP 视频下载器使用教程
+# YT-DLP 视频下载器
 
 YT-DLP 视频下载器是一个基于强大的开源项目 `yt-dlp` 构建的本地化网页下载工具。它为命令行程序提供了直观的 Web 交互界面，支持从全球数百个主流视频平台（如 YouTube、Bilibili、TikTok 等）下载高清视频。
 
